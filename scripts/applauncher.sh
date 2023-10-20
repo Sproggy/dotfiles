@@ -7,6 +7,7 @@
 #         |_|   |_|                                                   
 #  
 # by Stephan Raabe (2023) 
+# Forked by Corrie Tilcock (10/2023)
 # ----------------------------------------------------- 
 
 rofi -show drun

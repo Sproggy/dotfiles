@@ -6,8 +6,9 @@
 # |_|   |_|\__, |_|\___|\__|
 #          |___/            
 #
-# by Stephan Raabe (2023)
-# -----------------------------------------------------
+# by Stephan Raabe (2023) 
+# Forked by Corrie Tilcock (10/2023)
+# ----------------------------------------------------- 
 # Script to create ascii font based header on user input
 # and copy the result to the clipboard
 # -----------------------------------------------------

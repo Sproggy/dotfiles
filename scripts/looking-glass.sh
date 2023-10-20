@@ -7,6 +7,7 @@
 #                                |___/                          
 #  
 # by Stephan Raabe (2023) 
+# Forked by Corrie Tilcock (10/2023)
 # ----------------------------------------------------- 
 
 tmp=$(virsh --connect qemu:///system list | grep " win11 " | awk '{ print $3}')
