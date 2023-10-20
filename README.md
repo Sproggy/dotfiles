@@ -1,9 +1,19 @@
-# ML4W dotfiles
+# My Hyprland Dotfiles
 
-This is my configuration of Hyprland (Wayland) and Qtile (Xorg).
-This package includes installation scripts to install and setup the required components.
+This is my fork of Stephan Raabe's dotfiles for Hyprland, His version is a rounded effect across the whole landscape of Hyprland and associated applications. I have gone for a more squared look an feel.
 
-The dotfiles are tested with Arch Linux, Manjaro Linux, EndeavourOS and Arco Linux.
+His original work can be found here
+
+https://gitlab.com/stephan-raabe/dotfiles.git
+
+I have not personally used or played with QTile config, so this is an as is copy of Stephan's config and any questions please reach out to him.
+
+# Hyprland dotfiles
+
+This is the configuration for Arcolinux based installation of Hyprland (Wayland) and/or Qtile (Xorg).
+
+This will work on most flavours of Arch.
+
 
 ## Common Packages
 
@@ -41,19 +51,7 @@ Hyprland: In addition, you can switch the Waybar Template with SUPER + CTRL + T 
 
 ## Screenshots & Video
 
-<a href="https://youtu.be/mJ9m18-7pQk" target="_blank">Watch on YouTube</a>
-
-<a href="https://youtu.be/mJ9m18-7pQk" target="_blank"><img src="screenshots/screenshot-24-2.png" alt="Click to watch on YouTube" /></a>
-
-<a href="https://youtu.be/mJ9m18-7pQk" target="_blank"><img src="screenshots/screenshot-24-3.png" alt="Click to watch on YouTube" /></a>
-
-<a href="https://youtu.be/mJ9m18-7pQk" target="_blank"><img src="screenshots/screenshot-24-4.png" alt="Click to watch on YouTube" /></a>
-
-<a href="https://youtu.be/mJ9m18-7pQk" target="_blank"><img src="screenshots/screenshot-24-1.png" alt="Click to watch on YouTube" /></a>
-
-<a href="https://youtu.be/mJ9m18-7pQk" target="_blank">Watch on YouTube</a>
-
-<b><a href="https://gitlab.com/stephan-raabe/dotfiles/-/tree/main/screenshots?ref_type=heads">You can find more screenshots here.</a></b>
+WIP
 
 ## Getting started
 
@@ -66,7 +64,7 @@ PLEASE BACKUP YOUR EXISTING .config WITH YOUR DOTFILES BEFORE STARTING THE SCRIP
 cd
 
 # Clone the repository from your home directory
-git clone https://gitlab.com/stephan-raabe/dotfiles.git
+git clone https://github.com/Sproggy/dotfiles.git
 
 # Or download the lastest version and unzip into ~/dotfiles folder
 
