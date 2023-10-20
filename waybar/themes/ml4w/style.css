@@ -48,7 +48,7 @@ window#waybar {
     font-weight: bold;
     font-style: normal;
     opacity: 0.8;
-    font-size: 12px;
+    font-size: 14px;
     color: @textcolor1;
 }
 
@@ -105,7 +105,7 @@ tooltip label {
     padding: 2px 10px 0px 10px;
     border-radius: 5px;
     color:@textcolor2;
-    font-size:12px;
+    font-size:14px;
     font-weight:normal;
     opacity:0.8;
 }
@@ -171,7 +171,7 @@ window#waybar.empty #window {
 
 #custom-appmenu {
     background-color: @backgrounddark;
-    font-size: 12px;
+    font-size: 14px;
     color: @textcolor1;
     border-radius: 5px;
     padding: 0px 10px 0px 10px;
@@ -197,7 +197,7 @@ window#waybar.empty #window {
 
 #custom-updates {
     background-color: @backgroundlight;
-    font-size: 12px;
+    font-size: 14px;
     color: @textcolor2;
     border-radius: 5px;
     padding: 2px 10px 0px 10px;
@@ -225,7 +225,7 @@ window#waybar.empty #window {
 
 #custom-youtube {
     background-color: @backgroundlight;
-    font-size: 12px;
+    font-size: 14px;
     color: @textcolor2;
     border-radius: 5px;
     padding: 2px 10px 0px 10px;
@@ -254,7 +254,7 @@ window#waybar.empty #window {
 
 #clock {
     background-color: @backgrounddark;
-    font-size: 12px;
+    font-size: 14px;
     color: @textcolor1;
     border-radius: 5px;
     padding: 1px 10px 0px 10px;
@@ -269,7 +269,7 @@ window#waybar.empty #window {
 
 #pulseaudio {
     background-color: @backgroundlight;
-    font-size: 12px;
+    font-size: 14px;
     color: @textcolor2;
     border-radius: 5px;
     padding: 2px 10px 0px 10px;
@@ -288,7 +288,7 @@ window#waybar.empty #window {
 
 #network {
     background-color: @backgroundlight;
-    font-size: 12px;
+    font-size: 14px;
     color: @textcolor2;
     border-radius: 5px;
     padding: 2px 10px 0px 10px;
@@ -312,7 +312,7 @@ window#waybar.empty #window {
 
 #bluetooth.on, #bluetooth.connected {
     background-color: @backgroundlight;
-    font-size: 12px;
+    font-size: 14px;
     color: @textcolor2;
     border-radius: 5px;
     padding: 2px 10px 0px 10px;
@@ -332,7 +332,7 @@ window#waybar.empty #window {
 
 #battery {
     background-color: @backgroundlight;
-    font-size: 12px;
+    font-size: 14px;
     color: @textcolor2;
     border-radius: 5px;
     padding: 2px 15px 0px 10px;
@@ -368,7 +368,7 @@ window#waybar.empty #window {
 
 #tray {
     background-color: @backgroundlight;
-    font-size: 12px;
+    font-size: 14px;
     color: @textcolor2;
     border-radius: 5px;
     padding: 2px 10px 0px 10px;
