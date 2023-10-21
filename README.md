@@ -10,7 +10,7 @@ I have not personally used or played with QTile config, so this is an as is copy
 
 # Hyprland dotfiles
 
-This is the configuration for Arcolinux based installation of Hyprland (Wayland) and/or Qtile (Xorg).
+This is the configuration for Arch Linux, Arcolinux, Manjaro based installations of Hyprland (Wayland) and/or Qtile (Xorg).
 
 This will work on most flavours of Arch.
 
