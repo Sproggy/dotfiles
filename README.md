@@ -52,13 +52,7 @@ Hyprland: In addition, you can switch the Waybar Template with SUPER + CTRL + T 
 
 ## Screenshots & Video
 
-<img> src="screenshots/screenshot-20231020-194152.png"</img>
-
-<img> src="screenshots/screenshot-20231020-194408.png"</img>
-
-<img> src="screenshots/screenshot-20231020-194623.png""</img>
-
-<img> src="screenshots/screenshot-20231020-194651.png"</img>
+![Model](https://github.com/Sproggy/dotfiles/blob/main/screenshots/screenshot-20231020-194152.png)
 
 ## Getting started
 
