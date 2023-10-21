@@ -36,7 +36,7 @@ This will work on most flavours of Arch.
 - Clipboard Manager: cliphist
 - Logout: wlogout
 - Screenlock: swaylock-effects
-- Screen Capture - wf-recorder
+- Screen Capture: wf-recorder
 
 ## Qtile
 
