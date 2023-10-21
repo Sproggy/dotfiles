@@ -52,7 +52,13 @@ Hyprland: In addition, you can switch the Waybar Template with SUPER + CTRL + T 
 
 ## Screenshots & Video
 
-WIP
+<a img src="screenshots/screenshot-20231020-194152.png" alt="Click to watch on YouTube"</a>
+
+<a img src="screenshots/screenshot-20231020-194408.png" alt="Click to watch on YouTube"</a>
+
+<a img src="screenshots/screenshot-20231020-194623.png" alt="Click to watch on YouTube"</a>
+
+<a img src="screenshots/screenshot-20231020-194651.png" alt="Click to watch on YouTube"</a>
 
 ## Getting started
 
