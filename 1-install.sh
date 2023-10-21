@@ -172,7 +172,7 @@ while true; do
             if [ -d ~/wallpaper/ ]; then
                 echo "wallpaper folder already exists."
             else
-                git clone https://gitlab.com/stephan-raabe/wallpaper.git ~/wallpaper
+                git clone https://gitlab.com/Sproggy/wallpaper.git ~/wallpaper
                 echo "wallpaper installed."
             fi
             echo "Wallpaper installed."
