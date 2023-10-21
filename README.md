@@ -53,7 +53,9 @@ Hyprland: In addition, you can switch the Waybar Template with SUPER + CTRL + T 
 ## Screenshots & Video
 
 ![Model](https://github.com/Sproggy/dotfiles/blob/main/screenshots/screenshot-20231020-194152.png)
-
+!(Model)(https://github.com/Sproggy/dotfiles/blob/main/screenshots/screenshot-20231020-194408.png)
+!(Model)(https://github.com/Sproggy/dotfiles/blob/main/screenshots/screenshot-20231020-194623.png)
+!(Model)(https://github.com/Sproggy/dotfiles/blob/main/screenshots/screenshot-20231020-194651.png)
 ## Getting started
 
 To make it easy for you to get started with my dotfiles, here's a list of recommended next steps.
