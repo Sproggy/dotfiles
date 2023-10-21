@@ -18,7 +18,7 @@ This will work on most flavours of Arch.
 ## Common Packages
 
 - Terminal: alacritty
-- Editor: nvim
+- Editor: nvim/ nano
 - Prompt: starship
 - Icons: Font Awesome
 - Menus: Rofi
@@ -36,6 +36,7 @@ This will work on most flavours of Arch.
 - Clipboard Manager: cliphist
 - Logout: wlogout
 - Screenlock: swaylock-effects
+- Screen Capture - wf-recorder
 
 ## Qtile
 
