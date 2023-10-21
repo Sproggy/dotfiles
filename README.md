@@ -52,10 +52,23 @@ Hyprland: In addition, you can switch the Waybar Template with SUPER + CTRL + T 
 
 ## Screenshots & Video
 
+Manjaro
 ![Model](https://github.com/Sproggy/dotfiles/blob/main/screenshots/screenshot-20231020-194152.png)
 ![Model](https://github.com/Sproggy/dotfiles/blob/main/screenshots/screenshot-20231020-194408.png)
 ![Model](https://github.com/Sproggy/dotfiles/blob/main/screenshots/screenshot-20231020-194623.png)
 ![Model](https://github.com/Sproggy/dotfiles/blob/main/screenshots/screenshot-20231020-194651.png)
+
+ArcoLinux
+![Model](https://github.com/Sproggy/dotfiles/blob/main/screenshots/53256162013_6be4b66963_o.png)
+![Model](https://github.com/Sproggy/dotfiles/blob/main/screenshots/53256224204_aaa86aff2e_o.png)
+![Model](https://github.com/Sproggy/dotfiles/blob/main/screenshots/53256357675_f6af5c7757_o.png)
+
+Arch Linux
+![Model](https://github.com/Sproggy/dotfiles/blob/main/screenshots/screenshot-20231021-163804.png)
+![Model](https://github.com/Sproggy/dotfiles/blob/main/screenshots/screenshot-20231021-163834.png)
+![Model](https://github.com/Sproggy/dotfiles/blob/main/screenshots/screenshot-20231021-164005.png)
+
+
 ## Getting started
 
 To make it easy for you to get started with my dotfiles, here's a list of recommended next steps.
