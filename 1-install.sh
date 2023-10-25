@@ -23,6 +23,7 @@ echo "  | || | | \__ \ || (_| | | | "
 echo " |___|_| |_|___/\__\__,_|_|_| "
 echo "                              "
 echo "by Stephan Raabe (2023)"
+echo "Forked by Corrie Tilcock (10/2023)"
 echo "-------------------------------------"
 echo ""
 
@@ -46,8 +47,8 @@ else
     echo "  | ||  _ \/ __| __/ _  | | | "
     echo "  | || | | \__ \ || (_| | | | "
     echo " |___|_| |_|___/\__\__,_|_|_| "
-    echo "                              "
     echo "by Stephan Raabe (2023)"
+    echo "Forked by Corrie Tilcock (10/2023)"
     echo "-------------------------------------"
     echo ""
 fi
