@@ -72,10 +72,8 @@ packagesYay=(
     "thunar-archive-plugin"
     "thunar-custom-acions"
     "thunar-media-tags-plugin"
-    "thunar-shares-plugin"
     "thunar-vcs-plugin"
     "thunar-volman"
-    "gnome-disk-untility"
 );
 
 # ------------------------------------------------------
