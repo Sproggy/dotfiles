@@ -122,6 +122,7 @@ packagesPacman=(
     "ntfs-3g"
     "samba"
     "xfce4-terminal"
+    "wf-recorder"
 );
 
 packagesYay=(
