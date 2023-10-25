@@ -129,19 +129,6 @@ packagesYay=(
     "bibata-cursor-theme" 
     "trizen"
     "sddm-sugar-dark"
-    "gvfs-afc"
-    "gvfs-goa"
-    "gvfs-gphoto2"
-    "gvfs-mtp"
-    "gvfs-nfs"
-    "gvfs-smb"
-    "thunar-archive-plugin"
-    "thunar-custom-acions"
-    "thunar-media-tags-plugin"
-    "thunar-shares-plugin"
-    "thunar-vcs-plugin"
-    "thunar-volman"
-    "gnome-disk-untility"
 );
   
 # ------------------------------------------------------
