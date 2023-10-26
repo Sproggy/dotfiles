@@ -75,6 +75,7 @@ packagesYay=(
     "thunar-vcs-plugin"
     "thunar-volman"
     "p7zip-gui"
+    "p7zip"
     "unzip"
     "unrar"
 );
