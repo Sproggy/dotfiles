@@ -70,7 +70,7 @@ packagesYay=(
     "gvfs-nfs"
     "gvfs-smb"
     "thunar-archive-plugin"
-    "thunar-custom-acions"
+    "thunar-custom-actions"
     "thunar-media-tags-plugin"
     "thunar-vcs-plugin"
     "thunar-volman"

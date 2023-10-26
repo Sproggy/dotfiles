@@ -131,7 +131,7 @@ packagesYay=(
     "bibata-cursor-theme" 
     "trizen"
     "sddm-sugar-dark"
-    "gnome-disk-untility"
+    "gnome-disk-utility"
     "thunar-shares-plugin"
 );
   
