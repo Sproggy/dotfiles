@@ -123,6 +123,7 @@ packagesPacman=(
     "samba"
     "xfce4-terminal"
     "wf-recorder"
+    "file-roller"
 );
 
 packagesYay=(

@@ -74,6 +74,9 @@ packagesYay=(
     "thunar-media-tags-plugin"
     "thunar-vcs-plugin"
     "thunar-volman"
+    "p7zip-gui"
+    "unzip"
+    "unrar"
 );
 
 # ------------------------------------------------------
