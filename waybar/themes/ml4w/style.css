@@ -234,6 +234,17 @@ window#waybar.empty #window {
 }
 
 /* -----------------------------------------------------
+ * Audio Group
+ * ----------------------------------------------------- */
+
+#pulseaudio-microphone,#pulseaudio,#bluetooth {
+    margin:5px;
+    padding:0px;
+    font-size:16px;
+    color:@iconcolor;
+}
+
+/* -----------------------------------------------------
  * Hardware Group
  * ----------------------------------------------------- */
 
@@ -264,25 +275,6 @@ window#waybar.empty #window {
 }
 
 /* -----------------------------------------------------
- * Pulseaudio
- * ----------------------------------------------------- */
-
-#pulseaudio {
-    background-color: @backgroundlight;
-    font-size: 14px;
-    color: @textcolor2;
-    border-radius: 5px;
-    padding: 2px 10px 0px 10px;
-    margin: 5px 15px 5px 0px;
-    opacity:0.8;
-}
-
-#pulseaudio.muted {
-    background-color: @backgrounddark;
-    color: @textcolor1;
-}
-
-/* -----------------------------------------------------
  * Network
  * ----------------------------------------------------- */
 
@@ -304,26 +296,6 @@ window#waybar.empty #window {
 #network.wifi {
     background-color: @backgroundlight;
     color: @textcolor2;
-}
-
-/* -----------------------------------------------------
- * Bluetooth
- * ----------------------------------------------------- */
-
-#bluetooth.on, #bluetooth.connected {
-    background-color: @backgroundlight;
-    font-size: 14px;
-    color: @textcolor2;
-    border-radius: 5px;
-    padding: 2px 10px 0px 10px;
-    margin: 5px 15px 5px 0px;
-    opacity:0.8;
-}
-
-#bluetooth.off {
-    background-color: transparent;
-    padding: 0px;
-    margin: 0px;
 }
 
 /* -----------------------------------------------------

@@ -270,7 +270,7 @@
 
     // Pulseaudio
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
+        "scroll-step": 5, // %, can be a float
         "format": "{icon} {volume}%",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
@@ -293,14 +293,12 @@
         "format": "{format_source}",
         "format-source": " {volume} %",
         "format-source-muted": "",
-            "on-click": "~/.config/hypr/scripts/Volume.sh --toggle-mic",
-            "on-click-right": "pavucontrol -t 4",
-            "on-scroll-up": "~/.config/hypr/scripts/Volume.sh --mic-inc",
-            "on-scroll-down": "~/.config/hypr/scripts/Volume.sh --mic-dec",
+            "on-click-right": "~/dotfiles/scripts/Volume.sh --toggle-mic",
+            "on-click": "pavucontrol -t 4",
+            "on-scroll-up": "~/dotfiles/scripts/Volume.sh --mic-inc",
+            "on-scroll-down": "~/dotfiles/scripts/Volume.sh --mic-dec",
             "scroll-step": 5,
         },
-        "on-click": "pavucontrol"
-    },
 
     // Bluetooth
     "bluetooth": {
