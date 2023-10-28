@@ -51,6 +51,7 @@
     // Modules Right    
     "modules-right": [
         "custom/updates",
+        "pulseaudio#microphone",
         "pulseaudio",
         "bluetooth",
         "battery", 
