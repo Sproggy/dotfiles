@@ -284,14 +284,18 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", " ", " "]
+            "default": ["", " ", " "],
+            "on-click-right": "~/dotfiles/scripts/Volume.sh --toggle-mute",
+            "on-click": "pavucontrol -t 4",
+            "on-scroll-up": "~/dotfiles/scripts/Volume.sh --volume-inc",
+            "on-scroll-down": "~/dotfiles/scripts/Volume.sh --volume-dec",
+            "scroll-step": 5,  
         },
-        "on-click": "pavucontrol"
     },
 
     "pulseaudio#microphone": {
         "format": "{format_source}",
-        "format-source": " {volume} %",
+        "format-source": " {volume}%",
         "format-source-muted": "",
             "on-click-right": "~/dotfiles/scripts/Volume.sh --toggle-mic",
             "on-click": "pavucontrol -t 4",
