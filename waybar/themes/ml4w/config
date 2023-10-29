@@ -51,8 +51,8 @@
     // Modules Right    
     "modules-right": [
         "custom/updates",
-        "group/audio",
         "battery", 
+        "group/audio",
         "group/hardware",
         "network",
         "tray",

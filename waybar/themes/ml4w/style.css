@@ -243,13 +243,16 @@ window#waybar.empty #window {
     font-size:16px;
     color:@iconcolor;
 }
+#bluetooth {
+    margin-right:10px;
+}
 
 /* -----------------------------------------------------
  * Hardware Group
  * ----------------------------------------------------- */
 
 #disk,#memory,#cpu {
-    margin:0px;
+    margin:5px;
     padding:0px;
     font-size:16px;
     color:@iconcolor;
