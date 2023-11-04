@@ -84,8 +84,8 @@
         "orientation": "horizontal",
         "modules": [
             "pulseaudio",
-            "pulseaudio#microphone",
-            "bluetooth"
+            "pulseaudio#microphone"
+            //"bluetooth"
         ]
     }
 }
