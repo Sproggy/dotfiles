@@ -94,7 +94,14 @@ _installSymLink .gtkrc-2.0 ~/.gtkrc-2.0 ~/dotfiles/gtk/.gtkrc-2.0 ~/.gtkrc-2.0
 _installSymLink gtk-3.0 ~/.config/gtk-3.0 ~/dotfiles/gtk/gtk-3.0/ ~/.config/
 _installSymLink gtk-4.0 ~/.config/gtk-4.0 ~/dotfiles/gtk/gtk-4.0/ ~/.config/
 _installSymLink themes ~/.local/share/themes ~/dotfiles/themes ~/.local/share/
+
+echo "-------------------------------------"
+echo "-> Install Thunar dotfiles"
+echo "-------------------------------------"
+echo ""
+
 _installSymLink xfce-perchannel-xml ~/.config/xfce4/xfconf/xfce-perchannel-xml ~/dotfiles/xfce-perchannel-xml ~/.config/xfce4/xfconf/
+_installSymLink Thunar ~/.config/Thunar ~/dotfiles/Thunar ~/.config/
 
 echo "-------------------------------------"
 echo "-> Install Qtile dotfiles"

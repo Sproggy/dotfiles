@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>debug-run</icon>
+	<name>Run Program</name>
+	<submenu></submenu>
+	<unique-id>1574362257746731-1</unique-id>
+	<command>xfce4-appfinder --collapsed</command>
+	<description>Run Program</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>terminal</icon>
+	<name>Open Terminal</name>
+	<submenu></submenu>
+	<unique-id>1571572865722588-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Open Terminal window here</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>utilities-terminal_su</icon>
+	<name>Open Root Terminal</name>
+	<submenu></submenu>
+	<unique-id>1571572865722595-2</unique-id>
+	<command>xfce4-terminal -e &quot;sudo -s&quot;</command>
+	<description>Open Root Terminal window here</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>krusader_root</icon>
+	<name>Run As Root</name>
+	<submenu></submenu>
+	<unique-id>1571572865722601-3</unique-id>
+	<command>pkexec thunar %d</command>
+	<description>Run As Root</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>image-x-generic</icon>
+	<name>Convert JPG To PNG</name>
+	<submenu></submenu>
+	<unique-id>1571572865722605-4</unique-id>
+	<command>convert %F `basename %F .jpg`.png</command>
+	<description>Convert the selected JPG graphic files to PNG</description>
+	<range></range>
+	<patterns>*.jpg;*.jpeg;*.JPG;*.JPEG</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>image-x-generic</icon>
+	<name>Convert TIF to PNG</name>
+	<submenu></submenu>
+	<unique-id>1571572865722609-5</unique-id>
+	<command>convert %F `basename %F .tif`.png</command>
+	<description>Convert the selected TIF graphic files to JPG</description>
+	<range></range>
+	<patterns>*.tif;*.tiff;*.TIF;*.TIFF</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>image-x-generic</icon>
+	<name>Convert TIF to JPG</name>
+	<submenu></submenu>
+	<unique-id>1571572865722612-6</unique-id>
+	<command>convert %F `basename %F .tif`.jpg</command>
+	<description>Convert the selected TIF graphic files to JPG</description>
+	<range></range>
+	<patterns>*.tif;*.tiff;*.TIF;*.TIFF</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>image-x-generic</icon>
+	<name>Convert PNG To JPG</name>
+	<submenu></submenu>
+	<unique-id>1571572865722616-7</unique-id>
+	<command>convert %F `basename %F .png`.jpg</command>
+	<description>Convert the selected PNG graphic files to JPG</description>
+	<range></range>
+	<patterns>*.png;*.PNG</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>image-x-generic</icon>
+	<name>Convert PNG To TIF</name>
+	<submenu></submenu>
+	<unique-id>1571572865722619-8</unique-id>
+	<command>convert %F `basename %F .png`.tif</command>
+	<description>Convert the selected PNG graphic files to TIF</description>
+	<range></range>
+	<patterns>*.png;*.PNG</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>image-x-generic</icon>
+	<name>Add 1 Pixel Black Border</name>
+	<submenu></submenu>
+	<unique-id>1571572865722652-18</unique-id>
+	<command>mogrify -bordercolor Black -border 1 %F</command>
+	<description>Add 1 pixel steelblue4 border to images</description>
+	<range></range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>image-x-generic</icon>
+	<name>Add 2 Pixel Black Border</name>
+	<submenu></submenu>
+	<unique-id>1571572865722655-19</unique-id>
+	<command>mogrify -bordercolor Black -border 2 %F</command>
+	<description>Add 2 pixel steelblue4 border to images</description>
+	<range></range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon>archive</icon>
+	<name>Create .7z archive</name>
+	<submenu></submenu>
+	<unique-id>1571572865722660-20</unique-id>
+	<command>7z a -t7z %n.7z %N</command>
+	<description>Create *.7z file from selected files</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>archive</icon>
+	<name>Create .rar archive</name>
+	<submenu></submenu>
+	<unique-id>1571572865722665-21</unique-id>
+	<command>rar a %n.rar %n</command>
+	<description>Compress directory contents as *.tar.gz file</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>archive</icon>
+	<name>Create .tar.bz2 archive</name>
+	<submenu></submenu>
+	<unique-id>1571572865722669-22</unique-id>
+	<command>tar jcf %n.tar.bz2 %n</command>
+	<description>Compress directory contents as *.tar.bz2 file</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>archive</icon>
+	<name>Create .tar.gz archive</name>
+	<submenu></submenu>
+	<unique-id>1571572865722674-23</unique-id>
+	<command>tar czvf %n.tar.gz %n</command>
+	<description>Compress directory contents as *.tar.gz file</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>archive</icon>
+	<name>Create .zip archive</name>
+	<submenu></submenu>
+	<unique-id>1571572865722678-24</unique-id>
+	<command>zip %n.zip %N</command>
+	<description>Create *.zip file from selected files</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>cm_extractfiles</icon>
+	<name>Extract .7z archive</name>
+	<submenu></submenu>
+	<unique-id>1571572865722681-25</unique-id>
+	<command>7z x %n</command>
+	<description>Extract .7z file here</description>
+	<range></range>
+	<patterns>*.7z</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>cm_extractfiles</icon>
+	<name>Extract .rar archive here</name>
+	<submenu></submenu>
+	<unique-id>1571572865722707-31</unique-id>
+	<command>unrar x %n</command>
+	<description>Extract .rar file here</description>
+	<range></range>
+	<patterns>*.rar</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>cm_extractfiles</icon>
+	<name>Extract .tar.bz2 archive here</name>
+	<submenu></submenu>
+	<unique-id>1571572865722711-32</unique-id>
+	<command>tar -jxvf %n</command>
+	<description>Extract .tar.bz2 file here</description>
+	<range></range>
+	<patterns>*.tar.bz2</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>cm_extractfiles</icon>
+	<name>Extract .tar.gz archive here</name>
+	<submenu></submenu>
+	<unique-id>1571572865722715-33</unique-id>
+	<command>tar -xzvf %n</command>
+	<description>Extract .tar.gz file here</description>
+	<range></range>
+	<patterns>*.tar.gz</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>cm_extractfiles</icon>
+	<name>Extract .zip archive here</name>
+	<submenu></submenu>
+	<unique-id>1571572865722718-34</unique-id>
+	<command>unzip %n</command>
+	<description>Extract .zip file here</description>
+	<range></range>
+	<patterns>*.zip</patterns>
+	<other-files/>
+</action>
+<action>
+	<icon>folder-copy</icon>
+	<name>Copy To ...</name>
+	<submenu></submenu>
+	<unique-id>1571572865722799-51</unique-id>
+	<command>cp %F $(zenity --file-selection --directory)</command>
+	<description>Copy To ...</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>folder-move</icon>
+	<name>Move To ...</name>
+	<submenu></submenu>
+	<unique-id>1571572865722804-52</unique-id>
+	<command>mv %F $(zenity --file-selection --directory)</command>
+	<description>Move To ...</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>system-search</icon>
+	<name>Search files inside...</name>
+	<submenu></submenu>
+	<unique-id>1571572865722807-53</unique-id>
+	<command>catfish --fileman=thunar --path=%f%d</command>
+	<description>Search files inside...</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+</actions>
