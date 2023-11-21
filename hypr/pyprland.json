@@ -1,0 +1,14 @@
+{
+    "pyprland": {
+        "plugins": [
+            "scratchpads"
+        ]
+    },
+    "scratchpads": {
+        "term": {
+            "command": "kitty --config-file ~/.config/kitty/kitty.conf" --class kitty-dropterm,
+            "animation": "fromTop",
+            "placements": ""
+        }
+    }
+}
