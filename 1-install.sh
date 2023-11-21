@@ -134,6 +134,7 @@ packagesYay=(
     "sddm-sugar-dark"
     "gnome-disk-utility"
     "thunar-shares-plugin"
+    "sublime-text-4"
 );
   
 # ------------------------------------------------------

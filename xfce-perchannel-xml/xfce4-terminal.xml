@@ -7,4 +7,5 @@
   <property name="misc-menubar-default" type="bool" value="false"/>
   <property name="misc-borders-default" type="bool" value="false"/>
   <property name="font-name" type="string" value="Monospace 10"/>
+  <property name="background-darkness" type="double" value="0.5"/>
 </channel>

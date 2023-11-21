@@ -57,6 +57,8 @@ packagesPacman=(
     "swayidle"
     "swappy"
     "cliphist"
+    "xorg-xhost"
+
 );
 
 packagesYay=(
@@ -86,6 +88,20 @@ packagesYay=(
 # ------------------------------------------------------
 _installPackagesPacman "${packagesPacman[@]}";
 _installPackagesYay "${packagesYay[@]}";
+
+# ------------------------------------------------------
+# Launch Thunar
+# ------------------------------------------------------
+echo ""
+echo "-> Launching Thunar to populate xfconf"
+thunar &
+sleep 5
+# ------------------------------------------------------
+# Close Thunar
+# ------------------------------------------------------
+echo ""
+echo "-> Closing Thunar"
+killall thunar
 
 echo ""
 echo "DONE!"
