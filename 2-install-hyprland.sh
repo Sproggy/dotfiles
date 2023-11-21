@@ -57,6 +57,8 @@ packagesPacman=(
     "swayidle"
     "swappy"
     "cliphist"
+    "xorg-xhost"
+
 );
 
 packagesYay=(
