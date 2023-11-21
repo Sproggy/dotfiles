@@ -60,6 +60,20 @@ packagesPacman=(
 # ------------------------------------------------------
 _installPackagesPacman "${packagesPacman[@]}";
 
+# ------------------------------------------------------
+# Launch Thunar
+# ------------------------------------------------------
+echo ""
+echo "-> Launching Thunar to populate xfconf"
+thunar &
+sleep 5
+# ------------------------------------------------------
+# Close Thunar
+# ------------------------------------------------------
+echo ""
+echo "-> Closing Thunar"
+killall thunar
+
 echo ""
 echo "DONE!" 
 echo "NEXT: Update the keyboard layout and screen resolution in ~/dotfiles/qtile/autostart.sh"

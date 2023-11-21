@@ -17,6 +17,7 @@ read -p "Enter the text for ascii encoding: " mytext
 figlet "$mytext" > ~/figlet.txt
 echo "" >> ~/figlet.txt
 echo "by Stephan Raabe (2023)" >> ~/figlet.txt
+echo "Forked by Corrie Tilcock (10/2023)" >> ~/figlet.txt
 echo "-----------------------------------------------------" >> ~/figlet.txt
 sed -i 's/^/# /; s/$/ /' ~/figlet.txt
 lines=$( cat ~/figlet.txt )
