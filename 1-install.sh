@@ -131,7 +131,7 @@ packagesYay=(
     "pfetch" 
     "bibata-cursor-theme" 
     "trizen"
-    "sddm-sugar-dark"
+    "sddm-sugar-candy-git"
     "gnome-disk-utility"
     "thunar-shares-plugin"
     "sublime-text-4"
