@@ -153,26 +153,30 @@ window#waybar.empty #window {
  * Custom Quicklinks
  * ----------------------------------------------------- */
 
-#custom-brave,
-#custom-outlook,
-#custom-filemanager,
-#custom-teams,
-#custom-chatgpt,
-#custom-calculator,
-#custom-windowsvm,
-#custom-cliphist,
-#custom-wallpaper,
+#custom-brave, 
+#custom-browser, 
+#custom-keybindings, 
+#custom-outlook, 
+#custom-filemanager, 
+#custom-teams, 
+#custom-chatgpt, 
+#custom-calculator, 
+#custom-windowsvm, 
+#custom-cliphist, 
+#custom-wallpaper, 
+#custom-wallpaperwlr, 
 #custom-waybarthemes,
-#custom-wf-recorder {
-    margin-right: 20px;
-    font-size: 20px;
+#custom-wf-recorder,
+#custom-keybindings  {
+    margin-right: 10px;
+    font-size: 18px;
     font-weight: bold;
     opacity: 0.8;
     color: @iconcolor;
 }
 
 #custom-wallpaper {
-    margin-right:23px;
+    margin-right:13px;
 }
 
 /* -----------------------------------------------------

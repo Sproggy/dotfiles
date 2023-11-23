@@ -136,7 +136,7 @@
 
     // Brave Launcher
     "custom/brave": {
-        "format": "",
+        "format": " ",
         "on-click": "brave",
         "tooltip": false
     },
@@ -310,6 +310,12 @@
         "format-off": "",
         "interval": 30,
         "on-click": "blueman-manager"
+    },
+
+    "custom/keybindings": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "~/dotfiles/scripts/keyhint.sh",
     },
 
     // Other

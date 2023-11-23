@@ -162,16 +162,18 @@ window#waybar.empty #window {
 #custom-cliphist, 
 #custom-wallpaper, 
 #custom-wallpaperwlr, 
-#custom-waybarthemes {
-    margin-right: 20px;
-    font-size: 20px;
+#custom-waybarthemes,
+#custom-wf-recorder,
+#custom-keybindings  {
+    margin-right: 10px;
+    font-size: 18px;
     font-weight: bold;
     opacity: 0.8;
     color: @iconcolor;
 }
 
 #custom-wallpaper, #custom-keybindings {
-    margin-right:23px;
+    margin-right:13px;
 }
 
 /* -----------------------------------------------------
