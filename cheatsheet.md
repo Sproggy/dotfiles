@@ -7,7 +7,6 @@
   Super          q        *quit* (kill focused window)
   Super   Shift  q        *quit* (kill focused window)
   Super          d        *show app menu* (`rofi menu`)
-  Super          x        *show wlogout* (lock/suspend/logout/reboot/shutdown)
   Super   Shift  b        *reload waybar config files*
 
 # screenshot
