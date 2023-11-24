@@ -18,8 +18,8 @@
   Ctrl    Alt U           *pavucontrol*
   Ctrl    ALT P           *pamac-manager*
   Super   F               *file manager* (`thunar`)
-  Super   B              *browser* (`brave`)
-  Super   Ctrl B              *browser* (`brave`)
+  Super   B               *browser* (`brave`)
+  Super   Ctrl B          *browser* (`brave`)
   Super
 
 # container layout
