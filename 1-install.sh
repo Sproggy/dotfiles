@@ -78,12 +78,14 @@ echo "-> Install main packages"
 
 packagesPacman=(
     "pacman-contrib"
-    "alacritty" 
+    "alacritty"
+    "kitty" 
     "rofi" 
     "chromium" 
     "nitrogen" 
     "dunst" 
     "starship"
+    "ranger"
     "neovim" 
     "mpv" 
     "freerdp" 
@@ -135,6 +137,7 @@ packagesYay=(
     "gnome-disk-utility"
     "thunar-shares-plugin"
     "sublime-text-4"
+    "pamac-gtk"
 );
   
 # ------------------------------------------------------
