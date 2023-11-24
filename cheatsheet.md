@@ -1,5 +1,17 @@
 # Hyprland CheatSheet #
 
+# NVIDIA Users
+
+if you are using an NVIDIA GPU or a laptop with NVIDIA GPU,
+please read the ~/dotfiles/hypr/conf/nvidia.conf for setup and configuration of your GPU
+
+# AMDGPU Users
+
+please install the xf86-video-amdgpu drivers and add to the modules section of your /etc/mkinicpio.conf
+and run sudo mkinitcpio -P (Please ensure you have your kernels headers installed)
+
+# Quick Keybinds
+
   Super = Windows Key
 
 # common operations
@@ -10,9 +22,14 @@
   Super   Shift  b        *reload waybar config files*
 
 # screenshot
-  Super Shift PrintSrc    *full screenshot*
+  Super PrintSrc          *full screenshot*
                           *active window screenshot*
                           *full screenshot + timer*
+
+# screen recorder
+  Super Shift PrintSrc    *to start full screen recording* (`wf-recorder`)
+
+screen recordings are saved by default to your ~/videos/Recordings directory
 
 # application shortcuts 
   Ctrl    Alt U           *pavucontrol*
