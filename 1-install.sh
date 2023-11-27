@@ -126,6 +126,7 @@ packagesPacman=(
     "xfce4-terminal"
     "wf-recorder"
     "file-roller"
+    "micro"
 );
 
 packagesYay=(
