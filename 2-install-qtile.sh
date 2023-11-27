@@ -74,6 +74,12 @@ echo ""
 echo "-> Closing Thunar"
 killall thunar
 
+# ------------------------------------------------------
+# Enable Bluetooth
+# ------------------------------------------------------
+sudo systemctl start bluetooth
+sudo systemctl enable bluetooth
+
 echo ""
 echo "DONE!" 
 echo "NEXT: Update the keyboard layout and screen resolution in ~/dotfiles/qtile/autostart.sh"
