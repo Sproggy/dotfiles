@@ -96,8 +96,6 @@ packagesPacman=(
     "ttf-fira-sans" 
     "ttf-fira-code" 
     "ttf-firacode-nerd"
-    "ttf-hellvetica" 
-    "ttf-roboto"  
     "figlet" 
     "vlc" 
     "exa" 
