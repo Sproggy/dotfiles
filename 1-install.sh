@@ -92,6 +92,7 @@ packagesPacman=(
     "xfce4-power-manager" 
     "thunar" 
     "mousepad" 
+    "awesome-terminal-fonts" 
     "ttf-font-awesome" 
     "ttf-fira-sans" 
     "ttf-fira-code" 
