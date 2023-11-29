@@ -128,6 +128,7 @@ packagesPacman=(
     "wf-recorder"
     "file-roller"
     "micro"
+    "pamixer"
 );
 
 packagesYay=(
