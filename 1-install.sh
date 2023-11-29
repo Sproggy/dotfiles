@@ -129,6 +129,10 @@ packagesPacman=(
     "file-roller"
     "micro"
     "pamixer"
+    "qt5-wayland" 
+    "qt5ct"
+    "qt6-wayland" 
+    "qt6ct"
 );
 
 packagesYay=(
