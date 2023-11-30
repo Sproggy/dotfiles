@@ -26,7 +26,7 @@ echo "
 echo "
 #########################################################
 #                                                       #
-#               Load Installation Library               #
+#              Load Installation Libraries              #
 #                                                       #
 #########################################################
 
@@ -36,15 +36,21 @@ source $(dirname "$0")/scripts/library.sh
 
 echo " Libraries loaded "
 
+echo ""
+echo ""
 echo "
 #########################################################
 #                                                       #
-#             Installation Library loaded               #
+#              Installation Library loaded              #
 #                                                       #
 #########################################################
 
 "
 
+sleep 3
+
+echo ""
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -65,6 +71,8 @@ else
     clear
 fi
 
+echo ""
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -77,6 +85,8 @@ echo "
 # ------------------------------------------------------
 # Confirm Start
 # ------------------------------------------------------
+
+sleep 3
 
 while true; do
     read -p "DO YOU WANT TO START THE INSTALLATION NOW? (Yy/Nn): " yn
@@ -91,7 +101,8 @@ while true; do
     esac
 done
 
-
+echo ""
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -119,6 +130,8 @@ case $GRAPHICSCARD in
   sudo pacman -S --noconfirm xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau;;
 esac
 
+echo ""
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -128,6 +141,10 @@ echo "
 
 "
 
+sleep 3
+
+echo ""
+echo ""
 echo ""
 echo "    ██████                                ██                             "
 echo "   ██░░░░██                              ████    ██████  ██████          "
@@ -370,7 +387,10 @@ echo "-> Copy default wallpaper to .cache"
 cp ~/dotfiles/wallpapers/default.jpg ~/.cache/current_wallpaper.jpg
 echo "default wallpaper copied."
 
+sleep 3
 
+echo ""
+echo ""
 echo ""
 echo "  ██      ██                          ██                         ██ "
 echo " ░██     ░██  ██   ██ ██████         ░██                        ░██ "
@@ -446,7 +466,10 @@ _installPackagesPacman "${packagesPacman[@]}";
 _installPackagesYay "${packagesYay[@]}";
 
 
+sleep 3
 
+echo ""
+echo ""
 echo "   ███████    ██████████ ██  ██          "
 echo "   ██░░░░░██  ░░░░░██░░░ ░░  ░██         "
 echo "  ██     ░░██     ░██     ██ ░██  █████  "
