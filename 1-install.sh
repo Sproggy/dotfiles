@@ -236,7 +236,6 @@ packagesPacman=(
     "file-roller"
     "micro"
     "xclip"
-    "pamac-gtk"
 );
 
 packagesYay=(
