@@ -371,21 +371,33 @@ echo "
 #########################################################
 
 "
-# ------------------------------------------------------
-# Init pywal
-# ------------------------------------------------------
+
+echo "
+#########################################################
+#                                                       #
+#                   Initiating Pywal                    #
+#                                                       #
+#########################################################
+
+"
 echo ""
 echo "-> Init pywal"
 wal -i ~/dotfiles/wallpapers/default.jpg
 echo "pywal initiated."
 
-# ------------------------------------------------------
-# Copy default wallpaper to .cache
-# ------------------------------------------------------
 echo ""
 echo "-> Copy default wallpaper to .cache"
 cp ~/dotfiles/wallpapers/default.jpg ~/.cache/current_wallpaper.jpg
 echo "default wallpaper copied."
+
+echo "
+#########################################################
+#                                                       #
+#                    Pywal Initiated                    #
+#                                                       #
+#########################################################
+
+"
 
 sleep 3
 
@@ -564,10 +576,18 @@ sudo systemctl enable bluetooth
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 
+echo "
+#########################################################
+#                                                       #
+#                Graphic Card Information               #
+#                                                       #
+#########################################################
 
+"
+echo "If you installed an NVIDIA Graphics Card please follow the instructions in the"
+echo "nvidia.conf file located ~/dotfiles/hypr/conf/nvidia.conf"
+echo ""
 echo ""
 echo "DONE!"
 echo "NEXT: Update the keyboard layout and screen resolution in ~/dotfiles/hypr/hyprland.conf"
-echo "Then proceed with with 2-dotfiles.sh"
-
-
+echo "Now proceed with running 2-dotfiles.sh"
