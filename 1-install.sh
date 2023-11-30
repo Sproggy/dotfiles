@@ -1,31 +1,22 @@
 #/bin/bash
-#  ___           _        _ _  
-# |_ _|_ __  ___| |_ __ _| | | 
-#  | || '_ \/ __| __/ _` | | | 
-#  | || | | \__ \ || (_| | | | 
-# |___|_| |_|___/\__\__,_|_|_| 
-#                              
-# by Stephan Raabe (2023) 
-# Forked by Corrie Tilcock (10/2023)
-# ----------------------------------------------------- 
-# Install Script for required packages
-# ------------------------------------------------------
+
+#  ██                    ██              ██  ██ 
+# ░██                   ░██             ░██ ░██ 
+# ░██ ███████   ██████ ██████  ██████   ░██ ░██ 
+# ░██░░██░░░██ ██░░░░ ░░░██░  ░░░░░░██  ░██ ░██ 
+# ░██ ░██  ░██░░█████   ░██    ███████  ░██ ░██ 
+# ░██ ░██  ░██ ░░░░░██  ░██   ██░░░░██  ░██ ░██ 
+# ░██ ███  ░██ ██████   ░░██ ░░████████ ███ ███ 
+# ░░ ░░░   ░░ ░░░░░░     ░░   ░░░░░░░░ ░░░ ░░░  
+#  
+# by Sproggy (Corrie Tilcock) (2023) 
+# ------------------------------------------------------------------- 
 
 # ------------------------------------------------------
 # Load Library
 # ------------------------------------------------------
 source $(dirname "$0")/scripts/library.sh
 clear
-echo "  ___           _        _ _  "
-echo " |_ _|_ __  ___| |_ __ _| | | "
-echo "  | ||  _ \/ __| __/ _  | | | "
-echo "  | || | | \__ \ || (_| | | | "
-echo " |___|_| |_|___/\__\__,_|_|_| "
-echo "                              "
-echo "by Stephan Raabe (2023)"
-echo "Forked by Corrie Tilcock (10/2023)"
-echo "-------------------------------------"
-echo ""
 
 # ------------------------------------------------------
 # Check if yay is installed
@@ -40,17 +31,20 @@ else
     makepkg -si
     cd ~/dotfiles/
     clear
-    echo "yay has been installed successfully."
-    echo ""
-    echo "  ___           _        _ _  "
-    echo " |_ _|_ __  ___| |_ __ _| | | "
-    echo "  | ||  _ \/ __| __/ _  | | | "
-    echo "  | || | | \__ \ || (_| | | | "
-    echo " |___|_| |_|___/\__\__,_|_|_| "
-    echo "by Stephan Raabe (2023)"
-    echo "Forked by Corrie Tilcock (10/2023)"
-    echo "-------------------------------------"
-    echo ""
+echo "yay has been installed successfully."
+echo ""
+echo "  ██                    ██              ██  ██ "
+echo " ░██                   ░██             ░██ ░██ "
+echo " ░██ ███████   ██████ ██████  ██████   ░██ ░██ "
+echo " ░██░░██░░░██ ██░░░░ ░░░██░  ░░░░░░██  ░██ ░██ "
+echo " ░██ ░██  ░██░░█████   ░██    ███████  ░██ ░██ "
+echo " ░██ ░██  ░██ ░░░░░██  ░██   ██░░░░██  ░██ ░██ "
+echo " ░██ ███  ░██ ██████   ░░██ ░░████████ ███ ███ "
+echo " ░░ ░░░   ░░ ░░░░░░     ░░   ░░░░░░░░ ░░░ ░░░  "
+echo ""
+echo " by Sproggy (Corrie Tilcock) (2023) "
+echo " ------------------------------------------------------------------- "
+echo ""
 fi
 
 # ------------------------------------------------------
@@ -69,6 +63,32 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
+
+
+echo "
+=================================
+=     Which Graphics Card?      =
+=================================
+
+1) Intel
+2) AMD
+3) Nvidia
+Defaults to AMD if you choose
+something else
+
+"
+
+read GRAPHICSCARD
+case $GRAPHICSCARD in
+1)
+  sudo pacman -S --noconfirm xf86-video-intel mesa lib32-mesa lib32-vulkan-intel vulkan-intel;;
+2)
+  sudo pacman -S --noconfirm xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau;;
+3)
+  sudo pacman -S --noconfirm nvidia-dkms nvidia-utils;;
+*)
+  sudo pacman -S --noconfirm xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau;;
+esac
 
 # ------------------------------------------------------
 # Install required packages
@@ -128,11 +148,6 @@ packagesPacman=(
     "wf-recorder"
     "file-roller"
     "micro"
-    "pamixer"
-    "qt5-wayland" 
-    "qt5ct"
-    "qt6-wayland" 
-    "qt6ct"
 );
 
 packagesYay=(
