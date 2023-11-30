@@ -381,6 +381,49 @@ echo "
 #                 Wallpapers Installed                  #
 #                                                       #
 #########################################################
+"
+echo ""
+echo "
+#########################################################
+#                                                       #
+#                     Install Fonts                     #
+#                                                       #
+#########################################################
+
+"
+echo ""
+echo "-> Install wallapers"
+while true; do
+    read -p "Do you want to clone the wallpapers? If not, the script will install 3 default wallpapers to ~/wallpaper/ (Yy/Nn): " yn
+    case $yn in
+        [Yy]* )
+            if [ -d ~/wallpaper/ ]; then
+                echo "wallpaper folder already exists."
+            else
+                git clone https://github.com/Sproggy/wallpaper.git ~/wallpaper
+                echo "wallpaper installed."
+            fi
+            echo "Wallpaper installed."
+        break;;
+        [Nn]* ) 
+            if [ -d ~/wallpaper/ ]; then
+                echo "wallpaper folder already exists."
+            else
+                mkdir ~/wallpaper
+            fi
+            cp ~/dotfiles/wallpapers/* ~/wallpaper
+            echo "Default wallpapers installed."
+        break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+echo "
+#########################################################
+#                                                       #
+#                    Fonts Installed                    #
+#                                                       #
+#########################################################
 
 "
 
