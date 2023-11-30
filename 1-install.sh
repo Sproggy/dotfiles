@@ -31,6 +31,7 @@ else
     makepkg -si
     cd ~/dotfiles/
     clear
+
 echo "yay has been installed successfully."
 echo ""
 echo "  ██                    ██              ██  ██ "
@@ -91,6 +92,15 @@ case $GRAPHICSCARD in
 *)
   sudo pacman -S --noconfirm xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau;;
 esac
+
+echo "
+#########################################################
+#                                                       #
+#         Your Graphics Card has been installed         #
+#                                                       #
+#########################################################
+
+"
 
 # ------------------------------------------------------
 # Install required packages
