@@ -225,6 +225,7 @@ packagesPacman=(
     "file-roller"
     "micro"
     "xclip"
+    "pamac-gtk"
 );
 
 packagesYay=(
@@ -236,7 +237,6 @@ packagesYay=(
     "gnome-disk-utility"
     "thunar-shares-plugin"
     "sublime-text-4"
-    "pamac-gtk"
 );
   
 _installPackagesPacman "${packagesPacman[@]}";
@@ -412,6 +412,7 @@ while true; do
             echo "Installation started."
         break;;
         [Nn]* ) 
+            echo "Installation is Aborted"
             exit;
         break;;
         * ) echo "Please answer yes or no.";;
@@ -501,6 +502,7 @@ while true; do
             echo "Installation started."
         break;;
         [Nn]* ) 
+            echo "Installation is Aborted"
             exit;
         break;;
         * ) echo "Please answer yes or no.";;
