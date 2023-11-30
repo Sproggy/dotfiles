@@ -311,7 +311,7 @@ while true; do
     case $yn in
         [Yy]* )
             sudo systemctl enable sddm.service
-            sudo sh ~/dotfiles/scripts/sddm.sh
+            sh ~/dotfiles/sddm/update.sh
         break;;
         [Nn]* ) 
             echo "sddm installation skipped."
@@ -541,6 +541,6 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 echo ""
 echo "DONE!"
 echo "NEXT: Update the keyboard layout and screen resolution in ~/dotfiles/hypr/hyprland.conf"
-echo "Then proceed with with 3-dotfiles.sh"
+echo "Then proceed with with 2-dotfiles.sh"
 
 
