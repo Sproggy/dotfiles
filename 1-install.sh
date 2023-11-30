@@ -141,7 +141,19 @@ echo "
 
 "
 
-sleep 3
+while true; do
+    read -p "DO YOU WANT TO INSTALL THE CORE APPS NOW? (Yy/Nn): " yn
+    case $yn in
+        [Yy]* )
+            echo "Installation started."
+        break;;
+        [Nn]* ) 
+            echo "Installation is Aborted"
+            exit;
+        break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
 
 echo ""
 echo ""
