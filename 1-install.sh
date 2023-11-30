@@ -37,7 +37,6 @@ source $(dirname "$0")/scripts/library.sh
 echo " Libraries loaded "
 
 echo ""
-echo ""
 echo "
 #########################################################
 #                                                       #
