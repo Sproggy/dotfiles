@@ -311,7 +311,7 @@ while true; do
     case $yn in
         [Yy]* )
             sudo systemctl enable sddm.service
-            sh ~/dotfiles/sddm/update.sh
+            #sh ~/dotfiles/sddm/update.sh
         break;;
         [Nn]* ) 
             echo "sddm installation skipped."
@@ -419,9 +419,14 @@ while true; do
 done
 echo ""
 
-# ------------------------------------------------------
-# Install required packages
-# ------------------------------------------------------
+echo "
+#########################################################
+#                                                       #
+#             Installing required Packages              #
+#                                                       #
+#########################################################
+
+"
 echo ""
 echo "-> Install main packages"
 packagesPacman=(
@@ -459,12 +464,19 @@ packagesYay=(
     "nwg-look"
 );
 
-# ------------------------------------------------------
-# Install required packages
-# ------------------------------------------------------
+
 _installPackagesPacman "${packagesPacman[@]}";
 _installPackagesYay "${packagesYay[@]}";
 
+
+echo "
+#########################################################
+#                                                       #
+#              Installed required Packages              #
+#                                                       #
+#########################################################
+
+"
 
 sleep 3
 
@@ -496,9 +508,14 @@ while true; do
 done
 echo ""
 
-# ------------------------------------------------------
-# Install required packages
-# ------------------------------------------------------
+echo "
+#########################################################
+#                                                       #
+#             Installing required Packages              #
+#                                                       #
+#########################################################
+
+"
 echo ""
 echo "-> Install main packages"
 
@@ -510,10 +527,18 @@ packagesPacman=(
     "slock"
 );
 
-# ------------------------------------------------------
-# Install required packages
-# ------------------------------------------------------
+
 _installPackagesPacman "${packagesPacman[@]}";
+
+
+echo "
+#########################################################
+#                                                       #
+#              Installed required Packages              #
+#                                                       #
+#########################################################
+
+"
 
 # ------------------------------------------------------
 # Launch Thunar
