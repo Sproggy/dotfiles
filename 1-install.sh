@@ -34,6 +34,7 @@ echo "
 
 source $(dirname "$0")/scripts/library.sh
 
+echo " Libraries loaded "
 
 echo "
 #########################################################
@@ -357,9 +358,6 @@ cp ~/dotfiles/wallpapers/default.jpg ~/.cache/current_wallpaper.jpg
 echo "default wallpaper copied."
 
 
-
-source $(dirname "$0")/scripts/library.sh
-clear
 echo ""
 echo "  ██      ██                          ██                         ██ "
 echo " ░██     ░██  ██   ██ ██████         ░██                        ░██ "
