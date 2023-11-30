@@ -1,5 +1,5 @@
 #/bin/bash
-
+echo ""
 echo "
   ██                    ██              ██  ██
  ░██                   ░██             ░██ ░██
@@ -13,6 +13,10 @@ echo "
 by Sproggy (Corrie Tilcock) (2023)
 #########################################################
 "
+echo " Welcome to the Hyprland & QTile installer "
+echo " I have chosen as my preference to install both, if you choose No on either Environment the installer will close "
+echo " I chose it this way so if 1 Enviroment has problems i still have the other to boot too, enjoy"
+sleep 3
 
 echo "
 #########################################################
@@ -22,6 +26,8 @@ echo "
 #########################################################
 
 "
+
+sleep 3
 
 echo "
 #########################################################
@@ -34,13 +40,11 @@ echo "
 
 source $(dirname "$0")/scripts/library.sh
 
-echo " Libraries loaded "
-
 echo ""
 echo "
 #########################################################
 #                                                       #
-#              Installation Library loaded              #
+#            Installation Libraries loaded              #
 #                                                       #
 #########################################################
 
@@ -58,10 +62,11 @@ echo "
 #########################################################
 
 "
+
 if sudo pacman -Qs yay > /dev/null ; then
     echo "yay is installed. You can proceed with the installation"
 else
-    echo "yay is not installed. Will be installed now!"
+    echo "yay is not installed and will be installed now!"
     _installPackagesPacman "base-devel"
     git clone https://aur.archlinux.org/yay-git.git ~/yay-git
     cd ~/yay-git
@@ -80,12 +85,8 @@ echo "
 #########################################################
 
 "
-
-# ------------------------------------------------------
-# Confirm Start
-# ------------------------------------------------------
-
 sleep 3
+echo ""
 
 while true; do
     read -p "DO YOU WANT TO START THE INSTALLATION NOW? (Yy/Nn): " yn
@@ -124,7 +125,7 @@ case $GRAPHICSCARD in
 2)
   sudo pacman -S --noconfirm xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau;;
 3)
-  sudo pacman -S --noconfirm nvidia-dkms nvidia-utils nvidia-settings;;
+  sudo pacman -S --noconfirm nvidia-dkms nvidia-utils nvidia-settings qt5-wayland qt5ct qt6-wayland qt6ct libva && yay --noconfirm -S libva-nvidia-driver-git;;
 *)
   sudo pacman -S --noconfirm xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau;;
 esac
@@ -272,7 +273,7 @@ echo "
 if [ -f /usr/bin/wal ]; then
     echo "pywal already installed."
 else
-    yay --noconfirm -S pywal
+    yay --noconfirm -S pywal-git
 fi
 
 echo "
@@ -390,7 +391,7 @@ echo "
 
 "
 echo ""
-echo "-> Install wallapers"
+echo "-> Install fonts"
 while true; do
     read -p "Do you want to clone the fonts? ~/fonts (Yy/Nn): " yn
     case $yn in
@@ -523,11 +524,10 @@ packagesYay=(
     "thunar-media-tags-plugin"
     "thunar-vcs-plugin"
     "thunar-volman"
-    "p7zip-gui"
-    "p7zip"
+    "p7zip-full-bin"
     "unzip"
     "unrar"
-    "nwg-look"
+    "nwg-look-bin"
 );
 
 
@@ -613,7 +613,7 @@ echo "
 echo ""
 echo "-> Launching Thunar to populate xfconf"
 thunar &
-sleep 5
+sleep 3
 # ------------------------------------------------------
 # Close Thunar
 # ------------------------------------------------------
