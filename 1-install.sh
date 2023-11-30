@@ -17,7 +17,7 @@ echo " Welcome to the Hyprland & QTile installer "
 echo " I have chosen as my preference to install both, if you choose No on either Environment the installer will close "
 echo " I chose it this way so if 1 Enviroment has problems i still have the other to boot too, enjoy"
 sleep 3
-
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -26,9 +26,9 @@ echo "
 #########################################################
 
 "
-
+echo ""
 sleep 3
-
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -37,9 +37,8 @@ echo "
 #########################################################
 
 "
-
+echo ""
 source $(dirname "$0")/scripts/library.sh
-
 echo ""
 echo "
 #########################################################
@@ -49,9 +48,8 @@ echo "
 #########################################################
 
 "
-
+echo ""
 sleep 3
-
 echo ""
 echo ""
 echo "
@@ -62,7 +60,7 @@ echo "
 #########################################################
 
 "
-
+echo ""
 if sudo pacman -Qs yay > /dev/null ; then
     echo "yay is installed. You can proceed with the installation"
 else
@@ -74,7 +72,7 @@ else
     cd ~/dotfiles/
     clear
 fi
-
+echo ""
 echo ""
 echo ""
 echo "
@@ -87,7 +85,7 @@ echo "
 "
 sleep 3
 echo ""
-
+echo ""
 while true; do
     read -p "DO YOU WANT TO START THE INSTALLATION NOW? (Yy/Nn): " yn
     case $yn in
@@ -100,7 +98,7 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
-
+echo ""
 echo ""
 echo ""
 echo "
@@ -117,7 +115,7 @@ Defaults to AMD if you choose
 something else
 
 "
-
+echo ""
 read GRAPHICSCARD
 case $GRAPHICSCARD in
 1)
@@ -129,7 +127,7 @@ case $GRAPHICSCARD in
 *)
   sudo pacman -S --noconfirm xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau;;
 esac
-
+echo ""
 echo ""
 echo ""
 echo "
@@ -154,7 +152,7 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
-
+echo ""
 echo ""
 echo ""
 echo ""
@@ -169,7 +167,7 @@ echo "   ░░░░░░   ░░░░░░  ░░░     ░░░░░�
 echo ""
 echo " by Sproggy (Corrie Tilcock) (2023) "
 echo " ------------------------------------------------------------------- "
-
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -178,12 +176,9 @@ echo "
 #########################################################
 
 "
-# ------------------------------------------------------
-# Install required packages
-# ------------------------------------------------------
 echo ""
 echo "-> Install main packages"
-
+echo ""
 packagesPacman=(
     "pacman-contrib"
     "alacritty"
@@ -238,7 +233,7 @@ packagesPacman=(
     "micro"
     "xclip"
 );
-
+echo ""
 packagesYay=(
     "brave-bin" 
     "pfetch" 
@@ -249,10 +244,10 @@ packagesYay=(
     "thunar-shares-plugin"
     "sublime-text-4"
 );
-  
+echo ""
 _installPackagesPacman "${packagesPacman[@]}";
 _installPackagesYay "${packagesYay[@]}";
-
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -261,7 +256,7 @@ echo "
 #########################################################
 
 "
-
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -275,7 +270,7 @@ if [ -f /usr/bin/wal ]; then
 else
     yay --noconfirm -S pywal-git
 fi
-
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -284,7 +279,7 @@ echo "
 #########################################################
 
 "
-
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -295,9 +290,9 @@ echo "
 "
 echo ""
 echo "-> Install .bashrc"
-
+echo ""
 _installSymLink .bashrc ~/.bashrc ~/dotfiles/.bashrc ~/.bashrc
-
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -306,7 +301,7 @@ echo "
 #########################################################
 
 "
-
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -330,7 +325,7 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
-
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -373,7 +368,7 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
-
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -416,7 +411,7 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
-
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -425,7 +420,7 @@ echo "
 #########################################################
 
 "
-
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -438,12 +433,12 @@ echo ""
 echo "-> Init pywal"
 wal -i ~/dotfiles/wallpapers/default.jpg
 echo "pywal initiated."
-
+echo ""
 echo ""
 echo "-> Copy default wallpaper to .cache"
 cp ~/dotfiles/wallpapers/default.jpg ~/.cache/current_wallpaper.jpg
 echo "default wallpaper copied."
-
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -452,9 +447,9 @@ echo "
 #########################################################
 
 "
-
+echo ""
 sleep 3
-
+echo ""
 echo ""
 echo ""
 echo ""
@@ -470,7 +465,7 @@ echo "  "
 echo " by Sproggy (Corrie Tilcock) (2023) "
 echo " ------------------------------------------------------------------- "
 echo ""
-
+echo ""
 while true; do
     read -p "DO YOU WANT TO START THE INSTALLATION NOW? (Yy/Nn): " yn
     case $yn in
@@ -485,14 +480,14 @@ while true; do
     esac
 done
 echo ""
-
+echo ""
 echo "
 #########################################################
 #                                                       #
 #             Installing required Packages              #
 #                                                       #
 #########################################################
-
+echo ""
 "
 echo ""
 echo "-> Install main packages"
@@ -508,7 +503,7 @@ packagesPacman=(
     "xorg-xhost"
 
 );
-
+echo ""
 packagesYay=(
     "swww" 
     "swaylock-effects" 
@@ -529,12 +524,12 @@ packagesYay=(
     "unrar"
     "nwg-look-bin"
 );
-
-
+echo ""
+echo ""
 _installPackagesPacman "${packagesPacman[@]}";
 _installPackagesYay "${packagesYay[@]}";
-
-
+echo ""
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -543,9 +538,9 @@ echo "
 #########################################################
 
 "
-
+echo ""
 sleep 3
-
+echo ""
 echo ""
 echo ""
 echo "   ███████    ██████████ ██  ██          "
@@ -574,7 +569,7 @@ while true; do
     esac
 done
 echo ""
-
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -585,7 +580,7 @@ echo "
 "
 echo ""
 echo "-> Install main packages"
-
+echo ""
 packagesPacman=(
     "qtile" 
     "polybar"
@@ -593,11 +588,11 @@ packagesPacman=(
     "scrot"
     "slock"
 );
-
-
+echo ""
+echo ""
 _installPackagesPacman "${packagesPacman[@]}";
-
-
+echo ""
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -606,37 +601,47 @@ echo "
 #########################################################
 
 "
-
-# ------------------------------------------------------
-# Launch Thunar
-# ------------------------------------------------------
 echo ""
-echo "-> Launching Thunar to populate xfconf"
-thunar &
-sleep 3
-# ------------------------------------------------------
-# Close Thunar
-# ------------------------------------------------------
-echo ""
-echo "-> Closing Thunar"
-killall thunar
-
-# ------------------------------------------------------
-# Enable Bluetooth
-# ------------------------------------------------------
-sudo systemctl start bluetooth
-sudo systemctl enable bluetooth
-sudo grub-mkconfig -o /boot/grub/grub.cfg
-
-
 echo "
 #########################################################
 #                                                       #
-#                Graphic Card Information               #
+#            Launch Thunar to generate xfconf           #
 #                                                       #
 #########################################################
 
 "
+echo ""
+echo "-> Launching Thunar to populate xfconf"
+thunar &
+sleep 3
+echo ""
+echo ""
+echo "-> Closing Thunar"
+killall thunar
+echo ""
+echo "
+#########################################################
+#                                                       #
+#                   Enabling Bluetooth                  #
+#                                                       #
+#########################################################
+
+"
+sudo systemctl start bluetooth
+sudo systemctl enable bluetooth
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+echo ""
+echo ""
+echo "
+#########################################################
+#                                                       #
+#           IMPORTANT Graphic Card Information          #
+#                                                       #
+#########################################################
+
+"
+echo ""
+echo ""
 echo "If you installed an NVIDIA Graphics Card please follow the instructions in the"
 echo "nvidia.conf file located ~/dotfiles/hypr/conf/nvidia.conf"
 echo ""
