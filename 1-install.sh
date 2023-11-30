@@ -311,7 +311,7 @@ while true; do
     case $yn in
         [Yy]* )
             sudo systemctl enable sddm.service
-            sudo $HOME/dotfiles/scripts/./sddm.sh
+            sudo sh ~/dotfiles/scripts/sddm.sh
         break;;
         [Nn]* ) 
             echo "sddm installation skipped."
