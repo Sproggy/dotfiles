@@ -1,37 +1,5 @@
 #/bin/bash
 
-#  ██                    ██              ██  ██ 
-# ░██                   ░██             ░██ ░██ 
-# ░██ ███████   ██████ ██████  ██████   ░██ ░██ 
-# ░██░░██░░░██ ██░░░░ ░░░██░  ░░░░░░██  ░██ ░██ 
-# ░██ ░██  ░██░░█████   ░██    ███████  ░██ ░██ 
-# ░██ ░██  ░██ ░░░░░██  ░██   ██░░░░██  ░██ ░██ 
-# ░██ ███  ░██ ██████   ░░██ ░░████████ ███ ███ 
-# ░░ ░░░   ░░ ░░░░░░     ░░   ░░░░░░░░ ░░░ ░░░  
-#  
-# by Sproggy (Corrie Tilcock) (2023) 
-# ------------------------------------------------------------------- 
-
-# ------------------------------------------------------
-# Load Library
-# ------------------------------------------------------
-source $(dirname "$0")/scripts/library.sh
-clear
-
-# ------------------------------------------------------
-# Check if yay is installed
-# ------------------------------------------------------
-if sudo pacman -Qs yay > /dev/null ; then
-    echo "yay is installed. You can proceed with the installation"
-else
-    echo "yay is not installed. Will be installed now!"
-    _installPackagesPacman "base-devel"
-    git clone https://aur.archlinux.org/yay-git.git ~/yay-git
-    cd ~/yay-git
-    makepkg -si
-    cd ~/dotfiles/
-    clear
-
 echo "yay has been installed successfully."
 echo ""
 echo "  ██                    ██              ██  ██ "
@@ -46,7 +14,53 @@ echo ""
 echo " by Sproggy (Corrie Tilcock) (2023) "
 echo " ------------------------------------------------------------------- "
 echo ""
+
+echo "
+#########################################################
+#                                                       #
+#             Starting Installation Process             #
+#                                                       #
+#########################################################
+
+"
+
+echo "
+#########################################################
+#                                                       #
+#               Load Installation Library               #
+#                                                       #
+#########################################################
+
+"
+# ------------------------------------------------------
+# Load Library
+# ------------------------------------------------------
+source $(dirname "$0")/scripts/library.sh
+clear
+
+echo "
+#########################################################
+#                                                       #
+#             Installation Library loaded               #
+#                                                       #
+#########################################################
+
+"
+# ------------------------------------------------------
+# Check if yay is installed
+# ------------------------------------------------------
+if sudo pacman -Qs yay > /dev/null ; then
+    echo "yay is installed. You can proceed with the installation"
+else
+    echo "yay is not installed. Will be installed now!"
+    _installPackagesPacman "base-devel"
+    git clone https://aur.archlinux.org/yay-git.git ~/yay-git
+    cd ~/yay-git
+    makepkg -si
+    cd ~/dotfiles/
+    clear
 fi
+
 
 # ------------------------------------------------------
 # Confirm Start
@@ -102,6 +116,16 @@ echo "
 
 "
 
+clear
+
+echo "
+#########################################################
+#                                                       #
+#             Installing required Packages              #
+#                                                       #
+#########################################################
+
+"
 # ------------------------------------------------------
 # Install required packages
 # ------------------------------------------------------
@@ -175,11 +199,17 @@ packagesYay=(
     "pamac-gtk"
 );
   
-# ------------------------------------------------------
-# Install required packages
-# ------------------------------------------------------
 _installPackagesPacman "${packagesPacman[@]}";
 _installPackagesYay "${packagesYay[@]}";
+
+echo "
+#########################################################
+#                                                       #
+#             Installed required Packages               #
+#                                                       #
+#########################################################
+
+"
 
 # ------------------------------------------------------
 # Install pywal
