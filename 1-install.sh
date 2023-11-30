@@ -394,25 +394,25 @@ echo "
 echo ""
 echo "-> Install wallapers"
 while true; do
-    read -p "Do you want to clone the wallpapers? If not, the script will install 3 default wallpapers to ~/wallpaper/ (Yy/Nn): " yn
+    read -p "Do you want to clone the fonts? ~/fonts (Yy/Nn): " yn
     case $yn in
         [Yy]* )
-            if [ -d ~/wallpaper/ ]; then
-                echo "wallpaper folder already exists."
+            if [ -d ~/fonts/ ]; then
+                echo "fonts folder does not exist."
             else
-                git clone https://github.com/Sproggy/wallpaper.git ~/wallpaper
-                echo "wallpaper installed."
+                git clone https://github.com/Sproggy/fonts.git ~/fonts
+                echo "fonts installed."
             fi
-            echo "Wallpaper installed."
+            echo "fonts installed."
         break;;
         [Nn]* ) 
-            if [ -d ~/wallpaper/ ]; then
-                echo "wallpaper folder already exists."
+            if [ -d ~/fonts/ ]; then
+                echo "fonts folder already exists."
             else
-                mkdir ~/wallpaper
+                mkdir ~/fonts
             fi
-            cp ~/dotfiles/wallpapers/* ~/wallpaper
-            echo "Default wallpapers installed."
+            sudo cp -r ~/fonts /usr/share/
+            echo "Default fonts installed."
         break;;
         * ) echo "Please answer yes or no.";;
     esac
