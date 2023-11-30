@@ -433,11 +433,7 @@ _installPackagesPacman "${packagesPacman[@]}";
 _installPackagesYay "${packagesYay[@]}";
 
 
-# ------------------------------------------------------
-# Confirm Start
-# ------------------------------------------------------
-source $(dirname "$0")/scripts/library.sh
-clear
+
 echo "   ███████    ██████████ ██  ██          "
 echo "   ██░░░░░██  ░░░░░██░░░ ░░  ░██         "
 echo "  ██     ░░██     ░██     ██ ░██  █████  "
