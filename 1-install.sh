@@ -66,9 +66,11 @@ done
 
 
 echo "
-=================================
-=     Which Graphics Card?      =
-=================================
+#########################################################
+#                                                       #
+#            Which Graphics Card do you have?           #
+#                                                       #
+#########################################################
 
 1) Intel
 2) AMD
@@ -85,7 +87,7 @@ case $GRAPHICSCARD in
 2)
   sudo pacman -S --noconfirm xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau;;
 3)
-  sudo pacman -S --noconfirm nvidia-dkms nvidia-utils;;
+  sudo pacman -S --noconfirm nvidia-dkms nvidia-utils nvidia-settings;;
 *)
   sudo pacman -S --noconfirm xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau;;
 esac
@@ -148,6 +150,7 @@ packagesPacman=(
     "wf-recorder"
     "file-roller"
     "micro"
+    "xclip"
 );
 
 packagesYay=(
