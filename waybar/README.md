@@ -15,7 +15,7 @@ A good starting point is to copy the default folder with the default waybar them
 The main theme folder includes the core config file and stylesheet.
 Waybar configuration: https://github.com/Alexays/Waybar/wiki/Configuration
 
-Create subfolders to save variations like in the folder ml4w. You can include stylesheets from other themes to standardize your themes like in the theme ml4w-bottom.
+Create subfolders to save variations like in the folder Top. You can include stylesheets from other themes to standardize your themes like in the theme Bottom.
 
 ## Stylesheet
 
