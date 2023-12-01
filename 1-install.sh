@@ -238,6 +238,7 @@ packagesPacman=(
     "file-roller"
     "micro"
     "xclip"
+    "pamixer"
 );
 echo ""
 packagesYay=(
@@ -249,6 +250,8 @@ packagesYay=(
     "gnome-disk-utility"
     "thunar-shares-plugin"
     "sublime-text-4"
+    "pacseek"
+    "github-desktop-bin"
 );
 echo ""
 _installPackagesPacman "${packagesPacman[@]}";
