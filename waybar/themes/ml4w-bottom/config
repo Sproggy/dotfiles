@@ -51,9 +51,8 @@
     // Modules Right    
     "modules-right": [
         "custom/updates",
-        "pulseaudio",
-        "bluetooth",
         "battery", 
+        "group/audio",
         "group/hardware",
         "network",
         "tray",
@@ -77,6 +76,16 @@
             "disk",
             "cpu",
             "memory"
+        ]
+    },
+
+    // Group Audio
+    "group/audio": {
+        "orientation": "horizontal",
+        "modules": [
+            "pulseaudio",
+            "pulseaudio#microphone"
+            //"bluetooth"
         ]
     }
 }
