@@ -39,6 +39,7 @@
         "custom/cliphist",
         "group/quicklinks",
         "custom/wf-recorder",
+        "custom/keybindings",
         "wlr/taskbar",
         "hyprland/window"
     ],
