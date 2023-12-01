@@ -1,17 +1,40 @@
 #!/bin/bash
-#  _   _           _       _                 _     _            
-# | | | |_ __   __| | __ _| |_ ___   ___  __| | __| |_ __ ___   
-# | | | | '_ \ / _` |/ _` | __/ _ \ / __|/ _` |/ _` | '_ ` _ \  
-# | |_| | |_) | (_| | (_| | ||  __/ \__ \ (_| | (_| | | | | | | 
-#  \___/| .__/ \__,_|\__,_|\__\___| |___/\__,_|\__,_|_| |_| |_| 
-#       |_|                                                     
-#  
-# by Stephan Raabe (2023) 
-# Forked by Corrie Tilcock (10/2023)
-# ----------------------------------------------------- 
+echo ""
+echo "  ██     ██              ██             ██           "
+echo " ░██    ░██ ██████      ░██            ░██           "
+echo " ░██    ░██░██░░░██     ░██  ██████   ██████  █████  "
+echo " ░██    ░██░██  ░██  ██████ ░░░░░░██ ░░░██░  ██░░░██ "
+echo " ░██    ░██░██████  ██░░░██  ███████   ░██  ░███████ "
+echo " ░██    ░██░██░░░  ░██  ░██ ██░░░░██   ░██  ░██░░░░  "
+echo " ░░███████ ░██     ░░██████░░████████  ░░██ ░░██████ "
+echo "  ░░░░░░░  ░░       ░░░░░░  ░░░░░░░░    ░░   ░░░░░░  "
+echo ""
+echo ""
+echo "   ████████ ███████   ███████   ████     ████ "
+echo "  ██░░░░░░ ░██░░░░██ ░██░░░░██ ░██░██   ██░██ "
+echo " ░██       ░██    ░██░██    ░██░██░░██ ██ ░██ "
+echo " ░█████████░██    ░██░██    ░██░██ ░░███  ░██ "
+echo " ░░░░░░░░██░██    ░██░██    ░██░██  ░░█   ░██ "
+echo "        ░██░██    ██ ░██    ██ ░██   ░    ░██ "
+echo "  ████████ ░███████  ░███████  ░██        ░██ "
+echo " ░░░░░░░░  ░░░░░░░   ░░░░░░░   ░░         ░░  "
+echo ""
+echo " by Sproggy (Corrie Tilcock) (2023) "
+echo " ------------------------------------------------------------------- "
 
-clear
-echo "Update the background wallpaper of sddm to the current wallpaper."
+while true; do
+    read -p "Update the background wallpaper of sddm to the current wallpaper NOW? (Yy/Nn): " yn
+    case $yn in
+        [Yy]* )
+            echo "Update started."
+        break;;
+        [Nn]* ) 
+            echo "Update is Aborted"
+            exit;
+        break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
 echo ""
 if [ ! -d /etc/sddm.conf.d/ ]; then
     sudo mkdir /etc/sddm.conf.d
