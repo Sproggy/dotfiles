@@ -14,7 +14,7 @@ by Sproggy (Corrie Tilcock) (2023)
 #########################################################
 "
 echo " Welcome to the Hyprland & QTile installer "
-echo " I have chosen as my preference to install both, if you choose No on either Environment the installer will close "
+echo " I have chosen as my preference to install both, if you choose No on either Environments the installer will fail and close "
 echo " I chose it this way so if 1 Enviroment has problems i still have the other to boot too, enjoy"
 sleep 3
 echo ""
