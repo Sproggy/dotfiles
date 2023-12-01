@@ -28,7 +28,7 @@ Add a config.sh file to save the theme name. Add it to the main or subfolders fo
 
 ```
 #!/bin/bash
-theme_name="ML4W Light"
+theme_name="Top Light"
 ```
 
 

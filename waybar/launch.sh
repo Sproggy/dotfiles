@@ -17,7 +17,7 @@ killall waybar
 # ----------------------------------------------------- 
 # Default theme: /THEMEFOLDER;/VARIATION
 # ----------------------------------------------------- 
-themestyle="/ml4w;/ml4w/light"
+themestyle="/Top;/Top/light"
 
 # ----------------------------------------------------- 
 # Get current theme information from .cache/.themestyle.sh
@@ -33,7 +33,7 @@ IFS=';' read -ra arrThemes <<< "$themestyle"
 echo ${arrThemes[0]}
 
 if [ ! -f ~/dotfiles/waybar/themes${arrThemes[1]}/style.css ]; then
-    themestyle="/ml4w;/ml4w/light"
+    themestyle="/Top;/Top/light"
 fi
 
 # ----------------------------------------------------- 
