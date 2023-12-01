@@ -87,16 +87,8 @@ git clone https://github.com/Sproggy/dotfiles.git
 # Change into the new dotfiles folder
 cd dotfiles
 
-# Install all required packages
+# Just run the single install file and go through every step, please be aware that this installs both Hyprland and QTile environments at once
 ./1-install.sh
-
-# Install hyprland window manager
-./2-install-hyprland.sh
-# OR/AND Install qtile window manager
-./2-install-qtile.sh
-
-# Install dotfiles
-./3-install-dotfiles.sh
 
 ```
 Please note that every Arch Linux system is different and I cannot guarantee that everything works fine on your system.
