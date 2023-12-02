@@ -50,5 +50,11 @@ echo "Current wallpaper copied into /usr/share/sddm/themes/sugar-candy/Backgroun
 sudo cp theme.conf /usr/share/sddm/themes/sugar-candy/
 echo "File theme.conf updated in /usr/share/sddm/themes/sugar-candy/"
 
+sudo cp ~/.cache/current_wallpaper.jpg /root/.cache/current_wallpaper.jpg
+
+sudo sed -i '/^GRUB_BACKGROUND/d' /etc/default/grub
+
+echo -e 'GRUB_BACKGROUND="~/.cache/current.jpg"'| sudo tee -a /etc/default/grub
+
 echo ""
 echo "DONE! Please logout to test sddm."
