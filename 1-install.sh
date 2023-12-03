@@ -420,6 +420,7 @@ while true; do
                 mkdir ~/fonts
             fi
             sudo cp -r ~/dotfiles/fonts/* /usr/share/fonts
+            sudo cp -r ~/fonts/* /usr/share/fonts
             echo "Default fonts installed."
         break;;
         * ) echo "Please answer yes or no.";;
