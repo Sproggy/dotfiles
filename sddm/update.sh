@@ -73,6 +73,9 @@ echo -e 'export GRUB_COLOR_NORMAL="white/black"'| sudo tee -a /etc/default/grub
 echo -e 'export GRUB_COLOR_HIGHLIGHT="white/dark-gray"'| sudo tee -a /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 echo "GRUB & SDDM Updated with current wallpaper"
+fc-cache -f -v
+sudo fc-cache -f -v
+echo "Font cache updated"
 echo ""
 echo ""
 echo "DONE! Please reboot to test GRUB & sddm update."
