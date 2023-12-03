@@ -68,7 +68,7 @@ sudo sed -i '/^GRUB_BACKGROUND/d' /etc/default/grub
 sudo sed -i '/^export GRUB_COLOR_NORMAL/d' /etc/default/grub
 sudo sed -i '/^export GRUB_COLOR_HIGHLIGHT/d' /etc/default/grub
 echo ""
-echo -e 'GRUB_BACKGROUND="~/.cache/current.jpg"'| sudo tee -a /etc/default/grub
+echo -e 'GRUB_BACKGROUND="~/.cache/current_wallpaper.jpg"'| sudo tee -a /etc/default/grub
 echo -e 'export GRUB_COLOR_NORMAL="white/black"'| sudo tee -a /etc/default/grub
 echo -e 'export GRUB_COLOR_HIGHLIGHT="white/dark-gray"'| sudo tee -a /etc/default/grub
 echo "GRUB & SDDM Updated with current wallpaper"
