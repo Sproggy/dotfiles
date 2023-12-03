@@ -61,36 +61,36 @@ Buttons
 
 #lock {
 	margin: 10px;
-	border-radius: 20px;
+	border-radius: 10px;
 	background-image: image(url("icons/lock.png"));
 }
 
 #logout {
 	margin: 10px;
-	border-radius: 20px;
+	border-radius: 10px;
 	background-image: image(url("icons/logout.png"));
 }
 
 #suspend {
 	margin: 10px;
-	border-radius: 20px;
+	border-radius: 10px;
 	background-image: image(url("icons/suspend.png"));
 }
 
 #hibernate {
 	margin: 10px;
-	border-radius: 20px;
+	border-radius: 10px;
 	background-image: image(url("icons/hibernate.png"));
 }
 
 #shutdown {
 	margin: 10px;
-	border-radius: 20px;
+	border-radius: 10px;
 	background-image: image(url("icons/shutdown.png"));
 }
 
 #reboot {
 	margin: 10px;
-	border-radius: 20px;
+	border-radius: 10px;
 	background-image: image(url("icons/reboot.png"));
 }
