@@ -452,6 +452,7 @@ echo ""
 echo ""
 echo "-> Copy default wallpaper to .cache"
 cp ~/dotfiles/wallpapers/default.jpg ~/.cache/current_wallpaper.jpg
+sudo cp ~/.cache/current_wallpaper.jpg /root/.cache/current_wallpaper.jpg
 echo "default wallpaper copied."
 echo ""
 echo "
