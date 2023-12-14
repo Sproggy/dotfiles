@@ -87,7 +87,7 @@ git clone https://github.com/Sproggy/dotfiles.git
 # Change into the new dotfiles folder
 cd dotfiles
 
-# Just run the single install file and go through every step, please be aware that this installs both Hyprland and QTile environments at once
+# Just run the single install file and go through every step, please be aware that this installs both Hyprland(Wayland) and QTile(Xorg) environments at once
 ./1-install.sh
 
 ```
