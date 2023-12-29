@@ -90,7 +90,7 @@ alias notes='vim ~/notes.txt'
 
 alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias setkb='setxkbmap gb;echo "Keyboard set back to gb."'
-alias update='sudo pacman -Syu && yay -Syu'
+alias update='sudo pacman -Syu --noconfirm && yay -Syu --noconfirm'
 
 # -----------------------------------------------------
 # SCREEN RESOLUTINS
