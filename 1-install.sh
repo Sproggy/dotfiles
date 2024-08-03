@@ -243,6 +243,7 @@ packagesPacman=(
     "micro"
     "xclip"
     "pamixer"
+    "linux-headers"
 );
 echo ""
 packagesYay=(
@@ -250,7 +251,7 @@ packagesYay=(
     "pfetch" 
     "bibata-cursor-theme" 
     "trizen"
-    "sddm-sugar-candy-git"
+    "sddm-theme-sugar-candy-git"
     "gnome-disk-utility"
     "thunar-shares-plugin"
     "sublime-text-4"
