@@ -56,11 +56,11 @@ echo ""
 sudo cp sddm.conf /etc/sddm.conf.d/
 echo "File /etc/sddm.conf.d/sddm.conf updated."
 echo ""
-sudo cp ~/.cache/current_wallpaper.jpg /usr/share/sddm/themes/sugar-candy/Backgrounds/
-echo "Current wallpaper copied into /usr/share/sddm/themes/sugar-candy/Backgrounds/"
+sudo cp ~/.cache/current_wallpaper.jpg /usr/share/sddm/themes/Sugar-Candy/Backgrounds/
+echo "Current wallpaper copied into /usr/share/sddm/themes/Sugar-Candy/Backgrounds/"
 echo ""
-sudo cp theme.conf /usr/share/sddm/themes/sugar-candy/
-echo "File theme.conf updated in /usr/share/sddm/themes/sugar-candy/"
+sudo cp theme.conf /usr/share/sddm/themes/Sugar-Candy/
+echo "File theme.conf updated in /usr/share/sddm/themes/Sugar-Candy/"
 echo ""
 sudo cp ~/.cache/current_wallpaper.jpg /root/.cache/current_wallpaper.jpg
 echo ""
