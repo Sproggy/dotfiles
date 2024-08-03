@@ -193,7 +193,7 @@ packagesPacman=(
     "pacman-contrib"
     "alacritty"
     "kitty" 
-    "rofi" 
+    "rofi-lbonn-wayland-git" 
     "chromium" 
     "nitrogen" 
     "dunst" 
@@ -243,7 +243,6 @@ packagesPacman=(
     "micro"
     "xclip"
     "pamixer"
-    "linux-headers"
 );
 echo ""
 packagesYay=(
