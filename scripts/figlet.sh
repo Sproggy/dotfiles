@@ -9,7 +9,7 @@
 # ░██      ░██  █████  ███░░██████  ░░██  
 # ░░       ░░  ░░░░░  ░░░  ░░░░░░    ░░   
 #  
-# by Sproggy (Corrie Tilcock) (2023) 
+# by Sproggy (Corrie Tilcock) (2024) 
 # ------------------------------------------------------------------- 
 # Script to create ascii font based header on user input
 # and copy the result to the clipboard

@@ -6,8 +6,7 @@
 # |_____\__,_|\__,_|_| |_|\___|_| |_|    \_/  |_|  |_| 
 #                                                      
 #  
-# by Stephan Raabe (2023) 
-# Forked by Corrie Tilcock (10/2023)
+# by Corrie Tilcock (2024)
 # ----------------------------------------------------- 
 
 if [ -f ~/private/win11-credentials.sh ]; then

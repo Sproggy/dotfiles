@@ -5,8 +5,7 @@
 #  \___/|_| |_|\___|____/|_|  |_| \_/ \___| 
 #                                           
 #  
-# by Stephan Raabe (2023) 
-# Forked by Corrie Tilcock (10/2023)
+# by Corrie Tilcock (2024)
 # ----------------------------------------------------- 
 
 rclone --vfs-cache-mode writes mount OneDrive: ~/OneDrive &

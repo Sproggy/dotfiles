@@ -6,8 +6,7 @@
 # |____/ \___|_|  \___|\___|_| |_|___/_| |_|\___/ \__| 
 #                                                      
 #  
-# by Stephan Raabe (2023) 
-# Forked by Corrie Tilcock (10/2023)
+# by Corrie Tilcock (2024)
 # ----------------------------------------------------- 
 
 DIR="$HOME/Pictures/screenshots/"

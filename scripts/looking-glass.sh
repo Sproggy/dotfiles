@@ -6,8 +6,7 @@
 # |_____\___/ \___/|_|\_\_|_| |_|\__, |  \____|_|\__,_|___/___/ 
 #                                |___/                          
 #  
-# by Stephan Raabe (2023) 
-# Forked by Corrie Tilcock (10/2023)
+# by Corrie Tilcock (2024)
 # ----------------------------------------------------- 
 
 tmp=$(virsh --connect qemu:///system list | grep " win11 " | awk '{ print $3}')

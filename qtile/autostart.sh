@@ -6,8 +6,7 @@
 #  \__\_\|_| |___|_____|_____| |____/ \__\__,_|_|   \__| 
 #                                                        
 #  
-# by Stephan Raabe (2023) 
-# Forked by Corrie Tilcock (10/2023)
+# by Corrie Tilcock (2024)
 # ----------------------------------------------------- 
 
 # My screen resolution

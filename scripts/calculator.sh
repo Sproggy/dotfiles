@@ -6,8 +6,7 @@
 #  \____\__,_|_|\___|\__,_|_|\__,_|\__\___/|_|    
 #                                                 
 #  
-# by Stephan Raabe (2023) 
-# Forked by Corrie Tilcock (10/2023)
+# by Corrie Tilcock (2024)
 # ----------------------------------------------------- 
 
 rofi -show calc

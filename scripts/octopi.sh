@@ -5,8 +5,7 @@
 #  / ___ \ |_| | || (_) | | (_) | (__|   <  
 # /_/   \_\__,_|\__\___/|_|\___/ \___|_|\_\ 
 #                                           
-# by Stephan Raabe (2023) 
-# Forked by Corrie Tilcock (10/2023)
+# by Corrie Tilcock (2024)
 # ----------------------------------------------------- 
 
 pkill octopi-notifier

@@ -6,8 +6,7 @@
 #  \___/| .__/ \__,_|\__,_|\__\___||___/ 
 #       |_|                              
 #  
-# by Stephan Raabe (2023) 
-# Forked by Corrie Tilcock (10/2023)
+# by Corrie Tilcock (2024)
 # ----------------------------------------------------- 
 # Requires pacman-contrib trizen
 
