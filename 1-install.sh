@@ -1,21 +1,19 @@
 #/bin/bash
 echo ""
-echo "
-  ██                    ██              ██  ██
- ░██                   ░██             ░██ ░██
- ░██ ███████   ██████ ██████  ██████   ░██ ░██
- ░██░░██░░░██ ██░░░░ ░░░██░  ░░░░░░██  ░██ ░██
- ░██ ░██  ░██░░█████   ░██    ███████  ░██ ░██
- ░██ ░██  ░██ ░░░░░██  ░██   ██░░░░██  ░██ ░██
-░██ ███  ░██ ██████   ░░██ ░░████████ ███ ███ 
-░░ ░░░   ░░ ░░░░░░     ░░   ░░░░░░░░ ░░░ ░░░
-
-by Sproggy (Corrie Tilcock) (2024)
-#########################################################
-"
-echo " Welcome to the Hyprland & QTile installer "
+echo " Welcome to the Hyprland & XFCE installer "
 echo " I have chosen as my preference to install both, if you choose No on either Environments the installer will fail and close "
 echo " I chose it this way so if 1 Enviroment has problems i still have the other to boot too, enjoy"
+echo""
+echo " You will now be asked to enter your Root password to proceed with the installation process"
+echo""
+sleep 3
+sudo cp ~/dotfiles/figlet/fonts/* /usr/share/figlet/fonts/
+figlet -f 3d "Install"
+echo "
+
+by Sproggy (Corrie Tilcock) (2026)
+#########################################################
+"
 sleep 3
 echo ""
 echo "
@@ -66,8 +64,8 @@ if sudo pacman -Qs yay > /dev/null ; then
 else
     echo "yay is not installed and will be installed now!"
     _installPackagesPacman "base-devel"
-    git clone https://aur.archlinux.org/yay-git.git ~/yay-git
-    cd ~/yay-git
+    git clone https://aur.archlinux.org/yay-git.git ~/Downloads/yay-git
+    cd ~/Downloads/yay-git
     makepkg -si
     cd ~/dotfiles/
     clear
@@ -122,7 +120,7 @@ case $GRAPHICSCARD in
 1)
   sudo pacman -S --noconfirm xf86-video-intel mesa lib32-mesa lib32-vulkan-intel vulkan-intel;;
 2)
-  sudo pacman -S --noconfirm xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
+  sudo pacman -S --noconfirm xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver #mesa-vdpau lib32-mesa-vdpau
   sudo sed -i 's/MODULES=()/MODULES=(amdgpu)/' /etc/mkinitcpio.conf
   sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img;;
 3)
@@ -163,20 +161,7 @@ while true; do
     esac
 done
 echo ""
-echo ""
-echo ""
-echo ""
-echo "    ██████                                ██                             "
-echo "   ██░░░░██                              ████    ██████  ██████          "
-echo "  ██    ░░   ██████  ██████  █████      ██░░██  ░██░░░██░██░░░██  ██████ "
-echo " ░██        ██░░░░██░░██░░█ ██░░░██    ██  ░░██ ░██  ░██░██  ░██ ██░░░░  "
-echo " ░██       ░██   ░██ ░██ ░ ░███████   ██████████░██████ ░██████ ░░█████  "
-echo " ░░██    ██░██   ░██ ░██   ░██░░░░   ░██░░░░░░██░██░░░  ░██░░░   ░░░░░██ "
-echo "  ░░██████ ░░██████ ░███   ░░██████  ░██     ░██░██     ░██      ██████  "
-echo "   ░░░░░░   ░░░░░░  ░░░     ░░░░░░   ░░      ░░ ░░      ░░      ░░░░░░   "
-echo ""
-echo " by Sproggy (Corrie Tilcock) (2024) "
-echo " ------------------------------------------------------------------- "
+figlet -f 3d "Core Apps"
 echo ""
 echo "
 #########################################################
@@ -193,9 +178,8 @@ packagesPacman=(
     "pacman-contrib"
     "alacritty"
     "kitty" 
-    "rofi-lbonn-wayland-git" 
+    "rofi" 
     "chromium" 
-    "nitrogen" 
     "dunst" 
     "starship"
     "ranger"
@@ -220,7 +204,6 @@ packagesPacman=(
     "xdg-desktop-portal-gtk"
     "pavucontrol" 
     "tumbler" 
-    "xautolock" 
     "blueman"
     "sddm"
     "papirus-icon-theme"
@@ -243,6 +226,7 @@ packagesPacman=(
     "micro"
     "xclip"
     "pamixer"
+    "timeshift" 
 );
 echo ""
 packagesYay=(
@@ -255,7 +239,9 @@ packagesYay=(
     "thunar-shares-plugin"
     "sublime-text-4"
     "pacseek"
-    "github-desktop-bin"
+    "github-desktop-bin" 
+    "nitrogen" 
+    "xautolock" 
 );
 echo ""
 _installPackagesPacman "${packagesPacman[@]}";
@@ -278,6 +264,9 @@ echo "
 #########################################################
 
 "
+echo "Installing Matugen v2.4.1 into ~/.local/bin"
+# https://github.com/InioX/matugen/releases
+cp ~/dotfiles/prebuilt/matugen $HOME/.local/bin
 if [ -f /usr/bin/wal ]; then
     echo "pywal already installed."
 else
@@ -358,24 +347,24 @@ echo "
 echo ""
 echo "-> Install wallapers"
 while true; do
-    read -p "Do you want to clone the wallpapers? If not, the script will install 3 default wallpapers to ~/wallpaper/ (Yy/Nn): " yn
+    read -p "Do you want to clone the wallpapers? If not, the script will install 3 default wallpapers to ~/Pictures/Wallpapers/ (Yy/Nn): " yn
     case $yn in
         [Yy]* )
-            if [ -d ~/wallpaper/ ]; then
-                echo "wallpaper folder already exists."
+            if [ -d ~/Pictures/Wallpapers/ ]; then
+                echo "Wallpaper folder already exists."
             else
-                git clone https://github.com/Sproggy/wallpaper.git ~/wallpaper
-                echo "wallpaper installed."
+                git clone https://github.com/Sproggy/wallpaper.git ~/Pictures/Wallpapers
+                echo "Wallpapers installed."
             fi
-            echo "Wallpaper installed."
+            echo "Wallpapers installed."
         break;;
         [Nn]* ) 
-            if [ -d ~/wallpaper/ ]; then
-                echo "wallpaper folder already exists."
+            if [ -d ~/Pictures/Wallpapers/ ]; then
+                echo "Wallpapers folder already exists."
             else
-                mkdir ~/wallpaper
+                mkdir ~/Pictures/Wallpapers
             fi
-            cp ~/dotfiles/wallpapers/* ~/wallpaper
+            cp ~/dotfiles/Wallpapers/* ~/Pictures/Wallpapers
             echo "Default wallpapers installed."
         break;;
         * ) echo "Please answer yes or no.";;
@@ -466,19 +455,9 @@ echo "
 echo ""
 sleep 3
 echo ""
+figlet -f 3d "Hyprland"
 echo ""
-echo ""
-echo ""
-echo "  ██      ██                          ██                         ██ "
-echo " ░██     ░██  ██   ██ ██████         ░██                        ░██ "
-echo " ░██     ░██ ░░██ ██ ░██░░░██ ██████ ░██  ██████   ███████      ░██ "
-echo " ░██████████  ░░███  ░██  ░██░░██░░█ ░██ ░░░░░░██ ░░██░░░██  ██████ "
-echo " ░██░░░░░░██   ░██   ░██████  ░██ ░  ░██  ███████  ░██  ░██ ██░░░██ "
-echo " ░██     ░██   ██    ░██░░░   ░██    ░██ ██░░░░██  ░██  ░██░██  ░██ "
-echo " ░██     ░██  ██     ░██     ░███    ███░░████████ ███  ░██░░██████ "
-echo " ░░      ░░  ░░      ░░      ░░░    ░░░  ░░░░░░░░ ░░░   ░░  ░░░░░░  "
-echo "  "
-echo " by Sproggy (Corrie Tilcock) (2024) "
+echo " by Sproggy (Corrie Tilcock) (2026) "
 echo " ------------------------------------------------------------------- "
 echo ""
 echo ""
@@ -517,6 +496,7 @@ packagesPacman=(
     "swappy"
     "cliphist"
     "xorg-xhost"
+    "nwg-look"
 
 );
 echo ""
@@ -531,14 +511,12 @@ packagesYay=(
     "gvfs-nfs"
     "gvfs-smb"
     "thunar-archive-plugin"
-    "thunar-custom-actions"
     "thunar-media-tags-plugin"
     "thunar-vcs-plugin"
     "thunar-volman"
     "p7zip-full-bin"
     "unzip"
     "unrar"
-    "nwg-look-bin"
 );
 echo ""
 echo ""
@@ -557,18 +535,9 @@ echo "
 echo ""
 sleep 3
 echo ""
+figlet -f 3d "Xfce"
 echo ""
-echo ""
-echo "   ███████    ██████████ ██  ██          "
-echo "   ██░░░░░██  ░░░░░██░░░ ░░  ░██         "
-echo "  ██     ░░██     ░██     ██ ░██  █████  "
-echo " ░██      ░██     ░██    ░██ ░██ ██░░░██ "
-echo " ░██    ██░██     ░██    ░██ ░██░███████ "
-echo " ░░██  ░░ ██      ░██    ░██ ░██░██░░░░  "
-echo "  ░░███████ ██    ░██    ░██ ███░░██████ "
-echo "   ░░░░░░░ ░░     ░░     ░░ ░░░  ░░░░░░  "
-echo ""
-echo " by Sproggy (Corrie Tilcock) (2024) "
+echo " by Sproggy (Corrie Tilcock) (2026) "
 echo " ------------------------------------------------------------------- "
 
 while true; do
@@ -598,11 +567,8 @@ echo ""
 echo "-> Install main packages"
 echo ""
 packagesPacman=(
-    "qtile" 
-    "polybar"
-    "picom"
-    "scrot"
-    "slock"
+    "xfce4"
+    "xfce4-goodies"
 );
 echo ""
 echo ""
@@ -663,16 +629,9 @@ echo ""
 echo ""
 echo ""
 sleep 5
-echo "       ██            ██     ████ ██  ██                 "
-echo "      ░██           ░██    ░██░ ░░  ░██                 "
-echo "      ░██  ██████  ██████ ██████ ██ ░██  █████   ██████ "
-echo "   ██████ ██░░░░██░░░██░ ░░░██░ ░██ ░██ ██░░░██ ██░░░░  "
-echo "  ██░░░██░██   ░██  ░██    ░██  ░██ ░██░███████░░█████  "
-echo " ░██  ░██░██   ░██  ░██    ░██  ░██ ░██░██░░░░  ░░░░░██ "
-echo " ░░██████░░██████   ░░██   ░██  ░██ ███░░██████ ██████  "
-echo "  ░░░░░░  ░░░░░░     ░░    ░░   ░░ ░░░  ░░░░░░ ░░░░░░   "
+figlet -f 3d "dotfiles"
 echo ""
-echo " by Sproggy (Corrie Tilcock) (2024) "
+echo " by Sproggy (Corrie Tilcock) (2026) "
 echo " ------------------------------------------------------------------- "
 echo ""
 echo "The script will ask for permission to remove existing directories and files from ~/.config/"
@@ -776,22 +735,13 @@ _installSymLink gtk-4.0 ~/.config/gtk-4.0 ~/dotfiles/gtk/gtk-4.0/ ~/.config/
 _installSymLink themes ~/.local/share/themes ~/dotfiles/themes ~/.local/share/
 echo ""
 echo "-------------------------------------"
-echo "-> Install Thunar dotfiles"
+echo "-> Install Xfce dotfiles"
 echo "-------------------------------------"
 echo ""
 echo ""
-_installSymLink xfce-perchannel-xml ~/.config/xfce4/xfconf/xfce-perchannel-xml ~/dotfiles/xfce-perchannel-xml ~/.config/xfce4/xfconf/
+_installSymLink xfce4 ~/.config/xfce4/xfce4 ~/dotfiles/xfce4 ~/.config/
 _installSymLink Thunar ~/.config/Thunar ~/dotfiles/Thunar ~/.config/
-echo ""
-echo "-------------------------------------"
-echo "-> Install Qtile dotfiles"
-echo "-------------------------------------"
-echo ""
-echo ""
-_installSymLink qtile ~/.config/qtile ~/dotfiles/qtile/ ~/.config
-_installSymLink polybar ~/.config/polybar ~/dotfiles/polybar/ ~/.config
-_installSymLink picom ~/.config/picom ~/dotfiles/picom/ ~/.config
-_installSymLink .xinitrc ~/.xinitrc ~/dotfiles/qtile/.xinitrc ~/.xinitrc
+_installSymLink Mousepad ~/.config/Mousepad ~/dotfiles/Mousepad ~/.config/
 echo ""
 echo "-------------------------------------"
 echo "-> Install Hyprland dotfiles"
