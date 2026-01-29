@@ -193,9 +193,8 @@ packagesPacman=(
     "pacman-contrib"
     "alacritty"
     "kitty" 
-    "rofi-lbonn-wayland-git" 
+    "rofi" 
     "chromium" 
-    "nitrogen" 
     "dunst" 
     "starship"
     "ranger"
@@ -220,7 +219,6 @@ packagesPacman=(
     "xdg-desktop-portal-gtk"
     "pavucontrol" 
     "tumbler" 
-    "xautolock" 
     "blueman"
     "sddm"
     "papirus-icon-theme"
@@ -243,6 +241,7 @@ packagesPacman=(
     "micro"
     "xclip"
     "pamixer"
+    "timeshift" 
 );
 echo ""
 packagesYay=(
@@ -255,7 +254,9 @@ packagesYay=(
     "thunar-shares-plugin"
     "sublime-text-4"
     "pacseek"
-    "github-desktop-bin"
+    "github-desktop-bin" 
+    "nitrogen" 
+    "xautolock" 
 );
 echo ""
 _installPackagesPacman "${packagesPacman[@]}";
@@ -278,6 +279,9 @@ echo "
 #########################################################
 
 "
+echo "Installing Matugen v2.4.1 into ~/.local/bin"
+# https://github.com/InioX/matugen/releases
+cp ~/dotfiles/prebuilt/matugen $HOME/.local/bin
 if [ -f /usr/bin/wal ]; then
     echo "pywal already installed."
 else
