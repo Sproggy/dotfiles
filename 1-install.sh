@@ -6,7 +6,7 @@ echo " I chose it this way so if 1 Enviroment has problems i still have the othe
 echo""
 echo " You will now be asked to enter your Root password to proceed with the installation process"
 echo""
-sleep 3
+sleep 2
 sudo cp ~/dotfiles/figlet/fonts/* /usr/share/figlet/fonts/
 figlet -f 3d "Install"
 echo "
@@ -14,7 +14,7 @@ echo "
 by Sproggy (Corrie Tilcock) (2026)
 #########################################################
 "
-sleep 3
+sleep 2
 echo ""
 echo "
 #########################################################
@@ -24,8 +24,7 @@ echo "
 #########################################################
 
 "
-echo ""
-sleep 3
+sleep 2
 echo ""
 echo "
 #########################################################
@@ -47,7 +46,7 @@ echo "
 
 "
 echo ""
-sleep 3
+sleep 2
 echo ""
 echo ""
 echo "
@@ -81,7 +80,7 @@ echo "
 #########################################################
 
 "
-sleep 3
+sleep 2
 echo ""
 echo ""
 while true; do
@@ -98,7 +97,7 @@ while true; do
 done
 echo ""
 echo ""
-sleep 3
+sleep 2
 echo ""
 echo "
 #########################################################
@@ -131,7 +130,7 @@ case $GRAPHICSCARD in
   sudo pacman -S --noconfirm nvidia-dkms nvidia-utils nvidia-settings qt5-wayland qt5ct qt6-wayland qt6ct libva && yay --noconfirm -S libva-nvidia-driver-git
   sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img;;
 *)
-  sudo pacman -S --noconfirm xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
+  sudo pacman -S --noconfirm xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver #mesa-vdpau lib32-mesa-vdpau
   sudo sed -i 's/MODULES=()/MODULES=(amdgpu)/' /etc/mkinitcpio.conf
   sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img;;
 esac
@@ -146,7 +145,7 @@ echo "
 #########################################################
 
 "
-sleep 3
+sleep 2
 while true; do
     read -p "DO YOU WANT TO INSTALL THE CORE APPS NOW? (Yy/Nn): " yn
     case $yn in
@@ -234,7 +233,7 @@ packagesYay=(
     "pfetch" 
     "bibata-cursor-theme" 
     "trizen"
-    "sddm-theme-sugar-candy-git"
+    "sddm-sugar-candy-git"
     "gnome-disk-utility"
     "thunar-shares-plugin"
     "sublime-text-4"
@@ -242,6 +241,7 @@ packagesYay=(
     "github-desktop-bin" 
     "nitrogen" 
     "xautolock" 
+    "python2-bin"
 );
 echo ""
 _installPackagesPacman "${packagesPacman[@]}";
@@ -394,23 +394,23 @@ while true; do
     read -p "Do you want to clone the fonts? ~/fonts (Yy/Nn): " yn
     case $yn in
         [Yy]* )
-            if [ -d ~/fonts/ ]; then
+            if [ -d ~/.local/share/fonts/ ]; then
                 echo "fonts folder does not exist."
             else
-                git clone https://github.com/Sproggy/fonts.git ~/fonts
-                echo "fonts installed."
+                git clone https://github.com/Sproggy/fonts.git ~/.local/share/fonts
+                echo "user fonts installed."
             fi
-            echo "fonts installed."
+            echo "User Fonts Installed."
         break;;
         [Nn]* ) 
-            if [ -d ~/fonts/ ]; then
+            if [ -d ~/.local/share/fonts/ ]; then
                 echo "fonts folder already exists."
             else
-                mkdir ~/fonts
+                mkdir ~/.local/share/fonts
             fi
             sudo cp -r ~/dotfiles/fonts/* /usr/share/fonts
-            sudo cp -r ~/fonts/* /usr/share/fonts
-            echo "Default fonts installed."
+            sudo cp -r ~/.local/share/fonts/* /usr/share/fonts
+            echo "System Fonts Installed."
         break;;
         * ) echo "Please answer yes or no.";;
     esac
@@ -453,7 +453,7 @@ echo "
 
 "
 echo ""
-sleep 3
+sleep 2
 echo ""
 figlet -f 3d "Hyprland"
 echo ""
@@ -533,7 +533,7 @@ echo "
 
 "
 echo ""
-sleep 3
+sleep 2
 echo ""
 figlet -f 3d "Xfce"
 echo ""
@@ -595,7 +595,7 @@ echo "
 echo ""
 echo "-> Launching Thunar to populate xfconf"
 thunar &
-sleep 3
+sleep 2
 echo ""
 echo ""
 echo "-> Closing Thunar"
