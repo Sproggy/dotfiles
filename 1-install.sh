@@ -135,8 +135,6 @@ case $GRAPHICSCARD in
   sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img;;
 esac
 echo ""
-echo ""
-echo ""
 echo "
 #########################################################
 #                                                       #
@@ -171,82 +169,37 @@ echo "
 
 "
 echo ""
-echo "-> Install main packages"
+sh ~/dotfiles/hypr/packages/filetools.sh
 echo ""
-packagesPacman=(
-    "pacman-contrib"
-    "alacritty"
-    "kitty" 
-    "rofi" 
-    "chromium" 
-    "dunst" 
-    "starship"
-    "ranger"
-    "neovim" 
-    "mpv" 
-    "freerdp" 
-    "xfce4-power-manager" 
-    "thunar" 
-    "mousepad" 
-    "awesome-terminal-fonts" 
-    "ttf-font-awesome" 
-    "ttf-fira-sans" 
-    "ttf-fira-code" 
-    "ttf-firacode-nerd"
-    "figlet" 
-    "vlc" 
-    "exa" 
-    "python-pip" 
-    "python-psutil" 
-    "python-rich" 
-    "python-click" 
-    "xdg-desktop-portal-gtk"
-    "pavucontrol" 
-    "tumbler" 
-    "blueman"
-    "sddm"
-    "papirus-icon-theme"
-    "btop"
-    "networkmanager"
-    "network-manager-applet"
-    "git"
-    "nano"
-    "xdg-user-dirs"
-    "xdg-user-dirs-gtk"
-    "os-prober"
-    "polkit-gnome"
-    "gnome-keyring"
-    "gvfs"
-    "ntfs-3g"
-    "samba"
-    "xfce4-terminal"
-    "wf-recorder"
-    "file-roller"
-    "micro"
-    "xclip"
-    "pamixer"
-    "timeshift" 
-);
+sleep 2
 echo ""
-packagesYay=(
-    "brave-bin" 
-    "pfetch" 
-    "bibata-cursor-theme" 
-    "trizen"
-    "sddm-sugar-candy-git"
-    "gnome-disk-utility"
-    "thunar-shares-plugin"
-    "sublime-text-4"
-    "pacseek"
-    "github-desktop-bin" 
-    "nitrogen" 
-    "xautolock" 
-    "python2-bin"
-);
+sh ~/dotfiles/hypr/packages/webtools.sh
 echo ""
-_installPackagesPacman "${packagesPacman[@]}";
-_installPackagesYay "${packagesYay[@]}";
+sleep 2
 echo ""
+sh ~/dotfiles/hypr/packages/printers.sh
+echo ""
+sleep 2
+echo ""
+sh ~/dotfiles/hypr/packages/network.sh
+echo ""
+sleep 2
+echo ""
+sh ~/dotfiles/hypr/packages/media.sh
+echo ""
+sleep 2
+echo ""
+sh ~/dotfiles/hypr/packages/terminaltools.sh
+echo ""
+sleep 2
+echo ""
+sh ~/dotfiles/hypr/packages/systemtools.sh
+echo ""
+sleep 2
+echo ""
+sh ~/dotfiles/hypr/packages/system.sh
+echo ""
+sleep 2
 echo "
 #########################################################
 #                                                       #
@@ -303,30 +256,6 @@ echo "
 #########################################################
 
 "
-echo ""
-echo "
-#########################################################
-#                                                       #
-#                     Install SDDM                      #
-#                                                       #
-#########################################################
-
-"
-echo ""
-echo "-> Install sddm display manager"
-while true; do
-    read -p "Do you want to install the custom login promt? (Yy/Nn): " yn
-    case $yn in
-        [Yy]* )
-            sudo systemctl enable sddm.service
-            #sh ~/dotfiles/sddm/update.sh
-        break;;
-        [Nn]* ) 
-            echo "sddm installation skipped."
-        break;;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
 echo ""
 echo "
 #########################################################
