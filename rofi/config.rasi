@@ -5,15 +5,14 @@
 # |  _ < (_) |  _| | 
 # |_| \_\___/|_| |_| 
 #                    
-# by Stephan Raabe (2023) 
-# Forked by Corrie Tilcock (10/2023)
+# Forked by Corrie Tilcock (2026)
 # ----------------------------------------------------- 
 */
 
 /* ---- Configuration ---- */
 configuration {
     modi:                       "drun,run";
-    font:                       "Fira Sans Bold 12";
+    font:                       "Fira Sans Bold 10";
     show-icons:                 true;
     icon-theme:                 "kora";
     display-drun:               "APPS";
@@ -41,7 +40,7 @@ window {
     margin:                       0px; 
     color:                        #FFFFFF;
     border:                       3px;
-    border-color:                 #FFFFFF;
+    border-color:                 @color11;
     cursor:                       "default";
     transparency:                 "real";
     location:                     center;
@@ -100,7 +99,7 @@ textbox-prompt-colon {
     enabled:                      true;
     expand:                       false;
     str:                          "";
-    background-color:             transparent;
+    background-color:             @color11;
     text-color:                   inherit;
 }
 

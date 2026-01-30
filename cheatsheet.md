@@ -61,7 +61,7 @@ screen recordings are saved by default to your ~/videos/Recordings directory
   - Follow the github - https://github.com/hyprwm/Hyprland
 
 # user githubs
-  - https://gitlab.com/Stephan-Raabe/dotfiles
+  - https://github.com/mylinuxforwork/dotfiles
   - https://github.com/JaKooLit/Hyprland-Dots
   - https://github.com/eldermf/bspwm-hyprland
   - https://github.com/lauroro/hyprland-dotfiles

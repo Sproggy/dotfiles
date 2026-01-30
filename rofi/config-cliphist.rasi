@@ -5,8 +5,7 @@
 # |  _ < (_) |  _| | 
 # |_| \_\___/|_| |_| 
 #                    
-# by Stephan Raabe (2023) 
-# Forked by Corrie Tilcock (10/2023)
+# Forked by Corrie Tilcock (2026)
 # ----------------------------------------------------- 
 */
 
@@ -41,7 +40,7 @@ window {
     margin:                       0px; 
     color:                        #FFFFFF;
     border:                       3px;
-    border-color:                 #FFFFFF;
+    border-color:                 @color11;
     cursor:                       "default";
     transparency:                 "real";
     location:                     northeast;
