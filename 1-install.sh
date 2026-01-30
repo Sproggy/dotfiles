@@ -626,8 +626,6 @@ echo ""
 echo "If you installed an NVIDIA Graphics Card please follow the instructions in the"
 echo "nvidia.conf file located ~/dotfiles/hypr/conf/nvidia.conf"
 echo ""
-echo ""
-echo ""
 sleep 5
 figlet -f 3d "dotfiles"
 echo ""
@@ -638,6 +636,7 @@ echo "The script will ask for permission to remove existing directories and file
 echo "Symbolic links will then be created from ~/dotfiles into your ~/.config/ directory."
 echo "But you can decide to keep your personal versions by answering with No (Nn)."
 echo ""
+sleep 5
 echo ""
 echo "
 #########################################################
