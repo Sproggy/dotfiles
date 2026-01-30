@@ -14,7 +14,7 @@
 # Set defaults
 # -----------------------------------------------------
 
-cache_folder="$HOME/.cache/hyprland-dotfiles"
+cache_folder="$HOME/.cache"
 
 defaultwallpaper="$HOME/dotfiles/wallpapers/default.jpg"
 

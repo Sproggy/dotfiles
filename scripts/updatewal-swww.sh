@@ -12,7 +12,7 @@
 # ----------------------------------------------------- 
 # Select random wallpaper and create color scheme
 # ----------------------------------------------------- 
-wal -q -i ~/wallpaper/
+wal -q -i ~/Pictures/Wallpapers/
 
 # ----------------------------------------------------- 
 # Load current pywal color scheme
@@ -27,7 +27,7 @@ cp $wallpaper ~/.cache/current_wallpaper.jpg
 # ----------------------------------------------------- 
 # get wallpaper iamge name
 # ----------------------------------------------------- 
-newwall=$(echo $wallpaper | sed "s|$HOME/wallpaper/||g")
+newwall=$(echo $wallpaper | sed "s|$HOME/Pictures/Wallpapers/||g")
 
 # ----------------------------------------------------- 
 # Set the new wallpaper

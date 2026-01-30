@@ -435,12 +435,12 @@ echo "
 "
 echo ""
 echo "-> Init pywal"
-wal -i ~/dotfiles/wallpapers/default.jpg
+wal -i ~/dotfiles/Wallpapers/default.jpg
 echo "pywal initiated."
 echo ""
 echo ""
 echo "-> Copy default wallpaper to .cache"
-cp ~/dotfiles/wallpapers/default.jpg ~/.cache/current_wallpaper.jpg
+cp ~/dotfiles/Wallpapers/default.jpg ~/.cache/current_wallpaper.jpg
 sudo cp ~/.cache/current_wallpaper.jpg /root/.cache/current_wallpaper.jpg
 echo "default wallpaper copied."
 echo ""
@@ -712,7 +712,7 @@ echo "
 
 "
 echo ""
-wal -i wallpapers/
+wal -i ~/Pictures/Wallpapers/
 echo "Pywal templates initiated!"
 echo ""
 echo ""
@@ -753,6 +753,7 @@ _installSymLink waybar ~/.config/waybar ~/dotfiles/waybar/ ~/.config
 _installSymLink swaylock ~/.config/swaylock ~/dotfiles/swaylock/ ~/.config
 _installSymLink wlogout ~/.config/wlogout ~/dotfiles/wlogout/ ~/.config
 _installSymLink swappy ~/.config/swappy ~/dotfiles/swappy/ ~/.config
+_installSymLink waypaper ~/.config/waypaper ~/dotfiles/waypaper/ ~/.config
 echo ""
 echo ""
 echo "DONE!"
