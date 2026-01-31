@@ -53,6 +53,7 @@ if [ ! -d /etc/sddm.conf.d/ ]; then
     echo "Folder /etc/sddm.conf.d created."
 fi
 echo ""
+sudo rm -rf /usr/share/grub/themes/*
 echo ""
 sudo cp sddm.conf /etc/sddm.conf.d/
 echo "File /etc/sddm.conf.d/sddm.conf updated."

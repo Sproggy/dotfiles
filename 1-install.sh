@@ -7,6 +7,7 @@ echo""
 echo " You will now be asked to enter your Root password to proceed with the installation process"
 echo""
 sleep 2
+sudo pacman -S figlet
 sudo cp ~/dotfiles/figlet/fonts/* /usr/share/figlet/fonts/
 figlet -f 3d "Install"
 echo "
@@ -667,7 +668,7 @@ echo "-> Install Xfce dotfiles"
 echo "-------------------------------------"
 echo ""
 echo ""
-_installSymLink xfce4 ~/.config/xfce4/xfce4 ~/dotfiles/xfce4 ~/.config/
+_installSymLink xfce4 ~/.config/xfce4s ~/dotfiles/xfce4 ~/.config/
 _installSymLink Thunar ~/.config/Thunar ~/dotfiles/Thunar ~/.config/
 _installSymLink Mousepad ~/.config/Mousepad ~/dotfiles/Mousepad ~/.config/
 echo ""
