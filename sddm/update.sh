@@ -54,6 +54,7 @@ if [ ! -d /etc/sddm.conf.d/ ]; then
 fi
 echo ""
 sudo rm -rf /usr/share/grub/themes/*
+sudo rm -rf /boot/grub/themes/*
 echo ""
 sudo cp sddm.conf /etc/sddm.conf.d/
 echo "File /etc/sddm.conf.d/sddm.conf updated."

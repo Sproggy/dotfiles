@@ -7,7 +7,7 @@ echo""
 echo " You will now be asked to enter your Root password to proceed with the installation process"
 echo""
 sleep 2
-sudo pacman -S figlet
+sudo pacman -S figlet --noconfirm
 sudo cp ~/dotfiles/figlet/fonts/* /usr/share/figlet/fonts/
 figlet -f 3d "Install"
 echo "
@@ -513,6 +513,9 @@ echo "
 #########################################################
 
 "
+sudo chsh -s /bin/bash
+chsh -s /bin/bash
+sh ~/dotfiles/scripts/rm-dm-managers.sh
 echo ""
 echo "
 #########################################################
