@@ -1,17 +1,17 @@
 # DO NOT EDIT! This file will be overwritten by nwg-look.
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
-include "~/.gtkrc-2.0.mine"
-gtk-theme-name="Arc-Azure-dodger-blue"
-gtk-icon-theme-name="ePapirus-Dark"
+include "/home/hyprtk/.gtkrc-2.0.mine"
+gtk-theme-name="Arc-Azure-dodger-blue-Darker"
+gtk-icon-theme-name="Papirus-Dark"
 gtk-font-name="Cantarell 10"
-gtk-cursor-theme-name="Adwaita"
+gtk-cursor-theme-name="Bibata-Modern-Classic-Right"
 gtk-cursor-theme-size=24
 gtk-toolbar-style=GTK_TOOLBAR_TEXT
 gtk-toolbar-icon-size=GTK_ICON_SIZE_SMALL_TOOLBAR
 gtk-button-images=0
 gtk-menu-images=1
-gtk-enable-event-sounds=1
+gtk-enable-event-sounds=0
 gtk-enable-input-feedback-sounds=0
 gtk-xft-antialias=1
 gtk-xft-hinting=1
