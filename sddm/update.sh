@@ -81,26 +81,26 @@ echo ""
 echo -e 'GRUB_BACKGROUND="/root/.cache/current_wallpaper.jpg"'| sudo tee -a /etc/default/grub
 echo -e 'export GRUB_COLOR_NORMAL="white/black"'| sudo tee -a /etc/default/grub
 echo -e 'export GRUB_COLOR_HIGHLIGHT="white/dark-gray"'| sudo tee -a /etc/default/grub
+echo ""
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 echo ""
-echo " Enable OS-Prober"
+echo " Disable OS-Prober"
 sudo sed -i 's/GRUB_DISABLE_OS_PROBER=false/#GRUB_DISABLE_OS_PROBER=false/' /etc/default/grub
 echo ""
 echo "GRUB & SDDM Updated with current wallpaper"
 echo ""
-echo ""
 echo "Refreshing User Font Cache"
-echo ""
 echo ""
 fc-cache -f -v
 echo ""
+echo "User Font Cache updated "
 echo ""
 echo "Refreshing System Font Cache"
 echo ""
 echo ""
 sudo fc-cache -f -v
-echo "Font cache updated"
 echo ""
+echo "System Font cache updated"
 echo ""
 echo "DONE! Please reboot to test GRUB & sddm update."
 sleep 3
