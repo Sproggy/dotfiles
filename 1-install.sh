@@ -218,13 +218,10 @@ echo "
 #########################################################
 
 "
-echo "Installing Matugen v2.4.1 into ~/.local/bin"
-# https://github.com/InioX/matugen/releases
-cp ~/dotfiles/prebuilt/matugen $HOME/.local/bin
 if [ -f /usr/bin/wal ]; then
     echo "pywal already installed."
 else
-    yay --noconfirm -S pywal-git
+    yay --noconfirm -S python-pywal16-git
 fi
 echo ""
 echo "

@@ -70,6 +70,7 @@ echo ""
 echo ""
 sudo cp ~/.cache/current_wallpaper.jpg /root/.cache/current_wallpaper.jpg
 echo ""
+sudo sed -i 's/#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/' /etc/default/grub
 echo ""
 sudo sed -i '/^GRUB_BACKGROUND/d' /etc/default/grub
 sudo sed -i '/^export GRUB_COLOR_NORMAL/d' /etc/default/grub
@@ -85,13 +86,13 @@ echo ""
 echo "GRUB & SDDM Updated with current wallpaper"
 echo ""
 echo ""
-echo "Refreshing User Fonts Cache"
+echo "Refreshing User Font Cache"
 echo ""
 echo ""
 fc-cache -f -v
 echo ""
 echo ""
-echo "Refreshing System Fonts Cache"
+echo "Refreshing System Font Cache"
 echo ""
 echo ""
 sudo fc-cache -f -v
