@@ -116,4 +116,4 @@ cat ~/.cache/wal/sequences
 # PFETCH
 # -----------------------------------------------------
 echo ""
-pfetch
+fastfetch

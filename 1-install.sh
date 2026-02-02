@@ -213,13 +213,13 @@ echo ""
 echo "
 #########################################################
 #                                                       #
-#                    Install Pywal                      #
+#                    Install Pywal16                    #
 #                                                       #
 #########################################################
 
 "
 if [ -f /usr/bin/wal ]; then
-    echo "pywal already installed."
+    echo "pywal16 already installed."
 else
     yay --noconfirm -S python-pywal16-git
 fi
@@ -227,7 +227,7 @@ echo ""
 echo "
 #########################################################
 #                                                       #
-#                    Pywal Installed                    #
+#                    Pywal16 Installed                  #
 #                                                       #
 #########################################################
 
@@ -255,6 +255,30 @@ echo "
 
 "
 echo ""
+echo "
+#########################################################
+#                                                       #
+#                    Install SDDM                       #
+#                                                       #
+#########################################################
+
+"
+echo "
+#########################################################
+#                                                       #
+#              Set SDDM as Default Login Manager        #
+#                                                       #
+#########################################################
+"
+sh ~/dotfiles/scripts/rm-dm-managers.sh
+echo ""
+if [ ! -d /etc/sddm.conf.d/ ]; then
+    sudo mkdir /etc/sddm.conf.d
+    echo "Folder /etc/sddm.conf.d created."
+fi
+sudo cp ~/dotfiles/sddm/sddm.conf /etc/sddm.conf.d/
+echo "File /etc/sddm.conf.d/sddm.conf updated."
+
 echo "
 #########################################################
 #                                                       #
@@ -355,15 +379,15 @@ echo ""
 echo "
 #########################################################
 #                                                       #
-#                   Initiating Pywal                    #
+#                   Initiating Pywal16                  #
 #                                                       #
 #########################################################
 
 "
 echo ""
-echo "-> Init pywal"
+echo "-> Init pywal16"
 wal -i ~/dotfiles/Wallpapers/default.jpg
-echo "pywal initiated."
+echo "pywal16 initiated."
 echo ""
 echo ""
 echo "-> Copy default wallpaper to .cache"
@@ -374,7 +398,7 @@ echo ""
 echo "
 #########################################################
 #                                                       #
-#                    Pywal Initiated                    #
+#                    Pywal16 Initiated                  #
 #                                                       #
 #########################################################
 
@@ -510,10 +534,6 @@ echo "
 #########################################################
 
 "
-sudo chsh -s /bin/bash
-chsh -s /bin/bash
-sh ~/dotfiles/scripts/rm-dm-managers.sh
-echo ""
 echo "
 #########################################################
 #                                                       #
@@ -635,20 +655,20 @@ echo ""
 echo "
 #########################################################
 #                                                       #
-#                  Re-Initiating Pywal                  #
+#                  Re-Initiating Pywal16                #
 #                                                       #
 #########################################################
 
 "
 echo ""
 wal -i ~/Pictures/Wallpapers/
-echo "Pywal templates initiated!"
+echo "Pywal16 templates initiated!"
 echo ""
 echo ""
 echo "
 #########################################################
 #                                                       #
-#                    Pywal Initiated                    #
+#                    Pywal16 Initiated                  #
 #                                                       #
 #########################################################
 
@@ -658,7 +678,6 @@ echo "-> Install GTK dotfiles"
 echo "-------------------------------------"
 echo ""
 echo ""
-_installSymLink .gtkrc-2.0 ~/.gtkrc-2.0 ~/dotfiles/gtk/.gtkrc-2.0 ~/.gtkrc-2.0
 _installSymLink gtk-3.0 ~/.config/gtk-3.0 ~/dotfiles/gtk/gtk-3.0/ ~/.config/
 _installSymLink gtk-4.0 ~/.config/gtk-4.0 ~/dotfiles/gtk/gtk-4.0/ ~/.config/
 _installSymLink themes ~/.local/share/themes ~/dotfiles/themes ~/.local/share/

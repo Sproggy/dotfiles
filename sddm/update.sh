@@ -70,6 +70,7 @@ echo ""
 echo ""
 sudo cp ~/.cache/current_wallpaper.jpg /root/.cache/current_wallpaper.jpg
 echo ""
+echo " Enable OS-Prober"
 sudo sed -i 's/#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/' /etc/default/grub
 echo ""
 sudo sed -i '/^GRUB_BACKGROUND/d' /etc/default/grub
@@ -82,6 +83,8 @@ echo -e 'export GRUB_COLOR_NORMAL="white/black"'| sudo tee -a /etc/default/grub
 echo -e 'export GRUB_COLOR_HIGHLIGHT="white/dark-gray"'| sudo tee -a /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 echo ""
+echo " Enable OS-Prober"
+sudo sed -i 's/GRUB_DISABLE_OS_PROBER=false/#GRUB_DISABLE_OS_PROBER=false/' /etc/default/grub
 echo ""
 echo "GRUB & SDDM Updated with current wallpaper"
 echo ""
