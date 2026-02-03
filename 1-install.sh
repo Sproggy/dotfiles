@@ -696,7 +696,7 @@ echo "-> Install Xfce dotfiles"
 echo "-------------------------------------"
 echo ""
 echo ""
-_installSymLink xfce4 ~/.config/xfce4s ~/dotfiles/xfce4 ~/.config/
+_installSymLink xfce4 ~/.config/xfce4 ~/dotfiles/xfce4 ~/.config/
 _installSymLink Thunar ~/.config/Thunar ~/dotfiles/Thunar ~/.config/
 _installSymLink Mousepad ~/.config/Mousepad ~/dotfiles/Mousepad ~/.config/
 echo ""
