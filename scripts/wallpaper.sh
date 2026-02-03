@@ -1,22 +1,25 @@
 #!/bin/bash
-# __        __    _ _                              
-# \ \      / /_ _| | |_ __   __ _ _ __   ___ _ __  
-#  \ \ /\ / / _` | | | '_ \ / _` | '_ \ / _ \ '__| 
-#   \ V  V / (_| | | | |_) | (_| | |_) |  __/ |    
-#    \_/\_/ \__,_|_|_| .__/ \__,_| .__/ \___|_|    
-#                    |_|         |_|               
-#  
-# by Corrie Tilcock (2024)
+#
+# ██       ██            ██  ██
+#░██      ░██           ░██ ░██ ██████            ██████
+#░██   █  ░██  ██████   ░██ ░██░██░░░██  ██████  ░██░░░██  █████  ██████
+#░██  ███ ░██ ░░░░░░██  ░██ ░██░██  ░██ ░░░░░░██ ░██  ░██ ██░░░██░░██░░█
+#░██ ██░██░██  ███████  ░██ ░██░██████   ███████ ░██████ ░███████ ░██ ░
+#░████ ░░████ ██░░░░██  ░██ ░██░██░░░   ██░░░░██ ░██░░░  ░██░░░░  ░██
+#░██░   ░░░██░░████████ ███ ███░██     ░░████████░██     ░░██████░███
+#░░       ░░  ░░░░░░░░ ░░░ ░░░ ░░       ░░░░░░░░ ░░       ░░░░░░ ░░░ 
+#
+# by Sproggy (Corrie Tilcock) (2026)
 # ----------------------------------------------------- 
 
 # Select wallpaper
-selected=$(ls -1 ~/wallpaper | grep "jpg" | rofi -dmenu -config ~/dotfiles/rofi/config-wallpaper.rasi -p "Wallpapers")
+selected=$(ls -1 ~/Pictures/Wallpapers | grep "jpg" | rofi -dmenu -config ~/dotfiles/rofi/config-wallpaper.rasi -p "Wallpapers")
 
 if [ "$selected" ]; then
 
     echo "Changing theme..."
     # Update wallpaper with pywal
-    wal -q -i ~/wallpaper/$selected
+    wal -q -i ~/Pictures/Wallpapers/$selected
 
     # Wait for 1 sec
     sleep 1
@@ -27,7 +30,7 @@ if [ "$selected" ]; then
     # Get new theme
     source "$HOME/.cache/wal/colors.sh"
 
-    newwall=$(echo $wallpaper | sed "s|$HOME/wallpaper/||g")
+    newwall=$(echo $wallpaper | sed "s|$HOME/Pictures/Wallpapers/||g")
 
     # ----------------------------------------------------- 
     # Copy selected wallpaper into .cache folder
