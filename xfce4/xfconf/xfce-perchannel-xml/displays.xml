@@ -4,16 +4,17 @@
   <property name="ActiveProfile" type="string" value="Default"/>
   <property name="Notify" type="int" value="1"/>
   <property name="AutoEnableProfiles" type="int" value="3"/>
+  <property name="Schemes" type="empty">
+    <property name="Apply" type="string" value="Temp"/>
+  </property>
   <property name="Default" type="empty">
-    <property name="DisplayPort-0" type="string" value="Samsung Electric Company 49&quot;">
+    <property name="DP-1" type="string" value="Samsung Electric Company C49J89x HNTR300215 (DP-1)">
+      <property name="EDID" type="string" value="49bbd8976df1c574f8173948d6a2636c581d1566"/>
       <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="699a8fd6e4bd5606263e724a88db5952aa9648d4"/>
       <property name="Resolution" type="string" value="3840x1080"/>
-      <property name="RefreshRate" type="double" value="143.9992591677985"/>
-      <property name="ModeFlags" type="uint64" value="9"/>
+      <property name="RefreshRate" type="double" value="143.999"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
-      <property name="Primary" type="bool" value="false"/>
       <property name="Scale" type="double" value="1"/>
       <property name="Position" type="empty">
         <property name="X" type="int" value="0"/>

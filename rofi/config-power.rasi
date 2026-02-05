@@ -37,8 +37,8 @@ configuration {
 /* ---- Window ---- */
 window {
     width:                        400px;
-    x-offset:                     -14px;
-    y-offset:                     65px;
+    x-offset:                     -10px;
+    y-offset:                     10px;
     spacing:                      0px;
     padding:                      0px;
     margin:                       0px; 

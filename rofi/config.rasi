@@ -16,9 +16,9 @@
 /* ---- Configuration ---- */
 configuration {
     modi:                       "drun,run";
-    font:                       "Fira Sans Bold 10";
+    font:                       "Cantarell 10"; /* default = Fira Sans Bold 10 */
     show-icons:                 true;
-    icon-theme:                 "kora";
+    icon-theme:                 "Papirus-Dark"; /* default = kora */
     display-drun:               "APPS";
     display-run:                "RUN";
     display-filebrowser:        "FILES";
@@ -37,8 +37,8 @@ configuration {
 /* ---- Window ---- */
 window {
     width:                        900px;
-    x-offset:                     0px;
-    y-offset:                     0px;
+    x-offset:                     10px;
+    y-offset:                     10px;
     spacing:                      0px;
     padding:                      0px;
     margin:                       0px; 
@@ -47,8 +47,8 @@ window {
     border-color:                 @color11;
     cursor:                       "default";
     transparency:                 "real";
-    location:                     center;
-    anchor:                       center;
+    location:                     northwest;
+    anchor:                       northwest;
     fullscreen:                   false;
     enabled:                      true;
     border-radius:                10px;
