@@ -1,11 +1,15 @@
 /*
-#  ____        __ _  
-# |  _ \ ___  / _(_) 
-# | |_) / _ \| |_| | 
-# |  _ < (_) |  _| | 
-# |_| \_\___/|_| |_| 
-#                    
-# Forked by Corrie Tilcock (2026)
+#
+#   ██████                      ████ ██        
+#  ██░░░░██                    ░██░ ░░   █████ 
+# ██    ░░   ██████  ███████  ██████ ██ ██░░░██
+#░██        ██░░░░██░░██░░░██░░░██░ ░██░██  ░██
+#░██       ░██   ░██ ░██  ░██  ░██  ░██░░██████
+#░░██    ██░██   ░██ ░██  ░██  ░██  ░██ ░░░░░██
+# ░░██████ ░░██████  ███  ░██  ░██  ░██  █████ 
+#  ░░░░░░   ░░░░░░  ░░░   ░░   ░░   ░░  ░░░░░  
+#                 
+# by Sproggy (Corrie Tilcock) (2026)
 # ----------------------------------------------------- 
 */
 
@@ -19,7 +23,7 @@ configuration {
     display-run:                "RUN";
     display-filebrowser:        "FILES";
     display-window:             "WINDOW";
-	drun-display-format:        "{name}";
+    drun-display-format:        "{name}";
     hover-select:               true;
     me-select-entry:            "";
     me-accept-entry:            "MousePrimary";

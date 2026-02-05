@@ -18,7 +18,7 @@ selected=$(ls -1 ~/Pictures/Wallpapers | grep "jpg" | rofi -dmenu -config ~/dotf
 if [ "$selected" ]; then
 
     echo "Changing theme..."
-    # Update wallpaper with pywal
+    # Update wallpaper with pywal16
     wal -q -i ~/Pictures/Wallpapers/$selected
 
     # Wait for 1 sec

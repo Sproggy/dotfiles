@@ -175,7 +175,7 @@
     // Power Menu
     "custom/exit": {
         "format": "",
-        "on-click": "wlogout",
+        "on-click": "~/dotfiles/hyprlogout/logout.sh",
         "tooltip": false
     },
 
@@ -240,20 +240,6 @@
         "interval": 5,
         "on-click-right": "nm-connection-editor",
     },
-
-    /*
-    // Network
-    "network": {
-        "format": "{ifname}",
-        "format-wifi": "   {signalStrength}%",
-        "format-ethernet": "  {ipaddr}",
-        "format-disconnected": "", //An empty format will hide the module.
-        "tooltip-format": " {ifname} via {gwaddri}",
-        "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
-        "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
-        "tooltip-format-disconnected": "Disconnected",
-        "max-length": 50
-    }, */
 
     // Battery
     "battery": {

@@ -1,11 +1,15 @@
 /*
-#  ____        __ _  
-# |  _ \ ___  / _(_) 
-# | |_) / _ \| |_| | 
-# |  _ < (_) |  _| | 
-# |_| \_\___/|_| |_| 
-#                    
-# Forked by Corrie Tilcock (2026)
+#
+# ███████                                    
+#░██░░░░██                                   
+#░██   ░██  ██████  ███     ██  █████  ██████
+#░███████  ██░░░░██░░██  █ ░██ ██░░░██░░██░░█
+#░██░░░░  ░██   ░██ ░██ ███░██░███████ ░██ ░ 
+#░██      ░██   ░██ ░████░████░██░░░░  ░██   
+#░██      ░░██████  ███░ ░░░██░░██████░███   
+#░░        ░░░░░░  ░░░    ░░░  ░░░░░░ ░░░ 
+# 
+# by Sproggy (Corrie Tilcock) (2026)
 # ----------------------------------------------------- 
 */
 
@@ -27,7 +31,7 @@ configuration {
     
 }
 
-/* ---- Load pywal colors (custom wal template) ---- */
+/* ---- Load pywal16 colors (custom wal template) ---- */
 @import "~/.cache/wal/colors-rofi-pywal"
 
 /* ---- Window ---- */
@@ -138,7 +142,7 @@ button selected {
 listview {
     enabled:                      true;
     columns:                      1;
-    lines:                        2;
+    lines:                        7;
     cycle:                        true;
     dynamic:                      true;
     scrollbar:                    false;

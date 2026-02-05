@@ -711,6 +711,7 @@ _installSymLink swaylock ~/.config/swaylock ~/dotfiles/swaylock/ ~/.config
 _installSymLink wlogout ~/.config/wlogout ~/dotfiles/wlogout/ ~/.config
 _installSymLink swappy ~/.config/swappy ~/dotfiles/swappy/ ~/.config
 _installSymLink waypaper ~/.config/waypaper ~/dotfiles/waypaper/ ~/.config
+_installSymLink waypaper ~/.config/hyprlogout ~/dotfiles/hyprlogout/ ~/.config
 echo ""
 echo ""
 echo "DONE!"
