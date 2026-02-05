@@ -16,9 +16,9 @@
 /* ---- Configuration ---- */
 configuration {
     modi:                       "drun,run";
-    font:                       "Fira Sans Bold 10";
+    font:                       "Cantarell 10"; /* default = Fira Sans Bold 10 */
     show-icons:                 false;
-    icon-theme:                 "kora";
+    icon-theme:                 "Papirus-Dark"; /* default = kora */
     display-drun:               "APPS";
     display-run:                "RUN";
     display-filebrowser:        "FILES";
@@ -36,7 +36,7 @@ configuration {
 
 /* ---- Window ---- */
 window {
-    width:                        400px;
+    width:                        200px;
     x-offset:                     -10px;
     y-offset:                     10px;
     spacing:                      0px;

@@ -96,7 +96,7 @@
         "return-type": "json",       
         "exec": "~/dotfiles/scripts/updates.sh",
         "restart-interval": 60,
-        "on-click": "alacritty -e ~/dotfiles/scripts/installupdates.sh",
+        "on-click": "alacritty -o window.dimensions.lines=45 window.dimensions.columns=90 --class floating -e ~/dotfiles/scripts/installupdates.sh",
         "tooltip": false
     },
     

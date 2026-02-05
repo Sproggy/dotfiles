@@ -42,7 +42,7 @@ window {
     spacing:                      0px;
     padding:                      0px;
     margin:                       0px; 
-    color:                        #FFFFFF;
+    color:                        #ffffff;
     border:                       3px;
     border-color:                 @color11;
     cursor:                       "default";
