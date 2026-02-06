@@ -1,3 +1,3 @@
-wal -q -i ~/wallpaper/ 
+wal -q -i ~/Pictures/Wallpapers/ 
 
 exit

@@ -29,11 +29,11 @@ configuration {
 }
 
 /* ---- Load pywal16 colors (custom wal template) ---- */
-@import "~/.cache/wal/colors-rofi-pywal"
+@import "~/.cache/wal/colors-rofi-pywal.rasi"
 
 /* ---- Window ---- */
 window {
-    width:                        200px;
+    width:                        350px;
     x-offset:                     -10px;
     y-offset:                     10px;
     spacing:                      0px;
@@ -44,13 +44,15 @@ window {
     border-color:                 @color11;
     cursor:                       "default";
     transparency:                 "real";
-    location:                     northeast;
-    anchor:                       northeast;
+    location:                     center;
+    anchor:                       center;
     fullscreen:                   false;
     enabled:                      true;
     border-radius:                10px;
     background-color:             transparent;
 }
+
+
 
 /* ---- Mainbox ---- */
 mainbox {
@@ -138,8 +140,8 @@ button selected {
 /* ---- Listview ---- */
 listview {
     enabled:                      true;
-    columns:                      1;
-    lines:                        7;
+    columns:                      2;
+    lines:                        4;
     cycle:                        true;
     dynamic:                      true;
     scrollbar:                    false;

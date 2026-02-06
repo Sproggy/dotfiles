@@ -23,7 +23,7 @@
 			"default": ""
         },
         "persistent_workspaces": {
-             "*": 0
+             "*": 5
         }       
     },
 
@@ -37,13 +37,6 @@
         "ignore-list": [
            "Alacritty"
         ],
-        "app_ids-mapping": {
-            "firefoxdeveloperedition": "firefox-developer-edition"
-        },
-        "rewrite": {
-            "Firefox Web Browser": "Firefox",
-            "Foot Server": "Terminal"
-        }
     },
 
     // Hyprland Window
@@ -175,7 +168,7 @@
     // Power Menu
     "custom/exit": {
         "format": "",
-        "on-click": "~/dotfiles/hyprlogout/logout.sh",
+        "on-click": "~/.config/hyprlogout/logout.sh",
         "tooltip": false
     },
 
