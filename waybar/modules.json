@@ -168,7 +168,7 @@
     // Power Menu
     "custom/exit": {
         "format": "",
-        "on-click": "~/.config/hyprlogout/logout.sh",
+        "on-click": "~/dotfiles/hyprlogout/logout.sh",
         "tooltip": false
     },
 
