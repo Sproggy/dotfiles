@@ -87,7 +87,7 @@ alias notes='vim ~/notes.txt'
 # SYSTEM
 # -----------------------------------------------------
 
-alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias update-grub='~/dotfiles/scripts/update-grub.sh'
 alias setkb='setxkbmap gb;echo "Keyboard set back to gb."'
 alias update='sudo pacman -Syu --noconfirm && yay -Syu --noconfirm'
 
