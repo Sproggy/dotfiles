@@ -17,8 +17,8 @@
 configuration {
     modi:                       "drun,run";
     font:                       "Cantarell 10"; /* default = Fira Sans Bold 10 */
-    show-icons:                 true;
-    icon-theme:                 "Papirus-Dark"; /* default = kora */
+    show-icons:                 false;
+    icon-theme:                 "kora"; /* default = kora */
     display-drun:               "APPS";
     display-run:                "RUN";
     display-filebrowser:        "FILES";

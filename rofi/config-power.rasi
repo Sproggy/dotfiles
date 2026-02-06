@@ -18,10 +18,7 @@ configuration {
     modi:                       "drun,run";
     font:                       "Cantarell 10"; /* default = Fira Sans Bold 10 */
     show-icons:                 false;
-    icon-theme:                 "Papirus-Dark"; /* default = kora */
-    display-drun:               "APPS";
-    display-run:                "RUN";
-    display-filebrowser:        "FILES";
+    icon-theme:                 "kora"; /* default = kora */
     display-window:             "WINDOW";
 	hover-select:               true;
     me-select-entry:            "";
