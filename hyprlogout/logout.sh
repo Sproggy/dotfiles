@@ -21,7 +21,7 @@
 # by Sproggy (Corrie Tilcock) (2026)
 # ----------------------------------------------------- 
 
-chosen=$(echo -e " Lock\n Logout\n Hibernate\n Close Menu\n Reboot\n Shutdown\n Suspend" | rofi -dmenu -config ~/dotfiles/rofi/config-power.rasi -p "Power")
+chosen=$(echo -e " Lock\n Logout\n Hibernate\n Reboot\n Shutdown\n Suspend" | rofi -dmenu -config ~/dotfiles/rofi/config-power.rasi -p "Power")
 
 if [[ $chosen = " Lock" ]]; then
     swaylock

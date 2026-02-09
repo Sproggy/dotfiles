@@ -462,8 +462,7 @@ packagesPacman=(
 echo ""
 packagesYay=(
     "swww" 
-    "swaylock-effects" 
-    "wlogout"
+    "swaylock-effects"
     "gvfs-afc"
     "gvfs-goa"
     "gvfs-gphoto2"
@@ -585,7 +584,7 @@ echo ""
 echo "If you installed an NVIDIA Graphics Card please follow the instructions in the"
 echo "nvidia.conf file located ~/dotfiles/hypr/conf/nvidia.conf"
 echo ""
-sleep 5
+sleep 3
 figlet -f 3d "dotfiles"
 echo ""
 echo " by Sproggy (Corrie Tilcock) (2026) "
@@ -595,7 +594,7 @@ echo "The script will ask for permission to remove existing directories and file
 echo "Symbolic links will then be created from ~/dotfiles into your ~/.config/ directory."
 echo "But you can decide to keep your personal versions by answering with No (Nn)."
 echo ""
-sleep 5
+sleep 3
 echo ""
 echo "
 #########################################################
@@ -708,7 +707,6 @@ echo ""
 _installSymLink hypr ~/.config/hypr ~/dotfiles/hypr/ ~/.config
 _installSymLink waybar ~/.config/waybar ~/dotfiles/waybar/ ~/.config
 _installSymLink swaylock ~/.config/swaylock ~/dotfiles/swaylock/ ~/.config
-_installSymLink wlogout ~/.config/wlogout ~/dotfiles/wlogout/ ~/.config
 _installSymLink swappy ~/.config/swappy ~/dotfiles/swappy/ ~/.config
 _installSymLink waypaper ~/.config/waypaper ~/dotfiles/waypaper/ ~/.config
 _installSymLink waypaper ~/.config/hyprlogout ~/dotfiles/hyprlogout/ ~/.config

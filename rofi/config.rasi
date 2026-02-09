@@ -17,8 +17,8 @@
 configuration {
     modi:                       "drun,run";
     font:                       "Cantarell 10"; /* default = Fira Sans Bold 10 */
-    show-icons:                 false;
-    icon-theme:                 "kora"; /* default = kora */
+    show-icons:                 true;
+    icon-theme:                 "Papirus-Dark"; /* default = kora */
     display-drun:               "APPS";
     display-run:                "RUN";
     display-filebrowser:        "FILES";
@@ -36,7 +36,7 @@ configuration {
 
 /* ---- Window ---- */
 window {
-    width:                        900px;
+    width:                        650px;
     x-offset:                     10px;
     y-offset:                     10px;
     spacing:                      0px;
@@ -61,7 +61,7 @@ mainbox {
     orientation:                  horizontal;
     spacing:                      0px;
     margin:                       0px;
-    background-color:             @background;
+    background-color:             transparent;
     background-image:             url("~/.cache/current_wallpaper.jpg", height);
     children:                     ["imagebox","listbox"];
 }
@@ -102,7 +102,7 @@ inputbar {
 textbox-prompt-colon {
     enabled:                      true;
     expand:                       false;
-    str:                          "";
+    str:                          "";
     background-color:             @color11;
     text-color:                   inherit;
 }
@@ -141,8 +141,8 @@ button selected {
 /* ---- Listview ---- */
 listview {
     enabled:                      true;
-    columns:                      1;
-    lines:                        8;
+    columns:                      2;
+    lines:                        6;
     cycle:                        true;
     dynamic:                      true;
     scrollbar:                    false;
@@ -216,7 +216,7 @@ element alternate.active {
 element-icon {
     background-color:            transparent;
     text-color:                  inherit;
-    size:                        32px;
+    size:                        24px;
     cursor:                      inherit;
 }
 
@@ -231,11 +231,11 @@ element-text {
 /*****----- Message -----*****/
 message {
     background-color:            transparent;
-    border:0px;
-    margin:20px 0px 0px 0px;
-    padding:0px;
-    spacing:0px;
-    border-radius: 10px;
+    border:                      0px;
+    margin:                      20px 0px 0px 0px;
+    padding:                     0px;
+    spacing:                     0px;
+    border-radius:               10px;
 }
 
 textbox {
