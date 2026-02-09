@@ -38,7 +38,7 @@
 	<name>Run As Root</name>
 	<submenu></submenu>
 	<unique-id>1571572865722601-3</unique-id>
-	<command>pkexec thunar %d</command>
+	<command>pkexec thunar %f</command>
 	<description>Run As Root</description>
 	<range></range>
 	<patterns>*</patterns>
