@@ -685,7 +685,6 @@ echo "-------------------------------------"
 echo "-> Install GTK dotfiles"
 echo "-------------------------------------"
 echo ""
-echo ""
 _installSymLink gtk-3.0 ~/.config/gtk-3.0 ~/dotfiles/gtk/gtk-3.0/ ~/.config/
 _installSymLink gtk-4.0 ~/.config/gtk-4.0 ~/dotfiles/gtk/gtk-4.0/ ~/.config/
 _installSymLink themes ~/.local/share/themes ~/dotfiles/themes ~/.local/share/
@@ -693,7 +692,6 @@ echo ""
 echo "-------------------------------------"
 echo "-> Install Xfce dotfiles"
 echo "-------------------------------------"
-echo ""
 echo ""
 _installSymLink xfce4 ~/.config/xfce4 ~/dotfiles/xfce4 ~/.config/
 _installSymLink Thunar ~/.config/Thunar ~/dotfiles/Thunar ~/.config/
@@ -703,14 +701,11 @@ echo "-------------------------------------"
 echo "-> Install Hyprland dotfiles"
 echo "-------------------------------------"
 echo ""
-echo ""
 _installSymLink hypr ~/.config/hypr ~/dotfiles/hypr/ ~/.config
 _installSymLink waybar ~/.config/waybar ~/dotfiles/waybar/ ~/.config
 _installSymLink swaylock ~/.config/swaylock ~/dotfiles/swaylock/ ~/.config
 _installSymLink swappy ~/.config/swappy ~/dotfiles/swappy/ ~/.config
-_installSymLink waypaper ~/.config/waypaper ~/dotfiles/waypaper/ ~/.config
-_installSymLink waypaper ~/.config/hyprlogout ~/dotfiles/hyprlogout/ ~/.config
-echo ""
+_installSymLink hyprlogout ~/.config/hyprlogout ~/dotfiles/hyprlogout/ ~/.config
 echo ""
 echo "DONE!"
 echo "NEXT: Update the keyboard layout and screen resolution in ~/dotfiles/hypr/hyprland.conf"

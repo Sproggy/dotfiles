@@ -26,7 +26,7 @@
 wal -q -i ~/Pictures/Wallpapers/
 
 # ----------------------------------------------------- 
-# Load current pywal color scheme
+# Load current pywal16 color scheme
 # ----------------------------------------------------- 
 source "$HOME/.cache/wal/colors.sh"
 

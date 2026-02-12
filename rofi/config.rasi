@@ -166,6 +166,7 @@ element {
     background-color:             @background;
     border-radius:                10px;
     border:                       2px;
+    border-color:                 @color11;
 }
 
 element normal.normal {

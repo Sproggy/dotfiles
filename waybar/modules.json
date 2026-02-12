@@ -27,7 +27,7 @@
     "persistent-workspaces": {
       "*": 5
     }
-  },
+    },
 
     // Taskbar
     "wlr/taskbar": {
@@ -51,15 +51,6 @@
             "(.*) Microsoft Teams": "$1"
         },
         "separate-outputs": true
-    },
-
-    // Youtube Subscriber Count
-    "custom/youtube": {
-        "format": " {}",
-        "exec": "python ~/private/youtube.py",
-        "restart-interval": 600,
-        "on-click": "brave https://studio.youtube.com",
-        "tooltip": false
     },
     
     // Cliphist
@@ -99,7 +90,6 @@
     "custom/wallpaper": {
         "format": "",
         "on-click": "~/dotfiles/scripts/wallpaper-swww.sh",
-        //"on-click": "waypaper",
         "on-click-right": "~/dotfiles/scripts/updatewal-swww.sh",
         "tooltip": false
     },
@@ -115,27 +105,6 @@
     "custom/filemanager": {
         "format": "",
         "on-click": "~/dotfiles/scripts/filemanager.sh",
-        "tooltip": false
-    },
-
-    // Outlook Launcher
-    "custom/outlook": {
-        "format": "",
-        "on-click": "brave --app=https://outlook.office.com/mail/",
-        "tooltip": false
-    },
-
-    // Teams Launcher
-    "custom/teams": {
-        "format": "",
-        "on-click": "brave --app=https://teams.microsoft.com/go",
-        "tooltip": false
-    },
-
-    // Brave Launcher
-    "custom/brave": {
-        "format": " ",
-        "on-click": "brave",
         "tooltip": false
     },
 
@@ -172,17 +141,6 @@
         "format": "",
         "on-click": "~/dotfiles/hyprlogout/logout.sh",
         "tooltip": false
-    },
-
-    // Keyboard State
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
     },
 
     // System tray

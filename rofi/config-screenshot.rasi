@@ -42,8 +42,9 @@ configuration {
     
 }
 
-/* ---- Load pywal colors (custom wal template) ---- */
-@import "~/.cache/wal/colors-rofi-pywal"
+/*****----- Global Properties -----*****/
+@import                          "shared/colors.rasi"
+@import                          "shared/fonts.rasi"
 
 /* ---- Window ---- */
 window {
@@ -178,6 +179,7 @@ element {
     background-color:             @background;
     border-radius:                10px;
     border:                       2px;
+    border-color:                 @color11;
 }
 
 element normal.normal {

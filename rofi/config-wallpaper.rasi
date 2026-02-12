@@ -16,7 +16,6 @@
 /* ---- Configuration ---- */
 configuration {
     modi:                       "drun,run";
-    font:                       "Fira Sans Bold 10";
     show-icons:                 false;
     icon-theme:                 "kora";
     display-drun:               "APPS";
@@ -31,14 +30,15 @@ configuration {
     
 }
 
-/* ---- Load pywal colors (custom wal template) ---- */
-@import "~/.cache/wal/colors-rofi-pywal"
+/*****----- Global Properties -----*****/
+@import                          "shared/colors.rasi"
+@import                          "shared/fonts.rasi"
 
 /* ---- Window ---- */
 window {
-    width:                        400px;
+    width:                        500px;
     x-offset:                     0px;
-    y-offset:                     65px;
+    y-offset:                     0px;
     spacing:                      0px;
     padding:                      0px;
     margin:                       0px; 
@@ -47,8 +47,8 @@ window {
     border-color:                 @color11;
     cursor:                       "default";
     transparency:                 "real";
-    location:                     north;
-    anchor:                       north;
+    location:                     center;
+    anchor:                       center;
     fullscreen:                   false;
     enabled:                      true;
     border-radius:                10px;
@@ -61,7 +61,7 @@ mainbox {
     orientation:                  horizontal;
     spacing:                      0px;
     margin:                       0px;
-    background-color:             @background;
+    background-color:             transparent;
     background-image:             url("~/.cache/current_wallpaper.jpg", height);
     children:                     ["listbox"];
 }
@@ -90,11 +90,11 @@ dummy {
 /* ---- Inputbar ---- */
 inputbar {
     enabled:                      true;
-    text-color:                   @foreground;
+    text-color:                   #ffffff;
     spacing:                      10px;
     padding:                      15px;
     border-radius:                0px;
-    border-color:                 @foreground;
+    border-color:                 @color11;
     background-color:             @background;
     children:                     [ "textbox-prompt-colon", "entry" ];
 }
@@ -102,7 +102,7 @@ inputbar {
 textbox-prompt-colon {
     enabled:                      true;
     expand:                       false;
-    str:                          "";
+    str:                          "";
     background-color:             transparent;
     text-color:                   inherit;
 }
@@ -121,28 +121,29 @@ mode-switcher{
     enabled:                      true;
     spacing:                      20px;
     background-color:             transparent;
-    text-color:                   @foreground;
+    text-color:                   #ffffff;
 }
 
 button {
     padding:                      10px;
     border-radius:                10px;
+    border-color:                 @color11;
     background-color:             @background;
-    text-color:                   inherit;
+    text-color:                   #ffffff;
     cursor:                       pointer;
     border:                       0px;
 }
 
 button selected {
     background-color:             @color11;
-    text-color:                   @foreground;
+    text-color:                   #ffffff;
 }
 
 /* ---- Listview ---- */
 listview {
     enabled:                      true;
-    columns:                      1;
-    lines:                        8;
+    columns:                      3;
+    lines:                        6;
     cycle:                        true;
     dynamic:                      true;
     scrollbar:                    false;
@@ -155,6 +156,7 @@ listview {
     margin:                       0px;
     background-color:             @background;
     border:0px;
+    border-color:                 @color11;
 }
 
 /* ---- Element ---- */
@@ -166,6 +168,7 @@ element {
     background-color:             @background;
     border-radius:                10px;
     border:                       2px;
+    border-color:                 @color11;
 }
 
 element normal.normal {

@@ -21,7 +21,7 @@ if [ "$selected" ]; then
 
     echo "Changing theme..."
     # ----------------------------------------------------- 
-    # Update wallpaper with pywal
+    # Update wallpaper with pywal16
     # ----------------------------------------------------- 
     wal -q -i ~/Pictures/Wallpapers/$selected
 
