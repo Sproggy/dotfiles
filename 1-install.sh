@@ -706,6 +706,7 @@ _installSymLink waybar ~/.config/waybar ~/dotfiles/waybar/ ~/.config
 _installSymLink swaylock ~/.config/swaylock ~/dotfiles/swaylock/ ~/.config
 _installSymLink swappy ~/.config/swappy ~/dotfiles/swappy/ ~/.config
 _installSymLink hyprlogout ~/.config/hyprlogout ~/dotfiles/hyprlogout/ ~/.config
+_installSymLink waypaper ~/.config/waypaper ~/dotfiles/waypaper/ ~/.config
 echo ""
 echo "DONE!"
 echo "NEXT: Update the keyboard layout and screen resolution in ~/dotfiles/hypr/hyprland.conf"
