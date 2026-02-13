@@ -13,7 +13,7 @@
 # ----------------------------------------------------- 
 
 # Select wallpaper
-selected=$(ls -1 ~/Pictures/Wallpapers | grep "jpg" | rofi -dmenu -config ~/dotfiles/rofi/config-wallpaper.rasi -p "Wallpapers")
+selected=$(ls -1 ~/Pictures/Wallpapers | grep "png" | rofi -dmenu -config ~/dotfiles/rofi/config-wallpaper.rasi -p "Wallpapers")
 
 if [ "$selected" ]; then
 
@@ -32,7 +32,7 @@ if [ "$selected" ]; then
     # ----------------------------------------------------- 
     # Copy selected wallpaper into .cache folder
     # ----------------------------------------------------- 
-    cp $wallpaper ~/.cache/current_wallpaper.jpg
+    cp $wallpaper ~/.cache/current_wallpaper.png
 
     sleep 1
 

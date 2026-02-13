@@ -31,7 +31,7 @@ echo " ░░███████ ░██     ░░██████░░�
 echo "  ░░░░░░░  ░░       ░░░░░░  ░░░░░░░░    ░░   ░░░░░░  "
 echo ""
 echo ""
-echo " by Sproggy (Corrie Tilcock) (2024) "
+echo " by Sproggy (Corrie Tilcock) (2026) "
 echo " ------------------------------------------------------------------- "
 echo ""
 while true; do
@@ -60,7 +60,7 @@ sudo cp sddm.conf /etc/sddm.conf.d/
 echo "File /etc/sddm.conf.d/sddm.conf updated."
 echo ""
 echo ""
-sudo cp ~/.cache/current_wallpaper.jpg /usr/share/sddm/themes/Sugar-Candy/Backgrounds/
+sudo cp ~/.cache/current_wallpaper.png /usr/share/sddm/themes/Sugar-Candy/Backgrounds/
 echo "Current wallpaper copied into /usr/share/sddm/themes/Sugar-Candy/Backgrounds/"
 echo ""
 echo ""
@@ -68,19 +68,19 @@ sudo cp theme.conf /usr/share/sddm/themes/Sugar-Candy/
 echo "File theme.conf updated in /usr/share/sddm/themes/Sugar-Candy/"
 echo ""
 echo ""
-sudo cp ~/.cache/current_wallpaper.jpg /root/.cache/current_wallpaper.jpg
+sudo cp ~/.cache/current_wallpaper.png /root/.cache/current_wallpaper.png
 echo ""
 echo " Enable OS-Prober"
 sudo sed -i 's/#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/' /etc/default/grub
 echo ""
 sudo sed -i '/^GRUB_BACKGROUND/d' /etc/default/grub
-sudo sed -i '/^export GRUB_COLOR_NORMAL/d' /etc/default/grub
-sudo sed -i '/^export GRUB_COLOR_HIGHLIGHT/d' /etc/default/grub
+sudo sed -i '/^GRUB_COLOR_NORMAL/d' /etc/default/grub
+sudo sed -i '/^GRUB_COLOR_HIGHLIGHT/d' /etc/default/grub
 echo ""
 echo ""
-echo -e 'GRUB_BACKGROUND="/root/.cache/current_wallpaper.jpg"'| sudo tee -a /etc/default/grub
-echo -e 'export GRUB_COLOR_NORMAL="white/black"'| sudo tee -a /etc/default/grub
-echo -e 'export GRUB_COLOR_HIGHLIGHT="white/dark-gray"'| sudo tee -a /etc/default/grub
+echo -e 'GRUB_BACKGROUND="/root/.cache/current_wallpaper.png"'| sudo tee -a /etc/default/grub
+echo -e 'GRUB_COLOR_NORMAL="white/black"'| sudo tee -a /etc/default/grub
+echo -e 'GRUB_COLOR_HIGHLIGHT="white/dark-gray"'| sudo tee -a /etc/default/grub
 echo ""
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 echo ""

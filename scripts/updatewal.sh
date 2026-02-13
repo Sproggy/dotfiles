@@ -41,7 +41,7 @@ newwall=$(echo $wallpaper | sed "s|$HOME/Pictures/Wallpapers/||g")
 # ----------------------------------------------------- 
 # Copy selected wallpaper into .cache folder
 # ----------------------------------------------------- 
-cp $wallpaper ~/.cache/current_wallpaper.jpg
+cp $wallpaper ~/.cache/current_wallpaper.png
 
 sleep 1
 

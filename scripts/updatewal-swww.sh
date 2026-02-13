@@ -33,7 +33,7 @@ source "$HOME/.cache/wal/colors.sh"
 # ----------------------------------------------------- 
 # Copy selected wallpaper into .cache folder
 # ----------------------------------------------------- 
-cp $wallpaper ~/.cache/current_wallpaper.jpg
+cp $wallpaper ~/.cache/current_wallpaper.png
 
 # ----------------------------------------------------- 
 # get wallpaper iamge name
