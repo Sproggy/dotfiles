@@ -45,7 +45,7 @@ window {
     border-radius:               20px;
     border-color:                @color11;
     cursor:                      "default";
-    background-color:            transparent;
+    background-color:            @background;
 }
 
 /*****----- Main Box -----*****/
@@ -125,7 +125,7 @@ message {
     border-radius:               15px;
     border-color:                @color11;
     background-color:            @color4;
-    text-color:                  @foreground;
+    text-color:                  #ffffff;
 }
 textbox {
     background-color:            inherit;
@@ -178,7 +178,7 @@ element {
     border:                      3px solid;
     border-radius:               20px;
     border-color:                @color11;
-    background-color:            transparent;
+    background-color:            @background;
     text-color:                  #ffffff;
     cursor:                      pointer;
 }

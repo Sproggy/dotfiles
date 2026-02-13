@@ -1,13 +1,13 @@
 /*
 #
-# ██       ██     ██      ██  ██                                         
-#░██      ░██    ████    ░██ ░██ ██████            ██████                
-#░██   █  ░██   ██░░██   ░██ ░██░██░░░██  ██████  ░██░░░██  █████  ██████
-#░██  ███ ░██  ██  ░░██  ░██ ░██░██  ░██ ░░░░░░██ ░██  ░██ ██░░░██░░██░░█
-#░██ ██░██░██ ██████████ ░██ ░██░██████   ███████ ░██████ ░███████ ░██ ░ 
-#░████ ░░████░██░░░░░░██ ░██ ░██░██░░░   ██░░░░██ ░██░░░  ░██░░░░  ░██   
-#░██░   ░░░██░██     ░██ ███ ███░██     ░░████████░██     ░░██████░███   
-#░░       ░░ ░░      ░░ ░░░ ░░░ ░░       ░░░░░░░░ ░░       ░░░░░░ ░░░   
+# ██       ██            ██  ██
+#░██      ░██           ░██ ░██ ██████            ██████
+#░██   █  ░██  ██████   ░██ ░██░██░░░██  ██████  ░██░░░██  █████  ██████
+#░██  ███ ░██ ░░░░░░██  ░██ ░██░██  ░██ ░░░░░░██ ░██  ░██ ██░░░██░░██░░█
+#░██ ██░██░██  ███████  ░██ ░██░██████   ███████ ░██████ ░███████ ░██ ░
+#░████ ░░████ ██░░░░██  ░██ ░██░██░░░   ██░░░░██ ░██░░░  ░██░░░░  ░██
+#░██░   ░░░██░░████████ ███ ███░██     ░░████████░██     ░░██████░███
+#░░       ░░  ░░░░░░░░ ░░░ ░░░ ░░       ░░░░░░░░ ░░       ░░░░░░ ░░░ 
 #                    
 # by Sproggy (Corrie Tilcock) (2026)
 # ----------------------------------------------------- 
@@ -16,18 +16,10 @@
 /* ---- Configuration ---- */
 configuration {
     modi:                       "drun,run";
-    show-icons:                 false;
-    icon-theme:                 "kora";
-    display-drun:               "APPS";
-    display-run:                "RUN";
-    display-filebrowser:        "FILES";
-    display-window:             "WINDOW";
 	hover-select:               true;
     me-select-entry:            "";
     me-accept-entry:            "MousePrimary";
-    drun-display-format:        "{name}";
-    window-format:              "{w} · {c} · {t}";
-    
+    drun-display-format:        "{name}";    
 }
 
 /*****----- Global Properties -----*****/
@@ -142,8 +134,8 @@ button selected {
 /* ---- Listview ---- */
 listview {
     enabled:                      true;
-    columns:                      3;
-    lines:                        6;
+    columns:                      2;
+    lines:                        8;
     cycle:                        true;
     dynamic:                      true;
     scrollbar:                    false;
@@ -154,8 +146,8 @@ listview {
     spacing:                      0px;
     padding:                      10px;
     margin:                       0px;
-    background-color:             @background;
-    border:0px;
+    background-color:             transparent;
+    border:                       0px;
     border-color:                 @color11;
 }
 
@@ -172,47 +164,47 @@ element {
 }
 
 element normal.normal {
-    background-color:            inherit;
+    background-color:            @background;
     text-color:                  @foreground;
 }
 
 element normal.urgent {
-    background-color:            inherit;
+    background-color:            @background;
     text-color:                  @foreground;
 }
 
 element normal.active {
-    background-color:            inherit;
+    background-color:            @background;
     text-color:                  @foreground;
 }
 
 element selected.normal {
-    background-color:            @color11;
+    background-color:            @color4;
     text-color:                  @foreground;
 }
 
 element selected.urgent {
-    background-color:            inherit;
+    background-color:            @background;
     text-color:                  @foreground;
 }
 
 element selected.active {
-    background-color:            inherit;
+    background-color:            @color4;
     text-color:                  @foreground;
 }
 
 element alternate.normal {
-    background-color:            inherit;
+    background-color:            @background;
     text-color:                  @foreground;
 }
 
 element alternate.urgent {
-    background-color:            inherit;
+    background-color:            @background;
     text-color:                  @foreground;
 }
 
 element alternate.active {
-    background-color:            inherit;
+    background-color:            @background;
     text-color:                  @foreground;
 }
 

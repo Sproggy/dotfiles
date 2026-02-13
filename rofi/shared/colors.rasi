@@ -7,8 +7,10 @@
 ░░██    ██░██   ░██ ░██░██   ░██ ░██    ░░░░░██
  ░░██████ ░░██████  ███░░██████ ░███    ██████
   ░░░░░░   ░░░░░░  ░░░  ░░░░░░  ░░░    ░░░░░░
+
+    by Sproggy (Corrie Tilcock) (2026)
  **/
 
-/* Import color-scheme from `colors` directory */
+/* Import color-scheme from pywal16 `colors` directory */
 
 @import "~/.cache/wal/colors-rofi-pywal.rasi"
