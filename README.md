@@ -1,16 +1,6 @@
-# My Hyprland Dotfiles
-
-This is my fork of Stephan Raabe's dotfiles for Hyprland, His version is a rounded effect across the whole landscape of Hyprland and associated applications. I have gone for a more squared look an feel.
-
-His original work can be found here
-
-https://gitlab.com/stephan-raabe/dotfiles.git
-
-I have not personally used or played with QTile config, so this is an as is copy of Stephan's config and any questions please reach out to him.
-
 # Hyprland dotfiles
 
-This is the configuration for Arch Linux, Arcolinux, Manjaro based installations of Hyprland (Wayland) and/or Qtile (Xorg).
+This is the configuration for Arch Linux, Arcolinux, Manjaro based installations of Hyprland (Wayland) and/or XFCE (Xorg).
 
 This will work on most flavours of Arch.
 
@@ -79,7 +69,7 @@ PLEASE BACKUP YOUR EXISTING .config WITH YOUR DOTFILES BEFORE STARTING THE SCRIP
 # Make sure that you're in your home directory
 cd
 
-# Clone the repository from your home directory
+# Clone the repository to your home directory
 git clone https://github.com/Sproggy/dotfiles.git
 
 # Or download the lastest version and unzip into ~/dotfiles folder
@@ -87,7 +77,7 @@ git clone https://github.com/Sproggy/dotfiles.git
 # Change into the new dotfiles folder
 cd dotfiles
 
-# Just run the single install file and go through every step, please be aware that this installs both Hyprland(Wayland) and QTile(Xorg) environments at once
+# Just run the single install file and go through every step, please be aware that this installs both Hyprland (Wayland) and XFCE (Xorg) environments at once
 ./1-install.sh
 
 ```
