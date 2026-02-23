@@ -12,7 +12,7 @@ This will work on most flavours of Arch.
 - Prompt: starship
 - Icons: Font Awesome
 - Menus: Rofi
-- Colorscheme: pywal (dynamic)
+- Colorscheme: pywal16 (dynamic)
 - Browsers: chromium (brave optional)
 - Filemanager: Thunar
 - Cursor: Bibata Modern Ice
@@ -27,12 +27,6 @@ This will work on most flavours of Arch.
 - Logout: wlogout
 - Screenlock: swaylock-effects
 - Screen Capture: wf-recorder
-
-## Qtile
-
-- Compositor: picom
-- Status Bar: polybar
-- Screenshots: scrot
 
 ## Templating
 
