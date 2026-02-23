@@ -457,6 +457,7 @@ packagesPacman=(
     "cliphist"
     "xorg-xhost"
     "nwg-look"
+    "mission-center"
 
 );
 echo ""
