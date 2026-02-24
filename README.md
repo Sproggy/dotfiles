@@ -1,16 +1,6 @@
-# My Hyprland Dotfiles
-
-This is my fork of Stephan Raabe's dotfiles for Hyprland, His version is a rounded effect across the whole landscape of Hyprland and associated applications. I have gone for a more squared look an feel.
-
-His original work can be found here
-
-https://gitlab.com/stephan-raabe/dotfiles.git
-
-I have not personally used or played with QTile config, so this is an as is copy of Stephan's config and any questions please reach out to him.
-
 # Hyprland dotfiles
 
-This is the configuration for Arch Linux, Arcolinux, Manjaro based installations of Hyprland (Wayland) and/or Qtile (Xorg).
+This is the configuration for Arch Linux, Arcolinux, Manjaro based installations of Hyprland (Wayland) and/or XFCE (Xorg).
 
 This will work on most flavours of Arch.
 
@@ -22,7 +12,7 @@ This will work on most flavours of Arch.
 - Prompt: starship
 - Icons: Font Awesome
 - Menus: Rofi
-- Colorscheme: pywal (dynamic)
+- Colorscheme: pywal16 (dynamic)
 - Browsers: chromium (brave optional)
 - Filemanager: Thunar
 - Cursor: Bibata Modern Ice
@@ -38,15 +28,9 @@ This will work on most flavours of Arch.
 - Screenlock: swaylock-effects
 - Screen Capture: wf-recorder
 
-## Qtile
-
-- Compositor: picom
-- Status Bar: polybar
-- Screenshots: scrot
-
 ## Templating
 
-Hyprland & Qtile: Included is a pywal configuration that changes the color scheme based on a randomly selected wallpaper. With the key binding SuperKey + Shift + w you can change the wallpaper. SuperKey + Ctrl + w opens rofi with a list of installed wallpapers for your individual selection. See also the .bashrc and the key bindings on Hyprland and Qtile for more alias definitions.
+Hyprland: Included is a pywal16 configuration that changes the color scheme based on a randomly selected wallpaper. With the key binding SuperKey + Shift + w you can change the wallpaper. SuperKey + Ctrl + w opens rofi with a list of installed wallpapers for your individual selection. See also the .bashrc and the key bindings on Hyprland and Qtile for more alias definitions.
 
 Hyprland: In addition, you can switch the Waybar Template with SUPER + CTRL + T or by pressing the "..." icon in Waybar. The templates are available in ~/dotfiles/waybar/themes. You can add your own personal themes into this folder. The script will read in the folder structure.
 
@@ -79,7 +63,7 @@ PLEASE BACKUP YOUR EXISTING .config WITH YOUR DOTFILES BEFORE STARTING THE SCRIP
 # Make sure that you're in your home directory
 cd
 
-# Clone the repository from your home directory
+# Clone the repository to your home directory
 git clone https://github.com/Sproggy/dotfiles.git
 
 # Or download the lastest version and unzip into ~/dotfiles folder
@@ -87,7 +71,7 @@ git clone https://github.com/Sproggy/dotfiles.git
 # Change into the new dotfiles folder
 cd dotfiles
 
-# Just run the single install file and go through every step, please be aware that this installs both Hyprland(Wayland) and QTile(Xorg) environments at once
+# Just run the single install file and go through every step, please be aware that this installs both Hyprland (Wayland) and XFCE (Xorg) environments at once
 ./1-install.sh
 
 ```
