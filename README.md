@@ -24,7 +24,7 @@ This will work on most flavours of Arch.
 - Status Bar: waybar
 - Screenshots: grim & slurp
 - Clipboard Manager: cliphist
-- Logout: wlogout
+- Logout: hyprlogout
 - Screenlock: swaylock-effects
 - Screen Capture: wf-recorder
 
