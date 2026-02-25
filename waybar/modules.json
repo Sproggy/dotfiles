@@ -61,6 +61,13 @@
         "on-click-middle": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh w",
         "tooltip": false
     },
+    
+    // Terminal
+    "custom/terminal": {
+    "format": "",
+    "on-click": "alacritty"
+    //"format-icons": [""]
+    },
 
     // Screen Recorder
     "custom/wf-recorder": {
@@ -126,14 +133,14 @@
     "custom/windowsvm": {
         "format": "",
         "on-click": "~/dotfiles/scripts/launchvm.sh",
-        "tooltip": false
+        "tooltip": false 
     },
 
     // Rofi Application Launcher
     "custom/appmenu": {
         "format": "Apps",
         "on-click": "~/dotfiles/scripts/applauncher.sh",
-        "tooltip": false
+        "tooltip": false 
     },
 
     // Power Menu

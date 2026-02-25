@@ -164,7 +164,8 @@ window#waybar.empty #window {
 #custom-wallpaperwlr, 
 #custom-waybarthemes,
 #custom-wf-recorder,
-#custom-keybindings  {
+#custom-keybindings,
+#custom-terminal  {
     margin-right: 10px;
     font-size: 18px;
     font-weight: bold;

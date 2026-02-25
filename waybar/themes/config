@@ -35,6 +35,7 @@
     // Modules Left
     "modules-left": [
         "custom/appmenu",
+        "custom/terminal",
         "custom/wallpaper",
         "custom/waybarthemes",
         "custom/cliphist",
