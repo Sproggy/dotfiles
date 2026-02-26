@@ -23,8 +23,8 @@ echo "
 #             Removing leftover Packages                #
 #                                                       #
 #########################################################
-
 "
+sleep 2
 sudo pacman -Rns plasma kde-applications --noconfirm
 echo "
 #########################################################
@@ -32,7 +32,6 @@ echo "
 #             Starting Installation Process             #
 #                                                       #
 #########################################################
-
 "
 sleep 2
 echo ""
@@ -42,7 +41,6 @@ echo "
 #              Load Installation Libraries              #
 #                                                       #
 #########################################################
-
 "
 echo ""
 source $(dirname "$0")/scripts/library.sh
@@ -53,7 +51,6 @@ echo "
 #            Installation Libraries loaded              #
 #                                                       #
 #########################################################
-
 "
 echo ""
 sleep 2
@@ -65,7 +62,6 @@ echo "
 #                     Install Yay                       #
 #                                                       #
 #########################################################
-
 "
 echo ""
 if sudo pacman -Qs yay > /dev/null ; then
@@ -88,7 +84,6 @@ echo "
 #                    Yay is Installed                   #
 #                                                       #
 #########################################################
-
 "
 sleep 2
 echo ""
@@ -121,7 +116,6 @@ echo "
 3) Nvidia
 Defaults to AMD if you choose
 something else
-
 "
 echo ""
 read GRAPHICSCARD
@@ -151,7 +145,6 @@ echo "
 #         Your Graphics Card has been installed         #
 #                                                       #
 #########################################################
-
 "
 sleep 2
 while true; do
@@ -176,7 +169,6 @@ echo "
 #             Installing required Packages              #
 #                                                       #
 #########################################################
-
 "
 echo ""
 sh ~/dotfiles/hypr/packages/filetools.sh
@@ -216,7 +208,6 @@ echo "
 #              Installed required Packages              #
 #                                                       #
 #########################################################
-
 "
 echo ""
 echo "
@@ -225,7 +216,6 @@ echo "
 #                    Install Pywal16                    #
 #                                                       #
 #########################################################
-
 "
 if [ -f /usr/bin/wal ]; then
     echo "pywal16 already installed."
@@ -239,7 +229,6 @@ echo "
 #                    Pywal16 Installed                  #
 #                                                       #
 #########################################################
-
 "
 echo ""
 echo "
@@ -248,7 +237,6 @@ echo "
 #                     Update .bashrc                    #
 #                                                       #
 #########################################################
-
 "
 echo ""
 echo "-> Install .bashrc"
@@ -261,7 +249,6 @@ echo "
 #                    .bashrc Updated                    #
 #                                                       #
 #########################################################
-
 "
 echo ""
 echo "
@@ -270,7 +257,6 @@ echo "
 #                    Install SDDM                       #
 #                                                       #
 #########################################################
-
 "
 echo "
 #########################################################
@@ -294,7 +280,6 @@ echo "
 #                    SDDM Installed                     #
 #                                                       #
 #########################################################
-
 "
 echo "
 #########################################################
@@ -302,7 +287,6 @@ echo "
 #                   Install Wallpapers                  #
 #                                                       #
 #########################################################
-
 "
 echo ""
 echo "-> Install wallapers"
@@ -337,7 +321,6 @@ echo "
 #                 Wallpapers Installed                  #
 #                                                       #
 #########################################################
-
 "
 echo ""
 echo "
@@ -346,7 +329,6 @@ echo "
 #                     Install Fonts                     #
 #                                                       #
 #########################################################
-
 "
 echo ""
 echo "-> Install fonts"
@@ -382,7 +364,6 @@ echo "
 #                    Fonts Installed                    #
 #                                                       #
 #########################################################
-
 "
 echo ""
 echo "
@@ -391,17 +372,16 @@ echo "
 #                   Initiating Pywal16                  #
 #                                                       #
 #########################################################
-
 "
 echo ""
 echo "-> Init pywal16"
-wal -i ~/dotfiles/Wallpapers/default.jpg
+wal -i ~/dotfiles/Wallpapers/default.png
 echo "pywal16 initiated."
 echo ""
 echo ""
 echo "-> Copy default wallpaper to .cache"
-cp ~/dotfiles/Wallpapers/default.jpg ~/.cache/current_wallpaper.jpg
-sudo cp ~/.cache/current_wallpaper.jpg /root/.cache/current_wallpaper.jpg
+cp ~/dotfiles/Wallpapers/default.png ~/.cache/current_wallpaper.png
+sudo cp ~/.cache/current_wallpaper.png /root/.cache/current_wallpaper.png
 echo "default wallpaper copied."
 echo ""
 echo "
@@ -410,7 +390,6 @@ echo "
 #                    Pywal16 Initiated                  #
 #                                                       #
 #########################################################
-
 "
 echo ""
 sleep 2
@@ -442,7 +421,6 @@ echo "
 #             Installing required Packages              #
 #                                                       #
 #########################################################
-
 "
 echo ""
 echo "-> Install main packages"
@@ -490,7 +468,6 @@ echo "
 #              Installed required Packages              #
 #                                                       #
 #########################################################
-
 "
 echo ""
 sleep 2
@@ -521,7 +498,6 @@ echo "
 #             Installing required Packages              #
 #                                                       #
 #########################################################
-
 "
 echo ""
 echo "-> Install main packages"
@@ -541,7 +517,6 @@ echo "
 #              Installed required Packages              #
 #                                                       #
 #########################################################
-
 "
 echo "
 #########################################################
@@ -549,7 +524,6 @@ echo "
 #            Launch Thunar to generate xfconf           #
 #                                                       #
 #########################################################
-
 "
 echo ""
 echo "-> Launching Thunar to populate xfconf"
@@ -566,7 +540,6 @@ echo "
 #                   Enabling Bluetooth                  #
 #                                                       #
 #########################################################
-
 "
 sudo systemctl start bluetooth
 sudo systemctl enable bluetooth
@@ -575,10 +548,21 @@ echo ""
 echo "
 #########################################################
 #                                                       #
+#                   Enabling Cockpit                    #
+#                                                       #
+#########################################################
+"
+sudo cp ~/dotfiles/User-Management/manage-users.desktop /usr/share/applications/
+sudo systemctl start cockpit
+sudo systemctl enable cockpit
+echo ""
+echo ""
+echo "
+#########################################################
+#                                                       #
 #           IMPORTANT Graphic Card Information          #
 #                                                       #
 #########################################################
-
 "
 echo ""
 echo ""
@@ -603,7 +587,6 @@ echo "
 #              Confirm dotfile files Install            #
 #                                                       #
 #########################################################
-
 "
 while true; do
     read -p "DO YOU WANT TO START THE INSTALLATION NOW? (Yy/Nn): " yn
@@ -624,7 +607,6 @@ echo "
 #             Check .config directory exists            #
 #                                                       #
 #########################################################
-
 "
 echo ""
 echo "-> Check if .config folder exists"
@@ -642,7 +624,6 @@ echo "
 #                 Create Symbolic Links                 #
 #                                                       #
 #########################################################
-
 "
 # name symlink source target
 echo ""
@@ -667,7 +648,6 @@ echo "
 #                  Re-Initiating Pywal16                #
 #                                                       #
 #########################################################
-
 "
 echo ""
 wal -i ~/Pictures/Wallpapers/
@@ -680,7 +660,6 @@ echo "
 #                    Pywal16 Initiated                  #
 #                                                       #
 #########################################################
-
 "
 echo "-------------------------------------"
 echo "-> Install GTK dotfiles"

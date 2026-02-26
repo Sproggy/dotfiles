@@ -117,3 +117,4 @@ cat ~/.cache/wal/sequences
 # -----------------------------------------------------
 echo ""
 fastfetch
+. "$HOME/.cargo/env"
