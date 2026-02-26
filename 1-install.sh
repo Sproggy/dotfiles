@@ -553,8 +553,8 @@ echo "
 #########################################################
 "
 sudo cp ~/dotfiles/User-Management/manage-users.desktop /usr/share/applications/
-sudo systemctl start cockpit
-sudo systemctl enable cockpit
+sudo systemctl enable --now cockpit.socket
+sudo systemctl start cockpit.socket
 echo ""
 echo ""
 echo "
