@@ -18,7 +18,7 @@
 
 cache_folder="$HOME/.cache"
 
-defaultwallpaper="$HOME/dotfiles/Wallpapers/default.jpg"
+defaultwallpaper="$HOME/dotfiles/Wallpapers/default.png"
 
 cachefile="$cache_folder/current_wallpaper"
 
