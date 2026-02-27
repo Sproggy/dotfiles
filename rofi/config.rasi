@@ -36,23 +36,24 @@ configuration {
 
 /* ---- Window ---- */
 window {
-    width:                        650px;
-    x-offset:                     10px;
-    y-offset:                     10px;
-    spacing:                      0px;
-    padding:                      0px;
-    margin:                       0px; 
-    color:                        #ffffff;
-    border:                       3px;
-    border-color:                 @color11;
-    cursor:                       "default";
-    transparency:                 "real";
-    location:                     northwest;
-    anchor:                       northwest;
-    fullscreen:                   false;
-    enabled:                      true;
-    border-radius:                10px;
-    background-color:             transparent;
+    /* properties for window widget */
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       650px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    /* properties for all widgets */
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      3px solid;
+    border-radius:               20px;
+    border-color:                @color11;
+    cursor:                      "default";
+    background-color:            @background;
 }
 
 /* ---- Mainbox ---- */
@@ -232,27 +233,29 @@ element-text {
 
 /*****----- Message -----*****/
 message {
-    background-color:            transparent;
-    border:                      0px;
-    margin:                      20px 0px 0px 0px;
-    padding:                     0px;
-    spacing:                     0px;
-    border-radius:               10px;
+    enabled:                     true;
+    margin:                      0px 100px;
+    padding:                     15px;
+    border:                      3px solid;
+    border-radius:               15px;
+    border-color:                @color11;
+    background-color:            @color4;
+    text-color:                  #ffffff;
 }
-
 textbox {
-    padding:                     15px;
-    margin:                      0px;
-    border-radius:               0px;
-    background-color:            @background;
-    text-color:                  @foreground;
+    background-color:            inherit;
+    text-color:                  #ffffff;
     vertical-align:              0.5;
-    horizontal-align:            0.0;
+    horizontal-align:            0.5;
+    placeholder-color:           transparent;
+    blink:                       true;
+    markup:                      true;
 }
-
 error-message {
-    padding:                     15px;
-    border-radius:               20px;
-    background-color:            @background;
-    text-color:                  @foreground;
+    padding:                     12px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @color11;
+    background-color:            @color4;
+    text-color:                  #ffffff;
 }
