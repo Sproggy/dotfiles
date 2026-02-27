@@ -661,7 +661,8 @@ echo "
 #                  Re-Initiating Pywal16                #
 #                                                       #
 #########################################################
-"
+
+9;9u
 echo ""
 wal -i ~/Pictures/Wallpapers/
 echo "Pywal16 templates initiated!"
@@ -705,7 +706,7 @@ echo "-------------------------------------"
 echo "-> Setup Root User Config"
 echo "-------------------------------------"
 echo ""
-sudo cp -r ~/dotfiles/root /
+sudo cp ~/dotfiles/root/ /root/
 echo ""
 sleep 2
 echo "DONE!"
