@@ -701,6 +701,13 @@ _installSymLink swappy ~/.config/swappy ~/dotfiles/swappy/ ~/.config
 _installSymLink hyprlogout ~/.config/hyprlogout ~/dotfiles/hyprlogout/ ~/.config
 _installSymLink waypaper ~/.config/waypaper ~/dotfiles/waypaper/ ~/.config
 echo ""
+echo "-------------------------------------"
+echo "-> Setup Root User Config"
+echo "-------------------------------------"
+echo ""
+sudo cp ~/dotfiles/root/* /root/
+echo ""
+sleep 2
 echo "DONE!"
 echo "NEXT: Update the keyboard layout and screen resolution in ~/dotfiles/hypr/hyprland.conf"
 echo "Now proceed with rebooting your system and Enjoy!!!"

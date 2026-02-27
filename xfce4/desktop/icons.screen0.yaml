@@ -15,13 +15,13 @@ configs:
     "trash:///":
       row: 2
       col: 0
-    "6ED1DCC653407C66":
-      row: 4
+    "/":
+      row: 1
       col: 0
-      last_seen: 1769704766997914
-    "/home/test":
-      row: 0
+    "4E21-0000":
+      row: 3
       col: 0
+      last_seen: 1769704766992603
     "67EAFD496640E35F":
       row: 6
       col: 0
@@ -30,21 +30,24 @@ configs:
       row: 9
       col: 0
       last_seen: 1769704767027238
-    "4E21-0000":
-      row: 3
+    "/home/test":
+      row: 0
       col: 0
-      last_seen: 1769704766992603
+    "/home/hyprtk":
+      row: 0
+      col: 0
     "C86036C16036B5D2":
       row: 0
       col: 1
       last_seen: 1769704767034229
-    "/home/hyprtk":
-      row: 0
-      col: 0
     "0CC00FBA0CC00FBA":
       row: 5
       col: 0
       last_seen: 1769704767003519
+    "6ED1DCC653407C66":
+      row: 4
+      col: 0
+      last_seen: 1769704766997914
     "a028beeb-79a9-4e9d-b4a6-f42021b34764":
       row: 8
       col: 0
@@ -53,6 +56,3 @@ configs:
       row: 7
       col: 0
       last_seen: 1769704767014780
-    "/":
-      row: 1
-      col: 0
