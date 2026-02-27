@@ -560,6 +560,19 @@ echo ""
 echo "
 #########################################################
 #                                                       #
+#                   Enabling Samba                      #
+#                                                       #
+#########################################################
+"
+sudo cp ~/dotfiles/smb/smb.conf /etc/samba/
+sudo systemctl enable smb nmb
+sudo systemctl start smb nmb
+sudo systemctl restart smb nmb
+echo "Please update the interfaces section of /etc/samba/smb.conf with your IP address"
+sleep 2
+echo "
+#########################################################
+#                                                       #
 #           IMPORTANT Graphic Card Information          #
 #                                                       #
 #########################################################

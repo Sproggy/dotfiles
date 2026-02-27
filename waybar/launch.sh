@@ -26,7 +26,7 @@ killall waybar
 # ----------------------------------------------------- 
 # Default theme: /THEMEFOLDER;/VARIATION
 # ----------------------------------------------------- 
-themestyle="/Top;/Top/light"
+themestyle="/Bottom-Blur;/Bottom-Blur/colored"
 
 # ----------------------------------------------------- 
 # Get current theme information from .cache/.themestyle.sh
