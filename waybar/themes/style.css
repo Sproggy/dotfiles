@@ -166,7 +166,7 @@ window#waybar.empty #window {
 #custom-brave, 
 #custom-browser, 
 #custom-keybindings, 
-#custom-outlook, 
+#custom-outlook,
 #custom-filemanager, 
 #custom-teams, 
 #custom-chatgpt, 
@@ -177,7 +177,7 @@ window#waybar.empty #window {
 #custom-wallpaperwlr, 
 #custom-waybarthemes,
 #custom-wf-recorder,
-#custom-keybindings,
+#custom-kbstate,
 #custom-terminal  {
     margin-right: 10px;
     font-size: 18px;
@@ -384,6 +384,7 @@ window#waybar.empty #window {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
 }
+
 
 /* -----------------------------------------------------
  * Other

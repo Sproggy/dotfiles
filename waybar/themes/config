@@ -53,6 +53,7 @@
 
     // Modules Right    
     "modules-right": [
+        "custom/kbstate",
         "custom/updates",
         "battery", 
         "group/audio",
