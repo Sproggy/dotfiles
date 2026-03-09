@@ -164,10 +164,9 @@ window#waybar.empty #window {
 #custom-windowsvm, 
 #custom-cliphist, 
 #custom-wallpaper, 
-#custom-wallpaperwlr, 
 #custom-waybarthemes,
 #custom-wf-recorder,
-#custom-kbstate
+#custom-kbstate,
 #custom-terminal  {
     margin-right: 10px;
     font-size: 18px;
