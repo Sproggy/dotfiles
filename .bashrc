@@ -35,7 +35,7 @@ alias dot="cd ~/dotfiles"
 # Window Managers
 # -----------------------------------------------------
 
-alias Qtile='startx'
+alias XFCE='startx'
 
 # -----------------------------------------------------
 # GIT
@@ -73,8 +73,6 @@ alias vmstop='virsh --connect qemu:///system destroy win11'
 # EDIT CONFIG FILES
 # -----------------------------------------------------
 
-alias confq='nvim ~/dotfiles/qtile/config.py'
-alias confp='nvim ~/dotfiles/picom/picom.conf'
 alias confb='nvim ~/dotfiles/.bashrc'
 
 # -----------------------------------------------------
@@ -90,12 +88,12 @@ alias notes='vim ~/notes.txt'
 alias update-grub='~/dotfiles/scripts/update-grub.sh'
 alias setkb='setxkbmap gb;echo "Keyboard set back to gb."'
 alias update='sudo pacman -Syu --noconfirm && yay -Syu --noconfirm'
+alias scc='sudo pacman -Scc' #clear pacman cache
 
 # -----------------------------------------------------
 # SCREEN RESOLUTINS
 # -----------------------------------------------------
 
-# Qtile
 alias res1='xrandr --output DisplayPort-0 --mode 2560x1440 --rate 120'
 alias res2='xrandr --output DisplayPort-0 --mode 1920x1080 --rate 120'
 alias res3='xrandr --output DisplayPort-0 --mode 3840x1080 --rate 120'
@@ -113,7 +111,7 @@ eval "$(starship init bash)"
 cat ~/.cache/wal/sequences
 
 # -----------------------------------------------------
-# PFETCH
+# FASTFETCH
 # -----------------------------------------------------
 echo ""
 fastfetch
