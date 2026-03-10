@@ -35,10 +35,12 @@
     "modules-left": [
         "custom/appmenu",
         "custom/terminal",
+        "custom/filemanager",
+        "custom/browser",
         "custom/wallpaper",
         "custom/waybarthemes",
         "custom/cliphist",
-        "group/quicklinks",
+        //"group/quicklinks",
         "custom/wf-recorder",
         "custom/keybindings",
         "wlr/taskbar",

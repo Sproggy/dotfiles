@@ -191,7 +191,6 @@
         "on-click": "alacritty -e btop"
     }, 
     
-
     // Network
     "network": {
         "format": "{ifname}",
@@ -269,10 +268,18 @@
         "on-click": "blueman-manager"
     },
 
+    //keybindings
     "custom/keybindings": {
     "format": "",
     "tooltip": false,
     "on-click": "~/dotfiles/scripts/keyhint.sh",
+    },
+    
+    // browser
+    "custom/browser": {
+        "format": "",
+        "on-click": "exec brave", //choose a browser
+        "tooltip": false,
     },
 
     // Other

@@ -21,9 +21,9 @@ emit_json() {
   local state="$1"
   if [[ "$state" == "on" ]]; then
     # Nerd Font icon when ON; empty when OFF (so it disappears)
-    printf '{"text":"󰪛","alt":"on","tooltip":"Caps Lock is ON","class":["caps","on"]}\n'
+    printf '{"text":"","alt":"on","tooltip":"Caps Lock is ON","class":["caps","on"]}\n'
   else
-    printf '{"text":"","alt":"off","tooltip":"Caps Lock is OFF","class":["caps","off"]}\n'
+    printf '{"text":"","alt":"off","tooltip":"Caps Lock is OFF","class":["caps","off"]}\n'
   fi
 }
 
