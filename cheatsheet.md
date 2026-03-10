@@ -18,7 +18,7 @@ and run sudo mkinitcpio -P (Please ensure you have your kernels headers installe
   Super          Return   *term* (`alacritty`)
   Super          q        *quit* (kill focused window)
   Super          d        *show app menu* (`rofi menu`)
-  Super   Ctrl   q        *show wlogout* (lock/suspend/logout/reboot/shutdown)
+  Super   Ctrl   q        *show hyprlogout* (lock/suspend/logout/reboot/shutdown)
   Super   Shift  b        *reload waybar config files*
 
 # screenshot
@@ -37,7 +37,6 @@ screen recordings are saved by default to your ~/videos/Recordings directory
   Super   F               *file manager* (`thunar`)
   Super   B               *browser* (`brave`)
   Super   Ctrl B          *browser* (`chromium`)
-  Super
 
 # container layout
  
