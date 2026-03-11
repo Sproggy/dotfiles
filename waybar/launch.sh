@@ -26,7 +26,7 @@ killall waybar
 # ----------------------------------------------------- 
 # Default theme: /THEMEFOLDER;/VARIATION
 # ----------------------------------------------------- 
-themestyle="/Bottom-Blur;/Bottom-Blur/colored"
+themestyle="/Top-Blur;/Top-Blur/colored"
 
 # ----------------------------------------------------- 
 # Get current theme information from .cache/.themestyle.sh
@@ -48,9 +48,9 @@ fi
 # ----------------------------------------------------- 
 # Loading the configuration and style file based on the username
 # ----------------------------------------------------- 
-if [[ $USER = "raabe" ]]
+if [[ $USER = "hyprtk" ]]
 then
     waybar -c ~/dotfiles/waybar/themes${arrThemes[0]}/myconfig -s ~/dotfiles/waybar/themes${arrThemes[1]}/style.css &
 else
     waybar -c ~/dotfiles/waybar/themes${arrThemes[0]}/config -s ~/dotfiles/waybar/themes${arrThemes[1]}/style.css &
-fi 
+fi
