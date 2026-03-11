@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# ~/.local/bin/capslock-waybar.sh
+#
 # Tiny, low-CPU Caps Lock indicator for Waybar.
 # Prints a JSON line only when the state changes.
 
@@ -22,8 +22,10 @@ emit_json() {
   if [[ "$state" == "on" ]]; then
     # Nerd Font icon when ON; empty when OFF (so it disappears)
     printf '{"text":"","alt":"on","tooltip":"Caps Lock is ON","class":["caps","on"]}\n'
+    notify-send "Capslock ON"
   else
     printf '{"text":"","alt":"off","tooltip":"Caps Lock is OFF","class":["caps","off"]}\n'
+    notify-send "Capslock OFF"
   fi
 }
 

@@ -528,7 +528,7 @@ echo "
 echo ""
 echo "-> Launching Thunar to populate xfconf"
 thunar &
-sleep 2
+sleep 3
 echo ""
 echo ""
 echo "-> Closing Thunar"
@@ -569,7 +569,7 @@ sudo systemctl enable smb nmb
 sudo systemctl start smb nmb
 sudo systemctl restart smb nmb
 echo "Please update the interfaces section of /etc/samba/smb.conf with your IP address"
-sleep 2
+sleep 3
 echo "
 #########################################################
 #                                                       #
@@ -707,7 +707,7 @@ echo "-------------------------------------"
 echo ""
 sudo cp -r ~/dotfiles/root /
 echo ""
-sleep 2
+sleep 3
 echo "DONE!"
 echo "NEXT: Update the keyboard layout and screen resolution in ~/dotfiles/hypr/hyprland.conf"
 echo "Now proceed with rebooting your system and Enjoy!!!"

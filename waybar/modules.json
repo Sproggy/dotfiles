@@ -59,14 +59,17 @@
         "on-click": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh",
         "on-click-right": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh d",
         "on-click-middle": "sleep 0.1 && ~/dotfiles/scripts/cliphist.sh w",
-        "tooltip": false
+        "tooltip": true,
+        "tooltip-format": "Clipboard History"
     },
     
     // Terminal
     "custom/terminal": {
     "format": "",
-    "on-click": "alacritty"
+    "on-click": "alacritty",
     //"format-icons": [""]
+    "tooltip": true,
+    "tooltip-format": "Terminal"
     },
 
     // Screen Recorder
@@ -98,26 +101,29 @@
         "format": "",
         "on-click": "~/dotfiles/scripts/wallpaper-swww.sh",
         "on-click-right": "~/dotfiles/scripts/updatewal-swww.sh",
-        "tooltip": false
+        "tooltip": true,
+        "tooltip-format": "Wallpaper Switcher"
     },
 
     // Waybar Theme
     "custom/waybarthemes": {
-        "format": "",
+        "format": "",
         "on-click": "~/dotfiles/waybar/themeswitcher.sh",
-        "tooltip": false
+        "tooltip": true,
+        "tooltip-format": "Waybar Theme Switcher"
     },
 
     // Filemanager Launcher
     "custom/filemanager": {
-        "format": "",
+        "format": "🗁",
         "on-click": "~/dotfiles/scripts/filemanager.sh",
-        "tooltip": false
+        "tooltip": true,
+        "tooltip-format": "File Manager"
     },
 
     // ChatGPT Launcher
     "custom/chatgpt": {
-        "format": "",
+        "format": "",
         "on-click": "brave --app=https://chat.openai.com",
         "tooltip": false
     },
@@ -140,7 +146,8 @@
     "custom/appmenu": {
         "format": "Apps",
         "on-click": "~/dotfiles/scripts/applauncher.sh",
-        "tooltip": false 
+        "tooltip": true,
+        "tooltip-format": "Installed ApplicationsV"
     },
 
     // Power Menu
@@ -270,16 +277,18 @@
 
     //keybindings
     "custom/keybindings": {
-    "format": "",
-    "tooltip": false,
+    "format": "",
     "on-click": "~/dotfiles/scripts/keyhint.sh",
+    "tooltip": true,
+    "tooltip-format": "Keybinding Help"
     },
     
     // browser
     "custom/browser": {
         "format": "",
         "on-click": "exec brave", //choose a browser
-        "tooltip": false,
+        "tooltip": true,
+        "tooltip-format": "Web Browser"
     },
 
     // Other
