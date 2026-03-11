@@ -1,0 +1,21 @@
+set $wallpaper /home/hyprtk/Pictures/Wallpapers/9.png
+
+set $background #0c151b
+set $foreground #c2c4c6
+
+set $color0 #0c151b
+set $color1 #5A768A
+set $color2 #2593A8
+set $color3 #718D9C
+set $color4 #9EA0A3
+set $color5 #97A6AB
+set $color6 #D5AB9D
+set $color7 #c2c4c6
+set $color8 #5b666f
+set $color9 #5A768A
+set $color10 #2593A8
+set $color11 #718D9C
+set $color12 #9EA0A3
+set $color13 #97A6AB
+set $color14 #D5AB9D
+set $color15 #c2c4c6
