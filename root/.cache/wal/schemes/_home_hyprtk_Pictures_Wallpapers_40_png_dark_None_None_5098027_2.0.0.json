@@ -1,0 +1,28 @@
+{
+    "checksum": "d33705954f77974d9ee3e9ca8ed5fcae",
+    "wallpaper": "/home/hyprtk/Pictures/Wallpapers/40.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0c111b",
+        "foreground": "#c2c3c6",
+        "cursor": "#c2c3c6"
+    },
+    "colors": {
+        "color0": "#0c111b",
+        "color1": "#6B5E6A",
+        "color2": "#886877",
+        "color3": "#0F6A95",
+        "color4": "#71748A",
+        "color5": "#92798B",
+        "color6": "#11AAD6",
+        "color7": "#c2c3c6",
+        "color8": "#5b626f",
+        "color9": "#6B5E6A",
+        "color10": "#886877",
+        "color11": "#0F6A95",
+        "color12": "#71748A",
+        "color13": "#92798B",
+        "color14": "#11AAD6",
+        "color15": "#c2c3c6"
+    }
+}
