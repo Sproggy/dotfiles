@@ -1,4 +1,4 @@
-; mousepad GtkAccelMap rc-file         -*- scheme -*-
+; org.xfce.mousepad GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
 ; (gtk_accel_path "<Actions>/app.mousepad-plugin-shortcuts" "")
@@ -10,7 +10,7 @@
 ; (gtk_accel_path "<Actions>/app.preferences.window.client-side-decorations" "")
 ; (gtk_accel_path "<Actions>/win.search.find-and-replace" "<Primary>r")
 ; (gtk_accel_path "<Actions>/win.file.reload(false)" "F5")
-; (gtk_accel_path "<Actions>/win.edit.duplicate-line-selection" "")
+; (gtk_accel_path "<Actions>/win.document.viewer-mode" "")
 ; (gtk_accel_path "<Actions>/win.edit.move.line-up" "<Alt>Up")
 ; (gtk_accel_path "<Actions>/win.edit.convert.transpose" "<Primary>t")
 ; (gtk_accel_path "<Actions>/win.document.go-to-tab(4)" "<Alt>5")
@@ -45,6 +45,7 @@
 ; (gtk_accel_path "<Actions>/app.state.search.highlight-all" "")
 ; (gtk_accel_path "<Actions>/win.edit.paste" "<Primary>v")
 ; (gtk_accel_path "<Actions>/app.preferences.view.show-whitespace.leading" "")
+; (gtk_accel_path "<Actions>/win.edit.duplicate-line-selection" "")
 ; (gtk_accel_path "<Actions>/win.edit.copy" "<Primary>c")
 ; (gtk_accel_path "<Actions>/win.document.go-to-tab(6)" "<Alt>7")
 ; (gtk_accel_path "<Actions>/win.file.close-window" "<Primary><Shift>w")
@@ -66,7 +67,7 @@
 ; (gtk_accel_path "<Actions>/win.file.reload()" "")
 ; (gtk_accel_path "<Actions>/win.edit.delete-line" "<Primary><Shift>Delete")
 ; (gtk_accel_path "<Actions>/win.file.open-recent.clear-history" "")
-; (gtk_accel_path "<Actions>/win.document.viewer-mode" "")
+; (gtk_accel_path "<Actions>/app.preferences.view.auto-indent" "")
 ; (gtk_accel_path "<Actions>/app.preferences.view.show-whitespace.trailing" "")
 ; (gtk_accel_path "<Actions>/win.view.select-font" "")
 ; (gtk_accel_path "<Actions>/win.edit.move.line-down" "<Alt>Down")
@@ -75,7 +76,7 @@
 ; (gtk_accel_path "<Actions>/win.textview.menubar" "")
 ; (gtk_accel_path "<Actions>/win.search.go-to" "<Primary>l")
 ; (gtk_accel_path "<Actions>/win.document.line-ending()" "")
-; (gtk_accel_path "<Actions>/app.preferences.view.auto-indent" "")
+; (gtk_accel_path "<Actions>/app.preferences.window.app-name-in-title" "")
 ; (gtk_accel_path "<Actions>/app.preferences.view.show-line-numbers" "")
 ; (gtk_accel_path "<Actions>/win.edit.paste-special.paste-as-column" "")
 ; (gtk_accel_path "<Actions>/app.preferences.view.show-right-margin" "")
