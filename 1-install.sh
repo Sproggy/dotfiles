@@ -17,6 +17,7 @@ by Sproggy (Corrie Tilcock) (2026)
 "
 sleep 2
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -26,6 +27,8 @@ echo "
 "
 sleep 2
 sudo pacman -Rns plasma kde-applications --noconfirm
+echo""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -35,6 +38,7 @@ echo "
 "
 sleep 2
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -45,6 +49,7 @@ echo "
 echo ""
 source $(dirname "$0")/scripts/library.sh
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -56,6 +61,7 @@ echo ""
 sleep 2
 echo ""
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -78,6 +84,7 @@ fi
 echo ""
 echo ""
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -104,6 +111,7 @@ echo ""
 echo ""
 sleep 2
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -139,6 +147,7 @@ case $GRAPHICSCARD in
   sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img;;
 esac
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -210,6 +219,7 @@ echo "
 #########################################################
 "
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -231,6 +241,7 @@ echo "
 #########################################################
 "
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -251,6 +262,7 @@ echo "
 #########################################################
 "
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -281,6 +293,8 @@ echo "
 #                                                       #
 #########################################################
 "
+echo""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -323,6 +337,7 @@ echo "
 #########################################################
 "
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -366,6 +381,7 @@ echo "
 #########################################################
 "
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -393,6 +409,7 @@ echo "
 "
 echo ""
 sleep 2
+clear
 echo ""
 figlet -f 3d "Hyprland"
 echo ""
@@ -415,6 +432,7 @@ while true; do
 done
 echo ""
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -472,6 +490,7 @@ echo "
 echo ""
 sleep 2
 echo ""
+clear
 figlet -f 3d "Xfce"
 echo ""
 echo " by Sproggy (Corrie Tilcock) (2026) "
@@ -518,6 +537,8 @@ echo "
 #                                                       #
 #########################################################
 "
+echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -534,6 +555,7 @@ echo ""
 echo "-> Closing Thunar"
 killall thunar
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -545,6 +567,7 @@ sudo systemctl start bluetooth
 sudo systemctl enable bluetooth
 echo ""
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -557,6 +580,7 @@ sudo systemctl enable --now cockpit.socket
 sudo systemctl start cockpit.socket
 echo ""
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -570,6 +594,7 @@ sudo systemctl start smb nmb
 sudo systemctl restart smb nmb
 echo "Please update the interfaces section of /etc/samba/smb.conf with your IP address"
 sleep 3
+clear
 echo "
 #########################################################
 #                                                       #
@@ -583,6 +608,7 @@ echo "If you installed an NVIDIA Graphics Card please follow the instructions in
 echo "nvidia.conf file located ~/dotfiles/hypr/conf/nvidia.conf"
 echo ""
 sleep 3
+clear
 figlet -f 3d "dotfiles"
 echo ""
 echo " by Sproggy (Corrie Tilcock) (2026) "
@@ -593,6 +619,7 @@ echo "Symbolic links will then be created from ~/dotfiles into your ~/.config/ d
 echo "But you can decide to keep your personal versions by answering with No (Nn)."
 echo ""
 sleep 3
+clear
 echo ""
 echo "
 #########################################################
@@ -614,6 +641,7 @@ while true; do
     esac
 done
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -631,6 +659,7 @@ else
     echo ".config folder created."
 fi
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -655,6 +684,7 @@ _installSymLink rofi ~/.config/rofi ~/dotfiles/rofi/ ~/.config
 _installSymLink dunst ~/.config/dunst ~/dotfiles/dunst/ ~/.config
 _installSymLink wal ~/.config/wal ~/dotfiles/wal/ ~/.config
 echo ""
+clear
 echo "
 #########################################################
 #                                                       #
@@ -674,6 +704,8 @@ echo "
 #                                                       #
 #########################################################
 "
+echo ""
+clear
 echo "-------------------------------------"
 echo "-> Install GTK dotfiles"
 echo "-------------------------------------"
@@ -682,6 +714,7 @@ _installSymLink gtk-3.0 ~/.config/gtk-3.0 ~/dotfiles/gtk/gtk-3.0/ ~/.config/
 _installSymLink gtk-4.0 ~/.config/gtk-4.0 ~/dotfiles/gtk/gtk-4.0/ ~/.config/
 _installSymLink themes ~/.local/share/themes ~/dotfiles/themes ~/.local/share/
 echo ""
+clear
 echo "-------------------------------------"
 echo "-> Install Xfce dotfiles"
 echo "-------------------------------------"
@@ -690,6 +723,7 @@ _installSymLink xfce4 ~/.config/xfce4 ~/dotfiles/xfce4 ~/.config/
 _installSymLink Thunar ~/.config/Thunar ~/dotfiles/Thunar ~/.config/
 _installSymLink Mousepad ~/.config/Mousepad ~/dotfiles/Mousepad ~/.config/
 echo ""
+clear
 echo "-------------------------------------"
 echo "-> Install Hyprland dotfiles"
 echo "-------------------------------------"
@@ -702,6 +736,7 @@ _installSymLink swappy ~/.config/swappy ~/dotfiles/swappy/ ~/.config
 _installSymLink hyprlogout ~/.config/hyprlogout ~/dotfiles/hyprlogout/ ~/.config
 _installSymLink waypaper ~/.config/waypaper ~/dotfiles/waypaper/ ~/.config
 echo ""
+clear
 echo "-------------------------------------"
 echo "-> Setup Root User Config"
 echo "-------------------------------------"
@@ -709,6 +744,7 @@ echo ""
 sudo cp -r ~/dotfiles/root /
 echo ""
 sleep 3
+clear
 echo "DONE!"
 echo "NEXT: Update the keyboard layout and screen resolution in ~/dotfiles/hypr/hyprland.conf"
 echo "Now proceed with rebooting your system and Enjoy!!!"
