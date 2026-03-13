@@ -131,7 +131,7 @@ case $GRAPHICSCARD in
 1)
   sudo pacman -S --noconfirm xf86-video-intel mesa lib32-mesa lib32-vulkan-intel vulkan-intel;;
 2)
-  sudo pacman -S --noconfirm xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver #mesa-vdpau lib32-mesa-vdpau
+  sudo pacman -S --noconfirm xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver vdpauinfo corectl #mesa-vdpau lib32-mesa-vdpau
   sudo sed -i 's/MODULES=()/MODULES=(amdgpu)/' /etc/mkinitcpio.conf
   sudo mkinitcpio --config /etc/mkinitcpio.conf --generate /boot/initramfs-custom.img;;
 3)
@@ -209,6 +209,10 @@ echo ""
 sleep 2
 echo ""
 sh ~/dotfiles/hypr/packages/system.sh
+echo ""
+sleep 2
+echo ""
+sh ~/dotfiles/hypr/packages/hyprviz.sh
 echo ""
 sleep 2
 echo "
