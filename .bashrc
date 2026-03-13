@@ -18,7 +18,7 @@ PS1='[\u@\h \W]\$ '
 # -----------------------------------------------------
 
 alias c='clear'
-alias nf='neofetch'
+alias ff='fastfetch'
 alias pf='pfetch'
 alias ls='exa -al'
 alias shutdown='systemctl poweroff'
