@@ -74,7 +74,7 @@ if sudo pacman -Qs yay > /dev/null ; then
     echo "yay is installed. You can proceed with the installation"
 else
     echo "yay is not installed and will be installed now!"
-    _installPackagesPacman "base-devel"
+    _installPackagesPacman "base-devel linux-headers"
     git clone https://aur.archlinux.org/yay-git.git ~/Downloads/yay-git
     cd ~/Downloads/yay-git
     makepkg -si
@@ -213,6 +213,10 @@ echo ""
 sleep 2
 echo ""
 sh ~/dotfiles/hypr/packages/hyprviz.sh
+echo ""
+sleep 2
+echo ""
+sh ~/dotfiles/hypr/packages/sddmgrub.sh
 echo ""
 sleep 2
 echo "
@@ -470,10 +474,6 @@ packagesYay=(
     "gvfs-mtp"
     "gvfs-nfs"
     "gvfs-smb"
-    "thunar-archive-plugin"
-    "thunar-media-tags-plugin"
-    "thunar-vcs-plugin"
-    "thunar-volman"
     "p7zip-full-bin"
     "unzip"
     "unrar"
@@ -749,6 +749,9 @@ sudo cp -r ~/dotfiles/root /
 echo ""
 sleep 3
 clear
+echo "-------------------------------------"
+echo "-> Congratulations Setup Complete"
+echo "-------------------------------------"
 echo "DONE!"
 echo "NEXT: Update the keyboard layout and screen resolution in ~/dotfiles/hypr/hyprland.conf"
 echo "Now proceed with rebooting your system and Enjoy!!!"
