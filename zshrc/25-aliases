@@ -21,7 +21,7 @@ alias wifi='nmtui'
 alias arch-cleanup='~/.config/hypr/scripts/cleanup.sh'
 alias apps='~/dotfiles/scripts/applauncher.sh'
 alias update='~/dotfiles/scripts/installupdates.sh'
-alias lock='hyprlock'
+alias lock='swaylock'
 alias clock='tty-clock'
 
 

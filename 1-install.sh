@@ -84,8 +84,6 @@ else
     clear
 fi
 echo ""
-echo ""
-echo ""
 clear
 echo "
 #########################################################
@@ -550,6 +548,7 @@ mkdir ~/.local/bin
 echo ""
 clear
 echo ""
+echo ""
 echo "-------------------------------------"
 echo "-> Install ZSH"
 echo "-------------------------------------"
@@ -594,6 +593,8 @@ sudo ln -s /usr/bin/awww /usr/bin/swww
 sudo ln -s /usr/bin/awww-daemon /usr/bin/swww-daemon
 echo ""
 clear
+echo ""
+echo ""
 echo "-------------------------------------"
 echo "-> Setup Root User Config"
 echo "-------------------------------------"
@@ -607,6 +608,8 @@ echo " Setup Password Feedback when entering SUDO password "
 echo ""
 sleep 3
 clear
+echo ""
+echo ""
 echo "-------------------------------------"
 echo "-> Congratulations Setup Complete"
 echo "-------------------------------------"

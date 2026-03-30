@@ -1,5 +1,5 @@
 #!/bin/bash
-figlet -fs 3d "Matuwall"
+figlet -f 3d "Matuwall"
 echo ""
 sleep 2
 echo " Matuwall Installer "

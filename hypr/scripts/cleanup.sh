@@ -21,14 +21,7 @@
 # by Corrie Tilcock (Sproggy) (2026)
 # ----------------------------------------------------- 
 
-echo " WARNING!! This will clean out you YAY and PACMAN cache/uneeded installs/ Orphans"
 yay -Scc
 su -c 'pacman -Qtdq | pacman -Rns -'
 su -c 'pacman -Qqd | pacman -Rsu -'
-
-# Remove gamemode flag
-if [ -f ~/.cache/gamemode ]; then
-    rm ~/.cache/gamemode
-    echo ":: ~/.cache/gamemode removed"
-fi
 
