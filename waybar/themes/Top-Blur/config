@@ -1,0 +1,122 @@
+//  ██       ██                    ██
+// ░██      ░██            ██   ██░██
+// ░██   █  ░██  ██████   ░░██ ██ ░██       ██████   ██████
+// ░██  ███ ░██ ░░░░░░██   ░░███  ░██████  ░░░░░░██ ░░██░░█
+// ░██ ██░██░██  ███████    ░██   ░██░░░██  ███████  ░██ ░
+// ░████ ░░████ ██░░░░██    ██    ░██  ░██ ██░░░░██  ░██
+// ░██░   ░░░██░░████████  ██     ░██████ ░░████████░███
+// ░░       ░░  ░░░░░░░░  ░░      ░░░░░    ░░░░░░░░ ░░░
+//
+// by Sproggy (Corrie Tilcock) (2026)
+// ----------------------------------------------------- 
+//
+{
+    // General Settings
+
+    // Position TOP
+    "layer": "top",
+    "margin-top": 5,
+    "margin-bottom": 0,
+
+    // Position BOTTOM
+    // "position": "bottom",
+    // "margin-top": 0,
+    // "margin-bottom": 14,
+    
+    "layer": "top",
+    "height": 16,
+    "margin-left": 0,
+    "margin-right": 0,    
+    "spacing": 0,
+
+    // Load Modules
+    "include": ["~/dotfiles/waybar/modules.json"],
+
+    // Modules Left
+    "modules-left": [
+        "custom/appmenu",
+        "custom/terminal",
+        "custom/filemanager",
+        "custom/browser",
+        "group/themes",
+        "custom/cliphist",
+        //"group/quicklinks",
+        "custom/wf-recorder",
+        "custom/keybindings",
+        "custom/kbstate",
+        "wlr/taskbar",
+        "hyprland/window"
+    ],
+
+    // Modules Center
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+
+    // Modules Right    
+    "modules-right": [
+        "custom/updates",
+        "battery", 
+        "group/audio",
+        "group/hardware",
+        "network",
+        "tray",
+        "clock",
+        "custom/exit"
+    ],
+
+    // Group Quicklinks
+    //"group/quicklinks": {
+    //    "orientation": "horizontal",
+    //    "modules": [
+    //        "custom/filemanager",
+    //        "custom/brave",     
+    //     ]
+    //},
+
+    // Group Themes
+    "group/themes": {
+        "orientation": "inherit",
+        "drawer": {
+        "transition-duration": 500,
+        "children-class": "not-themes",
+        "transition-left-to-right": true,
+    },
+        "modules": [
+            "custom/wallpaper",
+            "custom/waybarthemes",
+            "custom/iconthemes",
+            "custom/screenshot"
+        ]
+    },
+
+    // Group Hardware
+    "group/hardware": {
+        "orientation": "inherit",
+        "drawer": {
+        "transition-duration": 500,
+        "children-class": "not-hardware",
+        "transition-left-to-right": true,
+    },
+        "modules": [
+            "disk",
+            "cpu",
+            "memory"
+        ]
+    },
+
+    // Group Audio
+    "group/audio": {
+        "orientation": "inherit",
+        "drawer": {
+        "transition-duration": 500,
+        "children-class": "not-audio",
+        "transition-left-to-right": false,
+    },
+        "modules": [
+            "pulseaudio",
+            "pulseaudio#microphone"
+            //"bluetooth"
+        ]
+    }
+}

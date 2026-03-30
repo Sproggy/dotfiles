@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/hyprtk/Pictures/Wallpapers/9.png"
+let background = "#0c151b"
+let foreground = "#c2c4c6"
+let cursor     = "#c2c4c6"
+
+" Colors
+let color0  = "#0c151b"
+let color1  = "#5A768A"
+let color2  = "#2593A8"
+let color3  = "#718D9C"
+let color4  = "#9EA0A3"
+let color5  = "#97A6AB"
+let color6  = "#D5AB9D"
+let color7  = "#c2c4c6"
+let color8  = "#5b666f"
+let color9  = "#5A768A"
+let color10 = "#2593A8"
+let color11 = "#718D9C"
+let color12 = "#9EA0A3"
+let color13 = "#97A6AB"
+let color14 = "#D5AB9D"
+let color15 = "#c2c4c6"

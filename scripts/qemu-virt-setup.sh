@@ -1,0 +1,70 @@
+#!/bin/bash
+#
+#    ███████                                      ██ ██      ██ ██          ██
+#   ██░░░░░██                                    ██ ░██     ░██░░          ░██
+#  ██     ░░██   █████  ██████████  ██   ██     ██  ░██     ░██ ██ ██████ ██████
+# ░██      ░██  ██░░░██░░██░░██░░██░██  ░██    ██   ░░██    ██ ░██░░██░░█░░░██░
+# ░██    ██░██ ░███████ ░██ ░██ ░██░██  ░██   ██     ░░██  ██  ░██ ░██ ░   ░██
+# ░░██  ░░ ██  ░██░░░░  ░██ ░██ ░██░██  ░██  ██       ░░████   ░██ ░██     ░██
+#  ░░███████ ██░░██████ ███ ░██ ░██░░██████ ██         ░░██    ░██░███     ░░██
+#   ░░░░░░░ ░░  ░░░░░░ ░░░  ░░  ░░  ░░░░░░ ░░           ░░     ░░ ░░░       ░░
+#
+#   ████████           ██
+#  ██░░░░░░           ░██           ██████
+# ░██         █████  ██████ ██   ██░██░░░██
+# ░█████████ ██░░░██░░░██░ ░██  ░██░██  ░██
+# ░░░░░░░░██░███████  ░██  ░██  ░██░██████
+#        ░██░██░░░░   ░██  ░██  ░██░██░░░
+#  ████████ ░░██████  ░░██ ░░██████░██
+# ░░░░░░░░   ░░░░░░    ░░   ░░░░░░ ░░
+#  
+# by Corrie Tilcock (2026)
+# ----------------------------------------------------- 
+
+echo ""
+echo "-------------------------------------"
+echo "-> Check for Virtualisation intel/amd"
+echo "-------------------------------------"
+echo ""
+lscpu | grep Virtualization
+echo ""
+sleep 3
+echo "-------------------------------------"
+echo "-> Install Qemu/Virt Manager "
+echo "-------------------------------------"
+echo ""
+sudo pacman -S qemu-full dnsmasq vde2 openbsd-netcat libguestfs --noconfirm
+yay -S bridge-utils virt-manager virt-viewer --noconfirm
+echo ""
+sleep 3
+echo "-------------------------------------"
+echo "-> Enable Services "
+echo "-------------------------------------"
+echo ""
+sudo systemctl enable --now libvirtd.service
+sudo systemctl status libvirtd.service
+echo ""
+sleep 3
+echo "-------------------------------------"
+echo "-> Add User to Virt Group "
+echo "-------------------------------------"
+echo ""
+sudo usermod -aG libvirt,kvm $(whoami)
+echo ""
+sleep 3
+echo "-------------------------------------"
+echo "-> Enable Services "
+echo "-------------------------------------"
+echo ""
+echo -e "kvm\nkvm_intel" | sudo tee /etc/modules-load.d/kvm.conf  # Intel
+echo -e "kvm\nkvm_amd" | sudo tee /etc/modules-load.d/kvm.conf    # AMD   
+echo ""
+sleep 3
+echo "-------------------------------------"
+echo "-> Enable Services "
+echo "-------------------------------------"
+echo ""
+sudo virsh net-autostart default
+sudo virsh net-start default   
+echo ""
+sleep 3

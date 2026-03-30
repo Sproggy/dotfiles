@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///root/.config/Thunar/accels.scm" added="2026-02-26T16:17:24.367113Z" modified="2026-02-27T10:57:59.238417Z" visited="2026-02-26T16:17:24.367113Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-scheme"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2026-02-26T16:17:24.367114Z" count="1"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-02-27T10:57:59.238416Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///root/.config/sublime-text/Packages/SelfPatcher/.python-version" added="2026-02-26T16:17:45.596287Z" modified="2026-02-27T10:57:56.913541Z" visited="2026-02-26T16:17:45.596288Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2026-02-26T16:17:45.596288Z" count="1"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-02-27T10:57:56.913540Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///root/.config/sublime-text/Packages/SelfPatcher/boot.py" added="2026-02-26T16:17:57.284307Z" modified="2026-02-27T10:57:55.309589Z" visited="2026-02-26T16:17:57.284308Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2026-02-26T16:17:57.284308Z" count="1"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-02-27T10:57:55.309588Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///etc/samba/smb.conf" added="2026-02-27T10:24:48.350020Z" modified="2026-02-27T10:24:48.350022Z" visited="2026-02-27T10:24:48.350020Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2026-02-27T10:24:48.350021Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///root/.bashrc" added="2026-02-27T10:57:14.999568Z" modified="2026-02-27T10:57:51.411997Z" visited="2026-02-27T10:57:14.999569Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2026-02-27T10:57:14.999569Z" count="1"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-02-27T10:57:51.411996Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/applications/nwg-look.desktop" added="2026-02-27T10:59:53.717949Z" modified="2026-02-27T11:35:08.664882Z" visited="2026-02-27T10:59:53.717949Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-desktop"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2026-02-27T11:35:08.664880Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///root/.gtkrc-2.0" added="2026-02-27T11:01:05.675985Z" modified="2026-03-20T13:24:57.423311Z" visited="2026-02-27T11:01:05.675985Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2026-03-20T13:23:48.729244Z" count="2"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-03-20T13:24:57.423310Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///root/.config/gtk-3.0/settings.ini" added="2026-02-27T11:02:30.068619Z" modified="2026-03-20T13:24:56.873389Z" visited="2026-02-27T11:02:30.068619Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2026-03-20T13:24:21.722360Z" count="2"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-03-20T13:24:56.873389Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///root/.config/gtk-4.0/settings.ini" added="2026-02-27T11:03:05.757538Z" modified="2026-03-20T13:24:56.367673Z" visited="2026-02-27T11:03:05.757538Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2026-03-20T13:24:41.023072Z" count="2"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-03-20T13:24:56.367672Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///root/.local/share/nwg-look/gsettings" added="2026-02-27T11:28:23.656645Z" modified="2026-03-20T13:25:03.204311Z" visited="2026-02-27T11:28:23.656645Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2026-02-27T11:28:23.656646Z" count="1"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-03-20T13:25:03.204310Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///root/.config/mimeapps.list" added="2026-02-27T11:29:16.008878Z" modified="2026-03-20T13:25:01.755321Z" visited="2026-02-27T11:29:16.008878Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2026-02-27T11:29:16.008879Z" count="1"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-03-20T13:25:01.755320Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///root/.config/xsettingsd/xsettingsd.conf" added="2026-02-27T11:29:26.321008Z" modified="2026-03-20T13:25:00.051258Z" visited="2026-02-27T11:29:26.321008Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2026-02-27T11:29:26.321009Z" count="1"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-03-20T13:25:00.051258Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/applications/xfce-settings-manager.desktop" added="2026-02-27T11:34:53.051178Z" modified="2026-02-27T11:34:57.124147Z" visited="2026-02-27T11:34:53.051179Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-desktop"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2026-02-27T11:34:57.124145Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///root/.gnupg/crls.d/DIR.txt" added="2026-02-27T11:55:23.462021Z" modified="2026-03-20T13:24:58.719659Z" visited="2026-02-27T11:55:23.462021Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2026-02-27T11:55:23.462022Z" count="1"/>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2026-03-20T13:24:58.719658Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
