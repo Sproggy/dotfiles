@@ -49,6 +49,10 @@ echo "
 echo ""
 source $(dirname "$0")/scripts/library.sh
 echo ""
+echo ""
+sh ~/dotfiles/scripts/set-timezone.sh
+echo ""
+sleep 2
 clear
 echo "
 #########################################################
