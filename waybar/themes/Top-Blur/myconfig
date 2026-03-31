@@ -40,7 +40,7 @@
         "custom/browser",
         "group/themes",
         "custom/cliphist",
-        //"group/quicklinks",
+        "custom/screenshot",
         "custom/wf-recorder",
         "custom/keybindings",
         "custom/kbstate",
@@ -86,7 +86,7 @@
             "custom/wallpaper",
             "custom/waybarthemes",
             "custom/iconthemes",
-            "custom/screenshot"
+            "custom/sddmgrub"
         ]
     },
 

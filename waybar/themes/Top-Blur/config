@@ -86,7 +86,8 @@
             "custom/wallpaper",
             "custom/waybarthemes",
             "custom/iconthemes",
-            "custom/screenshot"
+            "custom/screenshot",
+            "custom/sddmgrub"
         ]
     },
 

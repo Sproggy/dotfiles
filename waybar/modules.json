@@ -121,6 +121,14 @@
         "tooltip-format": "Folder Theme Switcher"
     },
 
+        // Set sddm & grub to current wallpaper
+    "custom/sddmgrub": {
+        "format": "",
+        "on-click": "alacritty -o window.dimensions.lines=45 window.dimensions.columns=90 --class floating -e ~/dotfiles/sddm/update.sh",
+        "tooltip": true,
+        "tooltip-format": "sddm/grub updater"
+    },
+
     // Filemanager Launcher
     "custom/filemanager": {
         "format": "🗁",
