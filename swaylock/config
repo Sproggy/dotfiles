@@ -13,7 +13,7 @@
 # ----------------------------------------------------- 
 
 ignore-empty-password
-font="Fira Sans Semibold"
+font="Cantarell"
 
 clock
 timestr=%R
@@ -24,7 +24,7 @@ datestr=%a, %e of %B
 
 # Add an image as a background 
 # In my setup the current wallpaper (requires wallpaper scripts in /scripts)
-image=~/.cache/current_wallpaper.png
+image=~/.cache/current-wallpaper.png
 
 # Fade in time
 fade-in=1

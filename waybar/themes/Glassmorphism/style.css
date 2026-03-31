@@ -1,0 +1,282 @@
+
+@import "colors.css";
+
+/* =========================================================
+   MASU Waybar — Glassmorphism
+   Frosted glass bar with soft glows and clean module pills
+   ========================================================= */
+
+@import "colors.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 11px;
+    font-weight: 500;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    transition: all 0.2s ease;
+}
+
+/* ── Bar ─────────────────────────────────────── */
+window#waybar {
+    background: rgba(10, 10, 20, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    color: rgba(220, 220, 235, 0.90);
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.45),
+                inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+/* ── Workspaces ──────────────────────────────── */
+#workspaces {
+    margin: 3px 0 3px 4px;
+    padding: 0 3px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: rgba(180, 180, 200, 0.45);
+    background: transparent;
+    border-radius: 7px;
+    min-width: 0;
+}
+
+#workspaces button.active {
+    color: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 0 10px rgba(140, 180, 255, 0.20);
+}
+
+#workspaces button.urgent {
+    color: rgba(255, 100, 120, 0.95);
+    background: rgba(255, 80, 100, 0.12);
+}
+
+#workspaces button:hover {
+    color: rgba(220, 220, 255, 0.85);
+    background: rgba(255, 255, 255, 0.07);
+}
+
+/* ── Clock ───────────────────────────────────── */
+#clock {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(230, 230, 245, 0.95);
+    letter-spacing: 0.5px;
+}
+
+#clock:hover {
+    color: #ffffff;
+}
+
+/* ── Module pill base ────────────────────────── */
+#mpris,
+#network,
+#pulseaudio,
+#cpu,
+#memory,
+#battery,
+#tray {
+    margin: 3px 1px;
+    padding: 0 7px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 8px;
+    color: rgba(200, 205, 220, 0.88);
+}
+
+#mpris:hover,
+#network:hover,
+#pulseaudio:hover,
+#cpu:hover,
+#memory:hover,
+#battery:hover {
+    background: rgba(255, 255, 255, 0.09);
+    border-color: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+}
+
+/* ── Spotify / Media ─────────────────────────── */
+#mpris {
+    color: rgba(180, 230, 180, 0.90);
+    border-color: rgba(100, 200, 120, 0.15);
+    background: rgba(80, 180, 100, 0.07);
+}
+
+#mpris.paused {
+    color: rgba(180, 180, 200, 0.55);
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ── Network ─────────────────────────────────── */
+#network {
+    color: rgba(140, 190, 255, 0.90);
+    border-color: rgba(100, 160, 255, 0.15);
+    background: rgba(80, 130, 230, 0.07);
+}
+
+#network.disconnected {
+    color: rgba(255, 120, 120, 0.80);
+    background: rgba(220, 80, 80, 0.07);
+    border-color: rgba(220, 80, 80, 0.15);
+}
+
+/* ── Volume ──────────────────────────────────── */
+#pulseaudio {
+    color: rgba(200, 160, 255, 0.90);
+    border-color: rgba(160, 120, 255, 0.15);
+    background: rgba(140, 100, 230, 0.07);
+}
+
+#pulseaudio.muted {
+    color: rgba(160, 160, 175, 0.50);
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ── CPU ─────────────────────────────────────── */
+#cpu {
+    color: rgba(255, 200, 120, 0.90);
+    border-color: rgba(255, 180, 80, 0.15);
+    background: rgba(220, 150, 60, 0.07);
+}
+
+/* ── Memory ──────────────────────────────────── */
+#memory {
+    color: rgba(120, 220, 210, 0.90);
+    border-color: rgba(80, 200, 190, 0.15);
+    background: rgba(60, 180, 170, 0.07);
+}
+
+/* ── Battery ─────────────────────────────────── */
+#battery {
+    color: rgba(160, 230, 140, 0.90);
+    border-color: rgba(120, 210, 100, 0.15);
+    background: rgba(100, 190, 80, 0.07);
+}
+
+#battery.warning:not(.charging) {
+    color: rgba(255, 200, 80, 0.95);
+    background: rgba(220, 170, 50, 0.10);
+    border-color: rgba(220, 170, 50, 0.20);
+}
+
+#battery.critical:not(.charging) {
+    color: rgba(255, 100, 100, 0.95);
+    background: rgba(220, 60, 60, 0.12);
+    border-color: rgba(220, 60, 60, 0.25);
+}
+
+#battery.charging {
+    color: rgba(120, 240, 160, 0.95);
+}
+
+/* ── Tray ────────────────────────────────────── */
+#tray {
+    padding: 0 8px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background: rgba(255, 100, 100, 0.12);
+    border-color: rgba(255, 100, 100, 0.20);
+}
+
+
+
+#custom-arch {
+    font-size: 16px;
+    padding: 0 10px;
+    color: #1793d1;
+}
+
+/* Pywal dynamic colors */
+#workspaces button.active {
+    color: @sky;
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.10);
+}
+
+#mpris {
+    color: @green;
+    border-color: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#network {
+    color: @sky;
+    border-color: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#pulseaudio {
+    color: @sapphire;
+    border-color: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#cpu {
+    color: @yellow;
+    border-color: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#memory {
+    color: @green;
+    border-color: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#custom-arch {
+    color: @sky;
+}
+
+/* Pywal dynamic colors */
+#workspaces button.active {
+    color: @sky;
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.10);
+}
+
+#mpris {
+    color: @green;
+    border-color: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#network {
+    color: @sky;
+    border-color: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#pulseaudio {
+    color: @sapphire;
+    border-color: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#cpu {
+    color: @yellow;
+    border-color: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#memory {
+    color: @green;
+    border-color: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#custom-arch {
+    color: @sky;
+}
