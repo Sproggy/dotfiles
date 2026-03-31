@@ -195,6 +195,9 @@ echo ""
 sh ~/dotfiles/hypr/packages/matuwall.sh
 echo ""
 sleep 2
+echo ""
+sh ~/dotfiles/scripts/awww-wrapper.sh
+echo ""
 echo "
 #########################################################
 #                                                       #
@@ -589,8 +592,6 @@ echo "
 echo ""
 _installSymLink standalone ~/.local/bin ~/dotfiles/standalone/ ~/.local/bin
 _installSymLink oh-my-zsh ~/.oh-my-zsh/oh-my-zsh.sh ~/dotfiles/oh-my-zsh/oh-my-zsh.sh ~/.oh-my-zsh
-sudo ln -s /usr/bin/awww /usr/bin/swww
-sudo ln -s /usr/bin/awww-daemon /usr/bin/swww-daemon
 echo ""
 clear
 echo ""

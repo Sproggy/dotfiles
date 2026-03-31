@@ -1,0 +1,6 @@
+#!/bin/bash
+# MASU awww wrapper — runs real awww then triggers pywal pipeline
+REAL_AWW=/usr/bin/awww
+WALLPAPER="${@: -1}"
+"$REAL_AWW" "$@"
+[ -f "$WALLPAPER" ] && bash ~/.config/hypr/scripts/wallpaper-colors.sh "$WALLPAPER" &

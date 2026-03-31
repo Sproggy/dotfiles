@@ -34,4 +34,4 @@ done
 
 if [ -f ~/.zshrc_custom ]; then
     source ~/.zshrc_custom
-fi
+fiexport PATH="$HOME/.local/bin:$PATH"
