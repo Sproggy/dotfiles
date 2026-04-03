@@ -156,7 +156,7 @@
         "format": " Home",
         "on-click": "~/dotfiles/scripts/applauncher.sh",
         "tooltip": true,
-        "tooltip-format": "Installed Applications"
+        "tooltip-format": "Application Launcher"
     },
 
     // Power Menu
