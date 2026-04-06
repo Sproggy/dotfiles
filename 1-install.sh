@@ -1,4 +1,4 @@
-#/bin/bash
+#/bin/bash 
 echo ""
 echo " Welcome to the Hyprland & XFCE installer "
 echo " I have chosen as my preference to install both, if you choose No on either Environments the installer will fail and close "
