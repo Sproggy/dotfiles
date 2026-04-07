@@ -10,7 +10,7 @@ while true; do
             if [ -d ~/.local/share/fonts/ ]; then
                 echo "fonts folder does not exist."
             else
-                git clone https://github.com/Sproggy/fonts.git ~/.local/share/fonts
+                git clone https://github.com/hyprtk/fonts.git ~/.local/share/fonts
                 echo "user fonts installed."
             fi
             echo "User Fonts Installed."

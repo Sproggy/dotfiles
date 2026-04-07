@@ -18,7 +18,7 @@
 #░████████░░██████   █████ ░░██████ ░░██████  ░░██
 #░░░░░░░░  ░░░░░░   ░░░░░   ░░░░░░   ░░░░░░    ░░
 #                                                                        
-# by Sproggy (Corrie Tilcock) (2026)
+# by hyprtk (Kori Tk) (2026)
 # ----------------------------------------------------- 
 
 chosen=$(echo -e " Lock\n Logout\n Hibernate\n Reboot\n Shutdown\n Suspend" | rofi -dmenu -config ~/dotfiles/rofi/config-power.rasi -p "Power")

@@ -1,5 +1,5 @@
 #
-# by Sproggy (Corrie Tilcock) (2026)
+# by hyprtk (Kori Tk) (2026)
 # ----------------------------------------------------- 
 
 wal -q -i ~/Pictures/Wallpapers/ 

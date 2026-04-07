@@ -8,7 +8,7 @@
 #   ░░░░░░░   ░░░   ░░  ░░░░░░   ░░░░░░░   ░░░    ░░    ░░     ░░░░░░
 #                                           
 #  
-# by Corrie Tilcock (2026)
+# by hyprtk (Kori Tk) (2026)
 # ----------------------------------------------------- 
 
 rclone --vfs-cache-mode writes mount OneDrive: ~/OneDrive &

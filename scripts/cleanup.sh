@@ -18,7 +18,7 @@
 #  ░░██████  ███░░██████░░████████ ███  ░██░░███████ ░██
 #   ░░░░░░  ░░░  ░░░░░░  ░░░░░░░░ ░░░   ░░  ░░░░░░░  ░░
 #
-# by Corrie Tilcock (Sproggy) (2026)
+# by hyprtk (Kori Tk) (2026)
 # ----------------------------------------------------- 
 
 echo " WARNING!! This will clean out you YAY and PACMAN cache/uneeded installs/ Orphans"

@@ -31,7 +31,7 @@ echo "
   ░░░░░░░  ░░       ░░░░░░  ░░░░░░░░    ░░   ░░░░░░  
 "
 echo ""
-echo " by Sproggy (Corrie Tilcock) (2026) "
+echo " by hyprtk (Kori Tk) (2026) "
 echo " ------------------------------------------------------------------- "
 echo ""
 while true; do

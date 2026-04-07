@@ -12,7 +12,7 @@ sudo cp ~/dotfiles/figlet/fonts/* /usr/share/figlet/fonts/
 figlet -f 3d "Install"
 echo "
 
-by Sproggy (Corrie Tilcock) (2026)
+by hyprtk (Kori Tk) (2026)
 #########################################################
 "
 sleep 2
@@ -325,7 +325,7 @@ clear
 echo ""
 figlet -f 3d "Hyprland"
 echo ""
-echo " by Sproggy (Corrie Tilcock) (2026) "
+echo " by hyprtk (Kori Tk) (2026) "
 echo " ------------------------------------------------------------------- "
 echo ""
 echo ""
@@ -416,7 +416,7 @@ sleep 5
 clear
 figlet -f 3d "dotfiles"
 echo ""
-echo " by Sproggy (Corrie Tilcock) (2026) "
+echo " by hyprtk (Kori Tk) (2026) "
 echo " ------------------------------------------------------------------- "
 echo ""
 echo "The script will ask for permission to remove existing directories and files from ~/.config/"

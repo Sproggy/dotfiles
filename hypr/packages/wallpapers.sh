@@ -10,7 +10,7 @@ while true; do
             if [ -d ~/Pictures/Wallpapers/ ]; then
                 echo "Wallpaper folder already exists."
             else
-                git clone https://github.com/Sproggy/wallpaper.git ~/Pictures/Wallpapers
+                git clone https://github.com/hyprtk/wallpaper.git ~/Pictures/Wallpapers
                 echo "Wallpapers installed."
             fi
             echo "Wallpapers installed."

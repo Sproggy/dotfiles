@@ -16,7 +16,7 @@
 # ░░████████ ░███   ░░██████░██████
 #  ░░░░░░░░  ░░░     ░░░░░░ ░░░░░
 #
-# by Corrie Tilcock (Sproggy) (2026)
+# by hyprtk (Kori Tk) (2026)
 # ----------------------------------------------------- 
 
 sudo sed -i 's/#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/' /etc/default/grub

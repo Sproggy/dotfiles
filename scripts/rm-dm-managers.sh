@@ -18,7 +18,7 @@
 #  ░░██████  ███░░██████░░████████ ███  ░██░░███████ ░██
 #   ░░░░░░  ░░░  ░░░░░░  ░░░░░░░░ ░░░   ░░  ░░░░░░░  ░░
 #  
-# by Corrie Tilcock (2026)
+# by hyprtk (Kori Tk) (2026)
 # ----------------------------------------------------- 
 # Install SDDM if not already installed
 sudo pacman -S --noconfirm sddm
