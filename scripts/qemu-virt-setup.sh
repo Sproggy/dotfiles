@@ -33,7 +33,7 @@ echo "-------------------------------------"
 echo "-> Install Qemu/Virt Manager "
 echo "-------------------------------------"
 echo ""
-sudo pacman -S qemu-full dnsmasq vde2 openbsd-netcat libguestfs --noconfirm
+sudo pacman -S qemu-full dnsmasq vde2 openbsd-netcat libguestfs swtpm --noconfirm
 yay -S bridge-utils virt-manager virt-viewer --noconfirm
 echo ""
 sleep 3
