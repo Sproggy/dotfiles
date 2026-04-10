@@ -1,34 +1,29 @@
-
+#/bin/bash
+figlet -f 3d "VMWare Setup"
+echo ""
+echo " Check If Virtualisation is enabled "
 lscpu | grep Virtualization
-
-which yay
-
--- YAY REPO IF YOU DON'T HAVE IT --
-https://github.com/Jguer/yay
------------------------------------------------------------
-
-sudo pacman -S --needed linux-headers
--- INSTALL THIS INSTEAD IF YOU ARE ON LTS LINUX --
-sudo pacman -S --needed linux-lts-headers
-
-Here is how you know if you are on lts linux 
-uname -r
-
-if you see something like this :
-
-6.6.x-lts
-
-You are on lts
-----------------------------------------------------------------------------------------
-
-yay -S vmware-keymaps
-yay -S vmware-workstation
-
+sleep 2
+echo ""
+echo " Check If Virtualisation is enabled "
+sudo pacman -S --needed --noconfirm linux-headers
+sleep 2
+echo ""
+echo " Install required files "
+yay -S vmware-keymaps --noconfirm
+yay -S vmware-workstation --noconfirm
+sleep 2
+echo ""
+echo " Check Units Installed "
 systemctl list-unit-files | grep vmware
-
+sleep 2
+echo ""
+echo " Enable VMWare Services "
 sudo systemctl enable --now vmware-networks.service
 sudo systemctl enable --now vmware-usbarbitrator.service
-
+sleep 2
+echo ""
+echo " Add VMWare modprobes "
 sudo modprobe vmmon
 sudo modprobe vmnet
-sudo modprobe vmw_vmci
+sudo modprobe vmw_vmci#
