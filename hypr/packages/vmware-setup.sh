@@ -26,4 +26,4 @@ echo ""
 echo " Add VMWare modprobes "
 sudo modprobe vmmon
 sudo modprobe vmnet
-sudo modprobe vmw_vmci#
+sudo modprobe vmw_vmci
