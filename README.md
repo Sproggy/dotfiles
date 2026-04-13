@@ -36,6 +36,10 @@ Hyprland: In addition, you can switch the Waybar Template with SUPER + CTRL + T 
 
 ## Screenshots & Video
 
+Garuda
+![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-13_10-37-05.png)
+![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-13_10-42-20.png)
+
 Manjaro
 ![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-20231020-194152.png)
 ![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-20231020-194408.png)
