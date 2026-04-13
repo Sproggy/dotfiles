@@ -1,70 +1,24 @@
-#/bin/bash
-
-set -e
-
-# ─── Cleanup Trap ──────────────────────────────────────────
-cleanup() {
-    local exit_code=$?
-    [[ $exit_code -ne 0 ]] && echo -e "\n${RED}[ERROR]${RESET} Installation interrupted!"
-    exit $exit_code
-}
-trap cleanup EXIT INT TERM
-
-# ─── Spinner ───────────────────────────────────────────────
-spinner() {
-    local pid=$1
-    local delay=0.1
-    local frames=("⠋" "⠙" "⠹" "⠸" "⠼" "⠴" "⠦" "⠧" "⠇" "⠏")
-    while kill -0 "$pid" 2>/dev/null; do
-        for frame in "${frames[@]}"; do
-            printf "\r  ${CYAN}%s${RESET} %s" "$frame" "$2"
-            sleep "$delay"
-        done
-    done
-    printf "\r"
-}
-
+#/bin/bash 
+echo ""
+echo " Welcome to the Hyprland & XFCE installer "
+echo " I have chosen as my preference to install both, if you choose No on either Environments the installer will fail and close "
+echo " I chose it this way so if 1 Enviroment has problems i still have the other to boot too, enjoy"
+echo""
+echo " You will now be asked to enter your Root password to proceed with the installation process"
+echo""
+sleep 2
 sudo pacman -S figlet --noconfirm
 sudo cp ~/dotfiles/figlet/fonts/* /usr/share/figlet/fonts/
+figlet -f 3d "Install"
+echo "
 
-RED='\e[0;31m'
-GREEN='\033[0;32m'
-BLUE='\033[0;34m'
-CYAN='\033[0;36m'
-YELLOW='\033[1;33m'
-MAGENTA='\e[38;5;201m'
-BOLD='\033[1m'
-RESET='\033[0m'
-
-info()    { echo -e "${MAGENTA}[INFO]${RESET} $1"; }
-success() { echo -e "${GREEN}[OK]${RESET} $1"; }
-warn()    { echo -e "${YELLOW}[WARN]${RESET} $1"; }
-error()   { echo -e "${RED}[ERROR]${RESET} $1"; exit 1; }
-step()    { echo -e "\n${BOLD}${BLUE}==>${RESET}${BOLD} $1${RESET}"; }
-
-clear
-echo -e "${MAGENTA}"
-figlet -f 3d "hyprtk..."
-echo -e "${RESET}"
-echo -e "${BOLD} Hyprland + XFCE Desktop Installer${RESET}"
-echo -e "  ${CYAN}Waybar + Papirus Folders + Pywal16 Dynamic Theme${RESET}"
-echo -e "  by Kori Tk (hyprtk) (2026)\n"
-echo -e "  ${CYAN}Features:${RESET}"
-echo -e "  ✦ Waybar with pywal dynamic colors"
-echo -e "  ✦ Matuwall panel wallpaper picker (SUPER+W)"
-echo -e "  ✦ Full pywal pipeline — everything follows your wallpaper"
-echo -e "  ✦ awww wallpaper daemon with smooth transitions"
-echo -e "  ✦ Papirus Folders — everything follows your wallpaper"
-echo -e "  ✦ Rofi launcher with dynamic colors"
-echo -e "  ✦ GRUB + SDDM sync with current wallpaper"
-echo -e "  ✦ Smooth fluid animations"
-echo -e "  ✦ Wallpaper persistence across reboots\n"
-echo -e "${MAGENTA}  This will install both Hyprland + XFCE full desktop environments.${RESET}\n"
+by hyprtk (Kori Tk) (2026)
+#########################################################
+"
 sleep 2
 echo ""
 clear
-echo -e "${RED}"
-echo -e "
+echo "
 #########################################################
 #                                                       #
 #             Removing leftover Packages                #
@@ -73,11 +27,17 @@ echo -e "
 "
 sleep 2
 sudo pacman -Rns plasma kde-applications --noconfirm
-sudo pacman -Rns gnome gnome-desktop gnome-extra --noconfirm
-sudo pacman -Rs $(pacman -Qdtq)
+echo""
+clear
+echo "
+#########################################################
+#                                                       #
+#             Starting Installation Process             #
+#                                                       #
+#########################################################
+"
+sleep 2
 echo ""
-echo -e "${RESET}"
-spinner $! "Cleaning up leftover orphan packages"
 clear
 echo "
 #########################################################
@@ -120,7 +80,6 @@ else
     git clone https://aur.archlinux.org/yay-git.git ~/Downloads/yay-git
     cd ~/Downloads/yay-git
     makepkg -si
-    rm -rf /Downloads/yay-git
     cd ~/dotfiles/
     clear
 fi
