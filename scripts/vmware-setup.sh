@@ -11,7 +11,7 @@ sleep 2
 echo ""
 echo " Install required files "
 yay -S vmware-keymaps --noconfirm
-yay -S vmware-workstation --noconfirm
+yay -S vmware-workstation open-vm-tools --noconfirm
 sleep 2
 echo ""
 echo " Check Units Installed "
