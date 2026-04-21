@@ -48,6 +48,10 @@ The templates are available in ~/dotfiles/waybar/themes. You can add your own pe
 
 ## Screenshots & Video
 
+Arch Linux
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-21_13-02-05.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-21_13-04-49.png)
+
 Garuda
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-13_10-37-05.png)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-13_10-42-20.png)
@@ -56,13 +60,10 @@ Manjaro
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-20231020-194152.png)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-20231020-194408.png)
 
-ArcoLinux
+ArcoLinux - No Longer producing Install ISO's (I am not removing the screenshots though)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/53256162013_6be4b66963_o.png)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/53256224204_aaa86aff2e_o.png)
 
-Arch Linux
-![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-21_13-02-05.png)
-![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-21_13-04-49.png)
 
 ## Getting started
 
