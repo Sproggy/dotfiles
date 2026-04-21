@@ -57,8 +57,9 @@ Garuda
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-13_10-42-20.png)
 
 Manjaro
-![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-20231020-194152.png)
-![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-20231020-194408.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-21_15-01-38.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-21_15-00-19.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-21_15-01-24.png)
 
 ArcoLinux - No Longer producing Install ISO's (I am not removing the screenshots though)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/53256162013_6be4b66963_o.png)
