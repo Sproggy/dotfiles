@@ -1,6 +1,6 @@
 # Hyprland Dots
 
-This is the configuration for Arch Linux, Arcolinux, Manjaro based installations of Hyprland (Wayland) and/or XFCE (Xorg).
+This is the configuration for Arch Linux, Arcolinux, Garuda, Manjaro based installations of Hyprland (Wayland) and/or XFCE (Xorg).
 
 This will work on most flavours of Arch.
 
@@ -75,7 +75,9 @@ PLEASE BACKUP YOUR EXISTING .config WITH YOUR DOTFILES BEFORE STARTING THE SCRIP
 ```
 # Make sure that you're in your home directory
 
-git clone https://raw.githubusercontent.com/hyprtk/dotfiles/install.sh && sh ./install.sh
+git clone https://raw.githubusercontent.com/hyprtk/dotfiles/install.sh
+cd dotfiles
+./install.sh
 
 #Please note that every Arch Linux system is different and I cannot guarantee that everything works fine on your system.
 
