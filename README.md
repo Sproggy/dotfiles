@@ -32,9 +32,6 @@ This will work on most flavours of Arch.
 
 Hyprland: Included is a pywal16 configuration that changes the color scheme based on a randomly selected wallpaper. 
 
-Keybinding SuperKey + Shift + w you can change the wallpaper.
-Keybinding SuperKey + Ctrl + w opens rofi with a list of installed wallpapers.
-Keybinding SuperKey + w opens matuwall to display all wallpapers on a film roll (Editable)
 
 See also the .bashrc and the key bindings on Hyprland and Qtile for more alias definitions.
 
