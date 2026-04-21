@@ -61,7 +61,7 @@ case $DOTS in
 3)
   cd $HOME
   git clone https://github.com/hyprtk/manjaro-dots.git
-  cd manjao-dots
+  cd manjaro-dots
   sh ./1-install.sh;;
 4)
   cd $HOME
