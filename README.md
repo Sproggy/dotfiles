@@ -65,19 +65,7 @@ PLEASE BACKUP YOUR EXISTING .config WITH YOUR DOTFILES BEFORE STARTING THE SCRIP
 
 ```
 # Make sure that you're in your home directory
-cd
+sh <(curl -L https://raw.githubusercontent.com/hyprtk/dotfiles/install.sh)
 
-# Clone the repository to your home directory
-git clone https://github.com/hyprtk/garuda-dots.git
-
-# Or download the lastest version and unzip into ~/garuda-dots folder
-
-# Change into the new garuda-dots folder
-cd garuda-dots
-
-# Just run the single install file and go through every step, please be aware that this installs both Hyprland (Wayland) and XFCE (Xorg) environments at once
-./1-install.sh
-
-```
 Please note that every Arch Linux system is different and I cannot guarantee that everything works fine on your system.
 
