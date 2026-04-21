@@ -30,7 +30,13 @@ This will work on most flavours of Arch.
 
 ## Templating
 
-Hyprland: Included is a pywal16 configuration that changes the color scheme based on a randomly selected wallpaper. With the key binding SuperKey + Shift + w you can change the wallpaper. SuperKey + Ctrl + w opens rofi with a list of installed wallpapers for your individual selection. See also the .bashrc and the key bindings on Hyprland and Qtile for more alias definitions.
+Hyprland: Included is a pywal16 configuration that changes the color scheme based on a randomly selected wallpaper. 
+
+Keybinding SuperKey + Shift + w you can change the wallpaper.
+Keybinding SuperKey + Ctrl + w opens rofi with a list of installed wallpapers.
+Keybinding SuperKey + w opens matuwall to display all wallpapers on a film roll (Editable)
+
+See also the .bashrc and the key bindings on Hyprland and Qtile for more alias definitions.
 
 Hyprland: In addition, you can switch the Waybar Template with SUPER + CTRL + T or by pressing the "..." icon in Waybar. The templates are available in ~/dotfiles/waybar/themes. You can add your own personal themes into this folder. The script will read in the folder structure.
 
