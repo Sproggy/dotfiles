@@ -1,20 +1,5 @@
 #!/usr/bin/env bash
 
-
-# ─── Spinner ───────────────────────────────────────────────
-spinner() {
-    local pid=$1
-    local delay=0.1
-    local frames=("⠋" "⠙" "⠹" "⠸" "⠼" "⠴" "⠦" "⠧" "⠇" "⠏")
-    while kill -0 "$pid" 2>/dev/null; do
-        for frame in "${frames[@]}"; do
-            printf "\r  ${CYAN}%s${RESET} %s" "$frame" "$2"
-            sleep "$delay"
-        done
-    done
-    printf "\r"
-}
-
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
@@ -36,7 +21,6 @@ cat << 'EOF'
 ░░   ░░  ░░      ░░      ░░░       ░░  ░░  ░░ ░░ ░░ ░░
 EOF
 echo -e "${RESET}"
-
 echo -e "${MAGENTA}"
 echo "
 #########################################################
@@ -62,7 +46,6 @@ echo -e "${MAGENTA}"
 echo " Defaults to Arch if you choose to not make selection "
 echo -e "${RESET}"
 echo ""
-
 read DOTS
 case $DOTS in
 1)
@@ -92,5 +75,3 @@ case $DOTS in
   sh ./1-install.sh;;
 esac
 echo ""
-spinner $! "Downloading and installing packages..."
-wait
