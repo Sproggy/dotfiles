@@ -38,7 +38,11 @@ Keybinding SuperKey + w opens matuwall to display all wallpapers on a film roll 
 
 See also the .bashrc and the key bindings on Hyprland and Qtile for more alias definitions.
 
-Hyprland: In addition, you can switch the Waybar Template with SUPER + CTRL + T or by pressing the "..." icon in Waybar. The templates are available in ~/dotfiles/waybar/themes. You can add your own personal themes into this folder. The script will read in the folder structure.
+Hyprland: In addition, you can switch the Waybar Template
+
+Keybinding SUPER + CTRL + T or by pressing the _ icon under the picture icon in waybat.
+
+The templates are available in ~/dotfiles/waybar/themes. You can add your own personal themes into this folder. The script will read in the folder structure.
 
 ## Screenshots & Video
 
