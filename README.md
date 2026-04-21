@@ -43,13 +43,10 @@ Garuda
 Manjaro
 ![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-20231020-194152.png)
 ![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-20231020-194408.png)
-![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-20231020-194623.png)
-![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-20231020-194651.png)
 
 ArcoLinux
 ![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/53256162013_6be4b66963_o.png)
 ![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/53256224204_aaa86aff2e_o.png)
-![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/53256357675_f6af5c7757_o.png)
 
 Arch Linux
 ![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-20231021-163804.png)
@@ -65,7 +62,8 @@ PLEASE BACKUP YOUR EXISTING .config WITH YOUR DOTFILES BEFORE STARTING THE SCRIP
 
 ```
 # Make sure that you're in your home directory
-sh <(curl -L https://raw.githubusercontent.com/hyprtk/dotfiles/install.sh)
 
-Please note that every Arch Linux system is different and I cannot guarantee that everything works fine on your system.
+git clone https://raw.githubusercontent.com/hyprtk/dotfiles/install.sh && sh ./install.sh
+
+#Please note that every Arch Linux system is different and I cannot guarantee that everything works fine on your system.
 
