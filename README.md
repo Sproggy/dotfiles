@@ -61,10 +61,8 @@ ArcoLinux
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/53256224204_aaa86aff2e_o.png)
 
 Arch Linux
-![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-20231021-163804.png)
-![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-20231021-163834.png)
-![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-20231021-164005.png)
-
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-21_13-02-05.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-21_13-04-49.png)
 
 ## Getting started
 
