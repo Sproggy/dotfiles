@@ -62,7 +62,8 @@ PLEASE BACKUP YOUR EXISTING .config WITH YOUR DOTFILES BEFORE STARTING THE SCRIP
 
 ```
 # Make sure that you're in your home directory
+
 sh <(curl -L https://raw.githubusercontent.com/hyprtk/dotfiles/install.sh)
 
-Please note that every Arch Linux system is different and I cannot guarantee that everything works fine on your system.
+#Please note that every Arch Linux system is different and I cannot guarantee that everything works fine on your system.
 
