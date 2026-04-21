@@ -32,31 +32,31 @@ This will work on most flavours of Arch.
 
 Hyprland: Included is a pywal16 configuration that changes the color scheme based on a randomly selected wallpaper. With the key binding SuperKey + Shift + w you can change the wallpaper. SuperKey + Ctrl + w opens rofi with a list of installed wallpapers for your individual selection. See also the .bashrc and the key bindings on Hyprland and Qtile for more alias definitions.
 
-Hyprland: In addition, you can switch the Waybar Template with SUPER + CTRL + T or by pressing the "..." icon in Waybar. The templates are available in ~/garuda-dots/waybar/themes. You can add your own personal themes into this folder. The script will read in the folder structure.
+Hyprland: In addition, you can switch the Waybar Template with SUPER + CTRL + T or by pressing the "..." icon in Waybar. The templates are available in ~/dotfiles/waybar/themes. You can add your own personal themes into this folder. The script will read in the folder structure.
 
 ## Screenshots & Video
 
 Garuda
-![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-13_10-37-05.png)
-![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-2026-04-13_10-42-20.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-13_10-37-05.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-13_10-42-20.png)
 
 Manjaro
-![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-20231020-194152.png)
-![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-20231020-194408.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-20231020-194152.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-20231020-194408.png)
 
 ArcoLinux
-![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/53256162013_6be4b66963_o.png)
-![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/53256224204_aaa86aff2e_o.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/53256162013_6be4b66963_o.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/53256224204_aaa86aff2e_o.png)
 
 Arch Linux
-![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-20231021-163804.png)
-![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-20231021-163834.png)
-![Model](https://github.com/hyprtk/garuda-dots/blob/main/screenshots/screenshot-20231021-164005.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-20231021-163804.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-20231021-163834.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-20231021-164005.png)
 
 
 ## Getting started
 
-To make it easy for you to get started with my garuda-dots, here's a list of recommended next steps.
+To make it easy for you to get started with my dotfiles, here's a list of recommended next steps.
 
 PLEASE BACKUP YOUR EXISTING .config WITH YOUR DOTFILES BEFORE STARTING THE SCRIPTS.
 
