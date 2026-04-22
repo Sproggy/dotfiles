@@ -44,7 +44,7 @@ Hyprland: In addition, you can switch the Waybar Template
 
 	Keybinding SUPER + CTRL + T or by pressing the _ icon under the picture icon in waybat.
 
-The templates are available in ~/dotfiles/waybar/themes. You can add your own personal themes into this folder. The script will read in the folder structure.
+The templates are available in ~/*-dots/waybar/themes. You can add your own personal themes into this folder. The script will read in the folder structure.
 
 ## Screenshots & Video
 
