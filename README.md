@@ -12,8 +12,8 @@ This will work on most flavours of Arch.
 - Prompt: starship
 - Icons: Font Awesome
 - Menus: Rofi
-- Colorscheme: pywal16 (dynamic)
-- Browsers: chromium (brave optional)
+- Colorscheme: Pywal16 (dynamic)
+- Browsers: Brave (chromium optional)
 - Filemanager: Thunar
 - Cursor: Bibata Modern Ice
 - Icons: Papirus-Icon-Theme
