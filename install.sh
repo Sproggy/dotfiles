@@ -30,9 +30,10 @@ echo "
 #########################################################
 
 1) Arch Linux
-2) Garuda Linux
-3) Manjaro Linux
-4) My Personal Dotfiles (contains testing features before being promoted to other Dots)
+2) EndeavourOS
+3) Garuda Linux
+4) Manjaro Linux
+5) My Personal Dotfiles (contains testing features before being promoted to other Dots)
 "
 echo -e "${RESET}"
 echo -e "${CYAN}"
@@ -55,15 +56,20 @@ case $DOTS in
   sh ./1-install.sh;;
 2)
   cd $HOME
+  git clone https://github.com/hyprtk/endeavour-dots.git
+  cd my-dots
+  sh ./1-install.sh;;
+3)
+  cd $HOME
   git clone https://github.com/hyprtk/garuda-dots.git
   cd garuda-dots
   sh ./1-install.sh;;
-3)
+4)
   cd $HOME
   git clone https://github.com/hyprtk/manjaro-dots.git
   cd manjaro-dots
   sh ./1-install.sh;;
-4)
+5)
   cd $HOME
   git clone https://github.com/hyprtk/my-dots.git
   cd my-dots
