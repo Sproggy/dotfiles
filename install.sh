@@ -80,4 +80,5 @@ case $DOTS in
   cd arch-dots
   sh ./1-install.sh;;
 esac
+rm -r $HOME/dotfiles
 echo ""
