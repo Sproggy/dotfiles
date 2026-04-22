@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+a#!/usr/bin/env bash
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -57,7 +57,7 @@ case $DOTS in
 2)
   cd $HOME
   git clone https://github.com/hyprtk/endeavour-dots.git
-  cd my-dots
+  cd endeavour-dots
   sh ./1-install.sh;;
 3)
   cd $HOME
