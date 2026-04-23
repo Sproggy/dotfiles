@@ -1,4 +1,4 @@
-a#!/usr/bin/env bash
+#!/usr/bin/env bash
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -30,10 +30,11 @@ echo "
 #########################################################
 
 1) Arch Linux
-2) EndeavourOS
-3) Garuda Linux
-4) Manjaro Linux
-5) My Personal Dotfiles (contains testing features before being promoted to other Dots)
+2) CachyOS
+3) EndeavourOS
+4) Garuda Linux
+5) Manjaro Linux
+6) My Personal Dotfiles (contains testing features before being promoted to other Dots)
 "
 echo -e "${RESET}"
 echo -e "${CYAN}"
@@ -56,20 +57,25 @@ case $DOTS in
   sh ./1-install.sh;;
 2)
   cd $HOME
+  git clone https://github.com/hyprtk/cachy-dots.git
+  cd cachy-dots
+  sh ./1-install.sh;;
+3)
+  cd $HOME
   git clone https://github.com/hyprtk/endeavour-dots.git
   cd endeavour-dots
   sh ./1-install.sh;;
-3)
+4)
   cd $HOME
   git clone https://github.com/hyprtk/garuda-dots.git
   cd garuda-dots
   sh ./1-install.sh;;
-4)
+5)
   cd $HOME
   git clone https://github.com/hyprtk/manjaro-dots.git
   cd manjaro-dots
   sh ./1-install.sh;;
-5)
+6)
   cd $HOME
   git clone https://github.com/hyprtk/my-dots.git
   cd my-dots
