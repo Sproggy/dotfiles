@@ -1,50 +1,83 @@
-#!/usr/bin/env bash
+a#!/usr/bin/env bash
 
-# --- Zenity Selection Menu ---
-# We use --list to give the user a clear radio-button style choice.
-CHOICE=$(zenity --list --radiolist --width=450 --height=400 \
-    --title="Hyprtk Dotfiles Installer" \
-    --text="Choose your distribution to install the appropriate dotfiles:" \
-    --column="Select" --column="ID" --column="Distribution" \
-    TRUE  "arch"      "Arch Linux" \
-    FALSE "cachy"     "CachyOS" \
-    FALSE "endeavour" "EndeavourOS" \
-    FALSE "garuda"    "Garuda Linux" \
-    FALSE "manjaro"   "Manjaro Linux" \
-    FALSE "personal"  "My Personal Dotfiles (Experimental)")
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+CYAN='\033[0;36m'
+YELLOW='\033[1;33m'
+MAGENTA='\033[35m'
+BOLD='\033[1m'
+RESET='\033[0m'
 
-# If the user hits 'Cancel' or closes the window, exit gracefully.
-if [ -z "$CHOICE" ]; then
-    zenity --info --text="Installation cancelled." --width=200
-    exit 0
-fi
+echo -e "${CYAN}"
+cat << 'EOF'
+ ██                                ██   ██
+░██       ██   ██ ██████          ░██  ░██
+░██      ░░██ ██ ░██░░░██ ██████ ██████░██  ██
+░██████   ░░███  ░██  ░██░░██░░█░░░██░ ░██ ██
+░██░░░██   ░██   ░██████  ░██ ░   ░██  ░████
+░██  ░██   ██    ░██░░░   ░██     ░██  ░██░██  ██ ██ ██
+░██  ░██  ██     ░██     ░███     ░░██ ░██░░██░██░██░██
+░░   ░░  ░░      ░░      ░░░       ░░  ░░  ░░ ░░ ░░ ░░
+EOF
+echo -e "${RESET}"
+echo -e "${MAGENTA}"
+echo "
+#########################################################
+#                                                       #
+#               Which Distro do you have?               #
+#                                                       #
+#########################################################
 
-# --- Warning for Personal Dots ---
-if [ "$CHOICE" == "personal" ]; then
-    zenity --warning --width=400 \
-        --text="IMPORTANT: Installing personal dotfiles may break your current system. A clean install is advised."
-    
-    # Optional: Double-check confirmation for the risky choice
-    zenity --question --text="Are you sure you want to proceed with Personal Dotfiles?" || exit 0
-fi
-
-# --- Mapping Choice to Repository ---
-case $CHOICE in
-    arch)      REPO="arch-dots" ;;
-    cachy)     REPO="cachy-dots" ;;
-    endeavour) REPO="endeavour-dots" ;;
-    garuda)    REPO="garuda-dots" ;;
-    manjaro)   REPO="manjaro-dots" ;;
-    personal)  REPO="my-dots" ;;
-    *)         REPO="arch-dots" ;; # Default fallback
+1) Arch Linux
+2) EndeavourOS
+3) Garuda Linux
+4) Manjaro Linux
+5) My Personal Dotfiles (contains testing features before being promoted to other Dots)
+"
+echo -e "${RESET}"
+echo -e "${CYAN}"
+echo "#########################   IMPORTANT   #############################
+*********************************************************************
+Installing my personal dots files may break your current system,
+if you wish to use my personal dots i would advise on a clean install
+*********************************************************************"
+echo -e "${RESET}"
+echo -e "${MAGENTA}"
+echo " Defaults to Arch if you choose to not make selection "
+echo -e "${RESET}"
+echo ""
+read DOTS
+case $DOTS in
+1)
+  cd $HOME
+  git clone https://github.com/hyprtk/arch-dots.git
+  cd arch-dots
+  sh ./1-install.sh;;
+2)
+  cd $HOME
+  git clone https://github.com/hyprtk/endeavour-dots.git
+  cd endeavour-dots
+  sh ./1-install.sh;;
+3)
+  cd $HOME
+  git clone https://github.com/hyprtk/garuda-dots.git
+  cd garuda-dots
+  sh ./1-install.sh;;
+4)
+  cd $HOME
+  git clone https://github.com/hyprtk/manjaro-dots.git
+  cd manjaro-dots
+  sh ./1-install.sh;;
+5)
+  cd $HOME
+  git clone https://github.com/hyprtk/my-dots.git
+  cd my-dots
+  sh ./1-install.sh;;
+*)
+  cd $HOME
+  git clone https://github.com/hyprtk/arch-dots.git
+  cd arch-dots
+  sh ./1-install.sh;;
 esac
-
-# --- Execution ---
-# Using a terminal to run the actual install so the user can see progress/errors
-cd "$HOME" || exit
-git clone "https://github.com/hyprtk/${REPO}.git"
-cd "$REPO" || exit
-
-# Run the installer script
-# Note: You might want to use 'bash' instead of 'sh' if the scripts use bashisms
-sh ./1-install.sh
+echo ""
