@@ -44,7 +44,7 @@ See also the .zshrc and the key bindings on Hyprland and XFCE for more alias def
 
 Hyprland: In addition, you can switch the Waybar Template
 
-	Keybinding SUPER + CTRL + T or by pressing the _ icon under the picture icon in waybat.
+	Keybinding SUPER + CTRL + T or by pressing the _ icon under the picture icon in waybar.
 
 The templates are available in ~/*-dots/waybar/themes. You can add your own personal themes into this folder. The script will read in the folder structure.
 
