@@ -33,8 +33,9 @@ echo "
 2) CachyOS
 3) EndeavourOS
 4) Garuda Linux
-5) Manjaro Linux
-6) My Personal Dotfiles (contains testing features before being promoted to other Dots)
+5) Kiro Linux (ArcoLinux Rebrand)
+6) Manjaro Linux
+7) My Personal Dotfiles (contains testing features before being promoted to other Dots)
 "
 echo -e "${RESET}"
 echo -e "${CYAN}"
@@ -72,10 +73,15 @@ case $DOTS in
   sh ./1-install.sh;;
 5)
   cd $HOME
+  git clone https://github.com/hyprtk/kiro-dots.git
+  cd kiro-dots
+  sh ./1-install.sh;;
+6)
+  cd $HOME
   git clone https://github.com/hyprtk/manjaro-dots.git
   cd manjaro-dots
   sh ./1-install.sh;;
-6)
+7)
   cd $HOME
   git clone https://github.com/hyprtk/my-dots.git
   cd my-dots
