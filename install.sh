@@ -37,6 +37,7 @@ echo "
 6) Kiro Linux (ArcoLinux Rebrand)
 7) Manjaro Linux
 8) My Personal Dotfiles (contains testing features before being promoted to other Dots)
+9) RebornOS 
 "
 echo -e "${RESET}"
 echo -e "${CYAN}"
@@ -91,6 +92,11 @@ case $DOTS in
   cd $HOME
   git clone https://github.com/hyprtk/my-dots.git
   cd my-dots
+  sh ./1-install.sh;;
+9)
+  cd $HOME
+  git clone https://github.com/hyprtk/reborn-dots.git
+  cd reborn-dots
   sh ./1-install.sh;;
 *)
   cd $HOME
