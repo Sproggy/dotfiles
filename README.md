@@ -145,3 +145,8 @@ Manjaro
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/manjaro1.png)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/manjaro2.png)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/manjaro3.png)
+
+Manjaro
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/reborn1.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/reborn2.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/reborn3.png)
