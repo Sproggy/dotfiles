@@ -19,7 +19,7 @@ Supported Distro's
   </tr>
   <tr>
     <td>BlueStar Linux</td>
-    <td><img src="" width="350"></td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/bslx1-thumb.png" width="350"></td>
   </tr>
   <tr>
     <td>CachyOS</td>
@@ -115,6 +115,11 @@ Archman Linux
 ![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/archman1.png)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/archman2.png)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/archman3.png)
+
+BlueStar Linux
+![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/bslx1.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/bslx2.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/bslx3.png)
 
 CachyOS
 ![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/cachy1.png)
