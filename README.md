@@ -15,44 +15,44 @@ Supported Distro's
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>Thumbnail</th>
+    <th>Supported Distributions</th>
+    <th>Thumbnails</th>
   </tr>
   <tr>
-    <td>Project A</td>
-    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/arch1-thumb.png" width="50"></td>
+    <td>Arch Linux</td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/arch1-thumb.png" width="350"></td>
   </tr>
   <tr>
-    <td>Project B</td>
-    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/archman1-thumb.pn" width="50"></td>
+    <td>Archman Linux</td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/archman1-thumb.png" width="350"></td>
   </tr>
   <tr>
-    <td>Project B</td>
-    <td><img src="https://example.com/image2.png" width="50"></td>
+    <td>BlueStar Linux</td>
+    <td><img src="" width="350"></td>
   </tr>
   <tr>
-    <td>Project B</td>
-    <td><img src="https://example.com/image2.png" width="50"></td>
-  </tr>
-  <tr>
-    <td>Project B</td>
-    <td><img src="https://example.com/image2.png" width="50"></td>
+    <td>CachyOS</td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/cachy1-thumb.png" width="350"></td>
   </tr>
   <tr>
     <td>Project B</td>
-    <td><img src="https://example.com/image2.png" width="50"></td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/archman1-thumb.png" width="350"></td>
   </tr>
   <tr>
     <td>Project B</td>
-    <td><img src="https://example.com/image2.png" width="50"></td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/archman1-thumb.png" width="350"></td>
   </tr>
   <tr>
     <td>Project B</td>
-    <td><img src="https://example.com/image2.png" width="50"></td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/archman1-thumb.png" width="350"></td>
   </tr>
   <tr>
     <td>Project B</td>
-    <td><img src="https://example.com/image2.png" width="50"></td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/archman1-thumb.png" width="350"></td>
+  </tr>
+  <tr>
+    <td>Project B</td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/archman1-thumb.png" width="350"></td>
   </tr>
 </table>   
 
