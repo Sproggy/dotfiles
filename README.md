@@ -13,6 +13,49 @@ Supported Distro's
 | Kiro Linux   | Manjaro Linux   | RebornOS   |
 ||||
 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Thumbnail</th>
+  </tr>
+  <tr>
+    <td>Project A</td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/arch1-thumb.png" width="50"></td>
+  </tr>
+  <tr>
+    <td>Project B</td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/archman1-thumb.pn" width="50"></td>
+  </tr>
+  <tr>
+    <td>Project B</td>
+    <td><img src="https://example.com/image2.png" width="50"></td>
+  </tr>
+  <tr>
+    <td>Project B</td>
+    <td><img src="https://example.com/image2.png" width="50"></td>
+  </tr>
+  <tr>
+    <td>Project B</td>
+    <td><img src="https://example.com/image2.png" width="50"></td>
+  </tr>
+  <tr>
+    <td>Project B</td>
+    <td><img src="https://example.com/image2.png" width="50"></td>
+  </tr>
+  <tr>
+    <td>Project B</td>
+    <td><img src="https://example.com/image2.png" width="50"></td>
+  </tr>
+  <tr>
+    <td>Project B</td>
+    <td><img src="https://example.com/image2.png" width="50"></td>
+  </tr>
+  <tr>
+    <td>Project B</td>
+    <td><img src="https://example.com/image2.png" width="50"></td>
+  </tr>
+</table>   
+
 This will work on most flavours of Arch but not all Arch based Distro's are made the same. So i have custom changed the installer to each distro.
 
 ## Common Packages
