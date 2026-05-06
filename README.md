@@ -2,8 +2,6 @@
 
 This is the configuration for Arch Linux based installations of Hyprland (Wayland) and/or XFCE (Xorg).
 
-Supported Distro's
-
 <table align="center">
   <tr>
     <th>Supported Distributions</th>
