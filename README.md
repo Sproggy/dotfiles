@@ -7,8 +7,11 @@ Supported Distro's
 | Distributions|||
 |----------|----------|----------|
 | Arch Linux  | Archman Linux  | BlueStar Linux   |
+|![MODEL]([https://github.com/hyprtk/dotfiles/blob/main/screenshots/arch1.png](https://github.com/hyprtk/dotfiles/blob/main/thumbnails/arch1-thumb.png))|||
 | CachyOS   | EndeavourOS   | Garuda Linux   |
+||||
 | Kiro Linux   | Manjaro Linux   | RebornOS   |
+||||
 
 This will work on most flavours of Arch but not all Arch based Distro's are made the same. So i have custom changed the installer to each distro.
 
