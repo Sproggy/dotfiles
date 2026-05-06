@@ -98,7 +98,3 @@ Manjaro
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/manjaro1.png)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/manjaro2.png)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/manjaro3.png)
-
-ArcoLinux - No Longer producing Install ISO's (I am not removing the screenshots though)
-![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/53256162013_6be4b66963_o.png)
-![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/53256224204_aaa86aff2e_o.png)
