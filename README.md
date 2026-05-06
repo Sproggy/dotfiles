@@ -48,6 +48,22 @@ Hyprland: In addition, you can switch the Waybar Template
 
 The templates are available in ~/*-dots/waybar/themes. You can add your own personal themes into this folder. The script will read in the folder structure.
 
+## Getting started
+
+To make it easy for you to get started with my dotfiles, here's a list of recommended next steps.
+
+PLEASE BACKUP YOUR EXISTING .config WITH YOUR DOTFILES BEFORE STARTING THE SCRIPTS.
+
+...
+# Make sure that you're in your home directory
+
+git clone https://raw.githubusercontent.com/hyprtk/dotfiles
+cd dotfiles
+./install.sh
+
+#Please note that every Arch Linux system is different and I cannot guarantee that everything works fine on your system.
+...
+
 ## Screenshots & Video
 
 Arch Linux
@@ -78,20 +94,3 @@ Manjaro
 ArcoLinux - No Longer producing Install ISO's (I am not removing the screenshots though)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/53256162013_6be4b66963_o.png)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/53256224204_aaa86aff2e_o.png)
-
-
-## Getting started
-
-To make it easy for you to get started with my dotfiles, here's a list of recommended next steps.
-
-PLEASE BACKUP YOUR EXISTING .config WITH YOUR DOTFILES BEFORE STARTING THE SCRIPTS.
-
-```
-# Make sure that you're in your home directory
-
-git clone https://raw.githubusercontent.com/hyprtk/dotfiles
-cd dotfiles
-./install.sh
-
-#Please note that every Arch Linux system is different and I cannot guarantee that everything works fine on your system.
-
