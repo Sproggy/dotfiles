@@ -1,11 +1,16 @@
 # Hyprland Dots
 
-This is the configuration for Arch Linux, CachyOS, EndeavourOS, Garuda, Manjaro based installations of Hyprland (Wayland) and/or XFCE (Xorg).
+This is the configuration for Arch Linux based installations of Hyprland (Wayland) and/or XFCE (Xorg).
 
-Discontinued Distro's: ArcoLinux
+Supported Distro's
 
-This will work on most flavours of Arch but not all Arch based Distro's are made the same.
+| Distributions|||
+|----------|----------|----------|
+| Arch Linux  | Archman Linux  | BlueStar Linux   |
+| CachyOS   | EndeavourOS   | Garuda Linux   |
+| Kiro Linux   | Manjaro Linux   | RebornOS   |
 
+This will work on most flavours of Arch but not all Arch based Distro's are made the same. So i have custom changed the installer to each distro.
 
 ## Common Packages
 
