@@ -43,7 +43,7 @@ Supported Distro's
   </tr>
   <tr>
     <td>RebornOS</td>
-    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/reborn1-thumb.png" width="350"></td>
+    <td><url=https://github.com/hyprtk/reborn-dots><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/reborn1-thumb.png" width="350"></td>
   </tr>
 </table>   
 
