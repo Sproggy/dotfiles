@@ -54,15 +54,13 @@ To make it easy for you to get started with my dotfiles, here's a list of recomm
 
 PLEASE BACKUP YOUR EXISTING .config WITH YOUR DOTFILES BEFORE STARTING THE SCRIPTS.
 
-...
 # Make sure that you're in your home directory
 
-git clone https://raw.githubusercontent.com/hyprtk/dotfiles
-cd dotfiles
-./install.sh
+	git clone https://raw.githubusercontent.com/hyprtk/dotfiles
+	cd dotfiles
+	./install.sh
 
 #Please note that every Arch Linux system is different and I cannot guarantee that everything works fine on your system.
-...
 
 ## Screenshots & Video
 
