@@ -4,15 +4,6 @@ This is the configuration for Arch Linux based installations of Hyprland (Waylan
 
 Supported Distro's
 
-| Distributions|||
-|----------|----------|----------|
-| Arch Linux  | Archman Linux  | BlueStar Linux   |
-|https://github.com/hyprtk/dotfiles/blob/main/thumbnails/arch1-thumb.png|||
-| CachyOS   | EndeavourOS   | Garuda Linux   |
-||||
-| Kiro Linux   | Manjaro Linux   | RebornOS   |
-||||
-
 <table>
   <tr>
     <th>Supported Distributions</th>
@@ -35,24 +26,24 @@ Supported Distro's
     <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/cachy1-thumb.png" width="350"></td>
   </tr>
   <tr>
-    <td>Project B</td>
-    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/archman1-thumb.png" width="350"></td>
+    <td>EndeavourOS</td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/endeavour1-thumb.png" width="350"></td>
   </tr>
   <tr>
-    <td>Project B</td>
-    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/archman1-thumb.png" width="350"></td>
+    <td>Garuda Linux</td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/garuda1-thumb.png" width="350"></td>
   </tr>
   <tr>
-    <td>Project B</td>
-    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/archman1-thumb.png" width="350"></td>
+    <td>Kiro Linux</td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/kiro1-thumb.png" width="350"></td>
   </tr>
   <tr>
-    <td>Project B</td>
-    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/archman1-thumb.png" width="350"></td>
+    <td>Manjaro Linux</td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/manjaro1-thumb.png" width="350"></td>
   </tr>
   <tr>
-    <td>Project B</td>
-    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/archman1-thumb.png" width="350"></td>
+    <td>RebornOS</td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/reborn1-thumb.png" width="350"></td>
   </tr>
 </table>   
 
