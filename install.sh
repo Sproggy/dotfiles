@@ -30,14 +30,15 @@ echo "
 #########################################################
 
 1) Arch Linux
-2) BlueStar Linux
-3) CachyOS
-4) EndeavourOS
-5) Garuda Linux
-6) Kiro Linux (ArcoLinux Rebrand)
-7) Manjaro Linux
-8) My Personal Dotfiles (contains testing features before being promoted to other Dots)
-9) RebornOS 
+2) Archman Linux
+3) BlueStar Linux
+4) CachyOS
+5) EndeavourOS
+6) Garuda Linux
+7) Kiro Linux (ArcoLinux Rebrand)
+8) Manjaro Linux
+9) My Personal Dotfiles (contains testing features before being promoted to other Dots)
+10) RebornOS 
 "
 echo -e "${RESET}"
 echo -e "${CYAN}"
@@ -60,40 +61,45 @@ case $DOTS in
   sh ./1-install.sh;;
 2)
   cd $HOME
+  git clone https://github.com/hyprtk/archman-dots.git
+  cd archman-dots
+  sh ./1-install.sh;;
+3)
+  cd $HOME
   git clone https://github.com/hyprtk/bslx-dots.git
   cd bslx-dots
   sh ./1-install.sh;;
-3)
+4)
   cd $HOME
   git clone https://github.com/hyprtk/cachy-dots.git
   cd cachy-dots
   sh ./1-install.sh;;
-4)
+5)
   cd $HOME
   git clone https://github.com/hyprtk/endeavour-dots.git
   cd endeavour-dots
   sh ./1-install.sh;;
-5)
+6)
   cd $HOME
   git clone https://github.com/hyprtk/garuda-dots.git
   cd garuda-dots
   sh ./1-install.sh;;
-6)
+7)
   cd $HOME
   git clone https://github.com/hyprtk/kiro-dots.git
   cd kiro-dots
   sh ./1-install.sh;;
-7)
+8)
   cd $HOME
   git clone https://github.com/hyprtk/manjaro-dots.git
   cd manjaro-dots
   sh ./1-install.sh;;
-8)
+9)
   cd $HOME
   git clone https://github.com/hyprtk/my-dots.git
   cd my-dots
   sh ./1-install.sh;;
-9)
+10)
   cd $HOME
   git clone https://github.com/hyprtk/reborn-dots.git
   cd reborn-dots
