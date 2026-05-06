@@ -74,25 +74,30 @@ Arch Linux
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/arch2.png)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/arch3.png)
 
+Archman Linux
+![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/archman1.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/archman2.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/archman3.png)
+
 CachyOS
-![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-23_16-38-13.png)
-![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-23_16-52-38.png)
-![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-23_16-53-24.png)
+![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/cachy1.png)
+![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/cachy2.png)
+![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/cachy3.png)
 
 Endeavour
-![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-22_11-16-25.png)
-![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-22_11-16-47.png)
-![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-22_11-17-59.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/endeavour1.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/endeavour2.png)
+![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/endeavour3.png)
 
 Garuda
-![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-22_09-43-27.png)
-![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-22_09-42-03.png)
-![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-22_09-43-12.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/garuda1.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/garuda2.png)
+![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/garuda3.png)
 
 Manjaro
-![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-21_15-01-38.png)
-![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-21_15-00-19.png)
-![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/screenshot-2026-04-21_15-01-24.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/manjaro1.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/manjaro2.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/manjaro3.png)
 
 ArcoLinux - No Longer producing Install ISO's (I am not removing the screenshots though)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/53256162013_6be4b66963_o.png)
