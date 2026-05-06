@@ -10,40 +10,40 @@ Supported Distro's
     <th>Thumbnails</th>
   </tr>
   <tr>
-    <td>Arch Linux</td>
+    <td><a href="https://github.com/hyprtk/arch-dots">Arch Linux</a></td>
     <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/arch1-thumb.png" width="350"></td>
   </tr>
   <tr>
-    <td>Archman Linux</td>
+    <td><a href="https://github.com/hyprtk/archman-dots">Archman Linux</a></td>
     <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/archman1-thumb.png" width="350"></td>
   </tr>
   <tr>
-    <td>BlueStar Linux</td>
+    <td><a href="https://github.com/hyprtk/bslx-dots">BlueStar Linux</a></td>
     <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/bslx1-thumb.png" width="350"></td>
   </tr>
   <tr>
-    <td>CachyOS</td>
+    <td><a href="https://github.com/hyprtk/cachy-dots">CachyOS</a></td>
     <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/cachy1-thumb.png" width="350"></td>
   </tr>
   <tr>
-    <td>EndeavourOS</td>
+    <td><a href="https://github.com/hyprtk/endeavour-dots">EndeavurOS</a></td>
     <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/endeavour1-thumb.png" width="350"></td>
   </tr>
   <tr>
-    <td>Garuda Linux</td>
+    <td><a href="https://github.com/hyprtk/garuda-dots">Garuda Linux</a></td>
     <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/garuda1-thumb.png" width="350"></td>
   </tr>
   <tr>
-    <td>Kiro Linux</td>
+    <td><a href="https://github.com/hyprtk/kiro-dots">Kiro Linux</a> (ArcoLinux Project)</td>
     <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/kiro1-thumb.png" width="350"></td>
   </tr>
   <tr>
-    <td>Manjaro Linux</td>
+    <td><a href="https://github.com/hyprtk/manjaro-dots">Manjaro Linux</a></td>
     <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/manjaro1-thumb.png" width="350"></td>
   </tr>
   <tr>
-    <td>RebornOS</td>
-    <td><url=https://github.com/hyprtk/reborn-dots><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/reborn1-thumb.png" width="350"></td>
+    <td><a href="https://github.com/hyprtk/reborn-dots">RebornOS</a></td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/reborn1-thumb.png" width="350"></td>
   </tr>
 </table>   
 
