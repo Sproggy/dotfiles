@@ -7,7 +7,7 @@ Supported Distro's
 | Distributions|||
 |----------|----------|----------|
 | Arch Linux  | Archman Linux  | BlueStar Linux   |
-|[[https://github.com/hyprtk/dotfiles/blob/main/thumnails/arch1-thumb.png](https://github.com/hyprtk/dotfiles/blob/main/thumbnails/arch1-thumb.png)](https://github.com/hyprtk/dotfiles/blob/main/thumbnails/arch1-thumb.png)|||
+|https://github.com/hyprtk/dotfiles/blob/main/thumbnails/arch1-thumb.png|||
 | CachyOS   | EndeavourOS   | Garuda Linux   |
 ||||
 | Kiro Linux   | Manjaro Linux   | RebornOS   |
