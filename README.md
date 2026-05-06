@@ -4,7 +4,7 @@ This is the configuration for Arch Linux based installations of Hyprland (Waylan
 
 Supported Distro's
 
-<table class="center">
+<table>
   <tr>
     <th>Supported Distributions</th>
     <th>Thumbnails</th>
