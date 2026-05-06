@@ -4,7 +4,7 @@ This is the configuration for Arch Linux based installations of Hyprland (Waylan
 
 Supported Distro's
 
-| Distributions|
+| Distributions|||
 |----------|----------|----------|
 | Arch Linux  | Archman Linux  | BlueStar Linux   |
 | CachyOS   | EndeavourOS   | Garuda Linux   |
