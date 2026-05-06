@@ -126,12 +126,12 @@ CachyOS
 ![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/cachy2.png)
 ![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/cachy3.png)
 
-Endeavour
+EndeavourOS
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/endeavour1.png)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/endeavour2.png)
 ![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/endeavour3.png)
 
-Garuda
+Garuda Linux
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/garuda1.png)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/garuda2.png)
 ![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/garuda3.png)
@@ -141,7 +141,7 @@ Kiro Linux
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/kiro2.png)
 ![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/kiro3.png)
 
-Manjaro
+Manjaro Linux
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/manjaro1.png)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/manjaro2.png)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/manjaro3.png)
