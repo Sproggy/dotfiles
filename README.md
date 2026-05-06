@@ -10,7 +10,7 @@ Supported Distro's
 | CachyOS   | EndeavourOS   | Garuda Linux   |
 | Kiro Linux   | Manjaro Linux   | RebornOS   |
 
-This will work on most flavours of Arch but not all Arch based Distro's are made the same.So i have custom changed the installer to each distro.
+This will work on most flavours of Arch but not all Arch based Distro's are made the same. So i have custom changed the installer to each distro.
 
 ## Common Packages
 
