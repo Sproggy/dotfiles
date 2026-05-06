@@ -5,13 +5,21 @@ This is the configuration for Arch Linux based installations of Hyprland (Waylan
 Supported Distro's
 
 Arch Linux
+
 Archman Linux
+
 BlueStar Linux
+
 CachyOS
+
 EndeavourOS
+
 Garuda Linux
+
 Kiro Linux (ArcoLinux Rebrand)
+
 Manjaro Linux
+
 RebornOS 
 
 
