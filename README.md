@@ -113,6 +113,11 @@ Arch Linux
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/arch2.png)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/arch3.png)
 
+Archcraft Linux
+![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/archcraft1.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/archcraft2.png)
+![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/archcraft3.png)
+
 Archman Linux
 ![MODEL](https://github.com/hyprtk/dotfiles/blob/main/screenshots/archman1.png)
 ![Model](https://github.com/hyprtk/dotfiles/blob/main/screenshots/archman2.png)
