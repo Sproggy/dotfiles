@@ -12,6 +12,10 @@ This is the configuration for Arch Linux based installations of Hyprland (Waylan
     <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/arch1-thumb.png" width="350"></td>
   </tr>
   <tr>
+    <td><a href="https://github.com/hyprtk/archcraft-dots">Archcraft Linux</a></td>
+    <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/archcraft1-thumb.png" width="350"></td>
+  </tr>
+  <tr>
     <td><a href="https://github.com/hyprtk/archman-dots">Archman Linux</a></td>
     <td><img src="https://github.com/hyprtk/dotfiles/blob/main/thumbnails/archman1-thumb.png" width="350"></td>
   </tr>
